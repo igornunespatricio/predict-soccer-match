@@ -1,0 +1,334 @@
+{
+    "2024": {
+        "round_1": [
+            {
+                "round": "Rodada 1",
+                "date": "13/04/2024 18:30",
+                "team1": "Internacional",
+                "score": "2 x 1",
+                "team2": "Bahia",
+                "stadium": "Beira-Rio"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "13/04/2024 18:30",
+                "team1": "Criciúma",
+                "score": "1 x 1",
+                "team2": "Juventude",
+                "stadium": "Heriberto Hülse"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "13/04/2024 21:00",
+                "team1": "Fluminense",
+                "score": "2 x 2",
+                "team2": "Bragantino",
+                "stadium": "Maracanã"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "13/04/2024 21:00",
+                "team1": "São Paulo",
+                "score": "1 x 2",
+                "team2": "Fortaleza",
+                "stadium": "Morumbi"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "14/04/2024 16:00",
+                "team1": "Vasco",
+                "score": "2 x 1",
+                "team2": "Grêmio",
+                "stadium": "São Januário"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "14/04/2024 16:00",
+                "team1": "Corinthians",
+                "score": "0 x 0",
+                "team2": "Atlético-MG",
+                "stadium": "Arena Corinthians"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "14/04/2024 16:00",
+                "team1": "Athletico-PR",
+                "score": "4 x 0",
+                "team2": "Cuiabá",
+                "stadium": "Arena da Baixada"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "14/04/2024 16:00",
+                "team1": "Atlético-GO",
+                "score": "1 x 2",
+                "team2": "Flamengo",
+                "stadium": "Serra Dourada"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "14/04/2024 17:00",
+                "team1": "Cruzeiro",
+                "score": "3 x 2",
+                "team2": "Botafogo",
+                "stadium": "Mineirão"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "14/04/2024 18:30",
+                "team1": "Vitória",
+                "score": "0 x 1",
+                "team2": "Palmeiras",
+                "stadium": "Barradão"
+            }
+        ],
+        "round_2": [
+            {
+                "round": "Rodada 2",
+                "date": "16/04/2024 21:30",
+                "team1": "Bahia",
+                "score": "2 x 1",
+                "team2": "Fluminense",
+                "stadium": "Fonte Nova"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "17/04/2024 19:00",
+                "team1": "Grêmio",
+                "score": "2 x 0",
+                "team2": "Athletico-PR",
+                "stadium": "Arena do Grêmio"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "17/04/2024 19:00",
+                "team1": "Bragantino",
+                "score": "2 x 1",
+                "team2": "Vasco",
+                "stadium": "Nabi Abi Chedid"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "17/04/2024 20:00",
+                "team1": "Atlético-MG",
+                "score": "1 x 1",
+                "team2": "Criciúma",
+                "stadium": "Arena MRV"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "17/04/2024 20:00",
+                "team1": "Palmeiras",
+                "score": "0 x 1",
+                "team2": "Internacional",
+                "stadium": "Arena Barueri"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "17/04/2024 20:00",
+                "team1": "Fortaleza",
+                "score": "1 x 1",
+                "team2": "Cruzeiro",
+                "stadium": "Castelão (CE)"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "17/04/2024 20:00",
+                "team1": "Juventude",
+                "score": "2 x 0",
+                "team2": "Corinthians",
+                "stadium": "Alfredo Jaconi"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "17/04/2024 21:30",
+                "team1": "Flamengo",
+                "score": "2 x 1",
+                "team2": "São Paulo",
+                "stadium": "Maracanã"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "18/04/2024 21:30",
+                "team1": "Botafogo",
+                "score": "1 x 0",
+                "team2": "Atlético-GO",
+                "stadium": "Nilton Santos (Engenhão)"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "05/06/2024 20:00",
+                "team1": "Cuiabá",
+                "score": "0 x 0",
+                "team2": "Vitória",
+                "stadium": "Arena Pantanal"
+            }
+        ]
+    },
+    "2025": {
+        "round_1": [
+            {
+                "round": "Rodada 1",
+                "date": "29/03/2025 18:30",
+                "team1": "São Paulo",
+                "score": "0 x 0",
+                "team2": "Sport",
+                "stadium": "Morumbi"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "29/03/2025 18:30",
+                "team1": "Cruzeiro",
+                "score": "2 x 1",
+                "team2": "Mirassol",
+                "stadium": "Mineirão"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "29/03/2025 18:30",
+                "team1": "Grêmio",
+                "score": "2 x 1",
+                "team2": "Atlético-MG",
+                "stadium": "Arena do Grêmio"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "29/03/2025 18:30",
+                "team1": "Fortaleza",
+                "score": "2 x 0",
+                "team2": "Fluminense",
+                "stadium": "Castelão (CE)"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "29/03/2025 18:30",
+                "team1": "Juventude",
+                "score": "2 x 0",
+                "team2": "Vitória",
+                "stadium": "Alfredo Jaconi"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "29/03/2025 21:00",
+                "team1": "Flamengo",
+                "score": "1 x 1",
+                "team2": "Internacional",
+                "stadium": "Maracanã"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "30/03/2025 16:00",
+                "team1": "Palmeiras",
+                "score": "0 x 0",
+                "team2": "Botafogo",
+                "stadium": "Arena Palmeiras"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "30/03/2025 18:30",
+                "team1": "Vasco",
+                "score": "2 x 1",
+                "team2": "Santos",
+                "stadium": "São Januário"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "30/03/2025 20:00",
+                "team1": "Bahia",
+                "score": "1 x 1",
+                "team2": "Corinthians",
+                "stadium": "Fonte Nova"
+            },
+            {
+                "round": "Rodada 1",
+                "date": "31/03/2025 20:00",
+                "team1": "Bragantino",
+                "score": "2 x 2",
+                "team2": "Ceará",
+                "stadium": "Nabi Abi Chedid"
+            }
+        ],
+        "round_2": [
+            {
+                "round": "Rodada 2",
+                "date": "05/04/2025 18:30",
+                "team1": "Corinthians",
+                "score": "3 x 0",
+                "team2": "Vasco",
+                "stadium": "Arena Corinthians"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "05/04/2025 18:30",
+                "team1": "Ceará",
+                "score": "2 x 0",
+                "team2": "Grêmio",
+                "stadium": "Castelão (CE)"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "05/04/2025 21:00",
+                "team1": "Botafogo",
+                "score": "2 x 0",
+                "team2": "Juventude",
+                "stadium": "Nilton Santos (Engenhão)"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "06/04/2025 16:00",
+                "team1": "Fluminense",
+                "score": "2 x 1",
+                "team2": "Bragantino",
+                "stadium": "Maracanã"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "06/04/2025 16:00",
+                "team1": "Atlético-MG",
+                "score": "0 x 0",
+                "team2": "São Paulo",
+                "stadium": "Mineirão"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "06/04/2025 18:30",
+                "team1": "Mirassol",
+                "score": "1 x 1",
+                "team2": "Fortaleza",
+                "stadium": "Municipal de Mirassol"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "06/04/2025 18:30",
+                "team1": "Internacional",
+                "score": "3 x 0",
+                "team2": "Cruzeiro",
+                "stadium": "Beira-Rio"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "06/04/2025 18:30",
+                "team1": "Vitória",
+                "score": "1 x 2",
+                "team2": "Flamengo",
+                "stadium": "Barradão"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "06/04/2025 18:30",
+                "team1": "Sport",
+                "score": "1 x 2",
+                "team2": "Palmeiras",
+                "stadium": "Ilha do Retiro"
+            },
+            {
+                "round": "Rodada 2",
+                "date": "06/04/2025 20:30",
+                "team1": "Santos",
+                "score": "2 x 2",
+                "team2": "Bahia",
+                "stadium": "Vila Belmiro"
+            }
+        ]
+    }
+}
