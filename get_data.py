@@ -54,7 +54,10 @@ def save_data(data: dict, filename: str):
 
 
 def main(
-    base_link, years: list, rounds: list = range(1, 39), save_path="data/matches.json"
+    base_link,
+    years: list,
+    rounds: list = range(1, 39),
+    save_path="data/raw_matches.json",
 ):
     data = {}
     for year in years:
@@ -74,4 +77,4 @@ def main(
 if __name__ == "__main__":
     base_link = "https://www.api-futebol.com.br/campeonato/campeonato-brasileiro"
 
-    main(base_link, years=[2024, 2025], rounds=[1, 2])
+    main(base_link, years=[2024, 2025])
