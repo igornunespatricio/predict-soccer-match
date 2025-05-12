@@ -2,6 +2,8 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
+from src.utils import save_json, read_config
+
 
 def get_round_link(link: str, year: int, round_number: int) -> str:
     round_link = f"{link}/{year}/rodada/{round_number}"
@@ -31,50 +33,44 @@ def parse_content(content: str) -> list:
         # 2. Extract match info
         row = card.find("div", class_="row small")
         if row:
-            team1 = row.find_all("div", class_="p-0")[0].get_text(strip=True)
+            home_team = row.find_all("div", class_="p-0")[0].get_text(strip=True)
             score = row.find_all("div", class_="p-0")[1].get_text(strip=True)
-            team2 = row.find_all("div", class_="p-0")[2].get_text(strip=True)
+            guest_team = row.find_all("div", class_="p-0")[2].get_text(strip=True)
         else:
-            team1 = score = team2 = None
+            home_team = score = guest = None
         row_data = {
             "round": round_number,
             "date": date,
-            "team1": team1,
+            "home_team": home_team,
             "score": score,
-            "team2": team2,
+            "guest_team": guest_team,
             "stadium": stadium,
         }
         round_data.append(row_data)
     return round_data
 
 
-def save_data(data: dict, filename: str):
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-
-
-def main(
+def get_data(
     base_link,
-    years: list,
-    rounds: list = range(1, 39),
     save_path="data/raw_matches.json",
 ):
     data = {}
-    for year in years:
+    config = read_config(path="config.yml")
+    for year, rounds in config.items():
         round_data = {}
         for round_number in rounds:
             link = get_round_link(base_link, year, round_number)
-            status_coode, content = get_content(link)
-            if status_coode != 200:
-                print(f"Error: {status_coode}")
+            status_code, content = get_content(link)
+            if status_code != 200:
+                print(f"Error: {status_code}")
                 continue
             round_data[f"round_{round_number}"] = parse_content(content)
         data[year] = round_data
     if save_path is not None:
-        save_data(data, save_path)
+        save_json(data, save_path)
 
 
 if __name__ == "__main__":
     base_link = "https://www.api-futebol.com.br/campeonato/campeonato-brasileiro"
 
-    main(base_link, years=[2024, 2025])
+    get_data(base_link)
