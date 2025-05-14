@@ -2,9 +2,9 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-from utils import save_json, read_config
+from src.utils import save_json, read_config
 from tinydb import TinyDB
-from db import get_db, insert_match  # Import your TinyDB helpers
+from src.db import get_db, insert_match  # Import your TinyDB helpers
 
 
 def get_round_link(link: str, year: int, round_number: int) -> str:
