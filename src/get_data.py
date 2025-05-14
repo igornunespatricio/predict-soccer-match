@@ -2,7 +2,9 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-from src.utils import save_json, read_config
+from utils import save_json, read_config
+from tinydb import TinyDB
+from db import get_db, insert_match  # Import your TinyDB helpers
 
 
 def get_round_link(link: str, year: int, round_number: int) -> str:
@@ -37,7 +39,7 @@ def parse_content(content: str) -> list:
             score = row.find_all("div", class_="p-0")[1].get_text(strip=True)
             guest_team = row.find_all("div", class_="p-0")[2].get_text(strip=True)
         else:
-            home_team = score = guest = None
+            home_team = score = guest_team = None
         row_data = {
             "round": round_number,
             "date": date,
@@ -52,22 +54,23 @@ def parse_content(content: str) -> list:
 
 def get_data(
     base_link,
-    save_path="data/raw_matches.json",
+    db_path="data/matches_db.json",
 ):
-    data = {}
+    db, db_table = get_db(db_path)
     config = read_config(path="config.yml")
+
     for year, rounds in config.items():
-        round_data = {}
         for round_number in rounds:
             link = get_round_link(base_link, year, round_number)
             status_code, content = get_content(link)
             if status_code != 200:
                 print(f"Error: {status_code}")
                 continue
-            round_data[f"round_{round_number}"] = parse_content(content)
-        data[year] = round_data
-    if save_path is not None:
-        save_json(data, save_path)
+
+            round_matches = parse_content(content)
+            for match in round_matches:
+                insert_match(db_table, match)
+    db.close()  # Close the TinyDB database
 
 
 if __name__ == "__main__":

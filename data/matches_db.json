@@ -1,0 +1,1264 @@
+{
+    "matches": {
+        "1": {
+            "round": "Rodada 1",
+            "date": "13/04/2024 18:30",
+            "home_team": "Internacional",
+            "score": "2 x 1",
+            "guest_team": "Bahia",
+            "stadium": "Beira-Rio",
+            "date_added": "2025-05-14T19:52:42.974907"
+        },
+        "2": {
+            "round": "Rodada 1",
+            "date": "13/04/2024 18:30",
+            "home_team": "Criciúma",
+            "score": "1 x 1",
+            "guest_team": "Juventude",
+            "stadium": "Heriberto Hülse",
+            "date_added": "2025-05-14T19:52:42.977049"
+        },
+        "3": {
+            "round": "Rodada 1",
+            "date": "13/04/2024 21:00",
+            "home_team": "Fluminense",
+            "score": "2 x 2",
+            "guest_team": "Bragantino",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:43.002288"
+        },
+        "4": {
+            "round": "Rodada 1",
+            "date": "13/04/2024 21:00",
+            "home_team": "São Paulo",
+            "score": "1 x 2",
+            "guest_team": "Fortaleza",
+            "stadium": "Morumbi",
+            "date_added": "2025-05-14T19:52:43.045111"
+        },
+        "5": {
+            "round": "Rodada 1",
+            "date": "14/04/2024 16:00",
+            "home_team": "Vasco",
+            "score": "2 x 1",
+            "guest_team": "Grêmio",
+            "stadium": "São Januário",
+            "date_added": "2025-05-14T19:52:43.066429"
+        },
+        "6": {
+            "round": "Rodada 1",
+            "date": "14/04/2024 16:00",
+            "home_team": "Corinthians",
+            "score": "0 x 0",
+            "guest_team": "Atlético-MG",
+            "stadium": "Arena Corinthians",
+            "date_added": "2025-05-14T19:52:43.087251"
+        },
+        "7": {
+            "round": "Rodada 1",
+            "date": "14/04/2024 16:00",
+            "home_team": "Athletico-PR",
+            "score": "4 x 0",
+            "guest_team": "Cuiabá",
+            "stadium": "Arena da Baixada",
+            "date_added": "2025-05-14T19:52:43.107877"
+        },
+        "8": {
+            "round": "Rodada 1",
+            "date": "14/04/2024 16:00",
+            "home_team": "Atlético-GO",
+            "score": "1 x 2",
+            "guest_team": "Flamengo",
+            "stadium": "Serra Dourada",
+            "date_added": "2025-05-14T19:52:43.129158"
+        },
+        "9": {
+            "round": "Rodada 1",
+            "date": "14/04/2024 17:00",
+            "home_team": "Cruzeiro",
+            "score": "3 x 2",
+            "guest_team": "Botafogo",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:43.159732"
+        },
+        "10": {
+            "round": "Rodada 1",
+            "date": "14/04/2024 18:30",
+            "home_team": "Vitória",
+            "score": "0 x 1",
+            "guest_team": "Palmeiras",
+            "stadium": "Barradão",
+            "date_added": "2025-05-14T19:52:43.179970"
+        },
+        "11": {
+            "round": "Rodada 2",
+            "date": "16/04/2024 21:30",
+            "home_team": "Bahia",
+            "score": "2 x 1",
+            "guest_team": "Fluminense",
+            "stadium": "Fonte Nova",
+            "date_added": "2025-05-14T19:52:43.822417"
+        },
+        "12": {
+            "round": "Rodada 2",
+            "date": "17/04/2024 19:00",
+            "home_team": "Grêmio",
+            "score": "2 x 0",
+            "guest_team": "Athletico-PR",
+            "stadium": "Arena do Grêmio",
+            "date_added": "2025-05-14T19:52:43.832113"
+        },
+        "13": {
+            "round": "Rodada 2",
+            "date": "17/04/2024 19:00",
+            "home_team": "Bragantino",
+            "score": "2 x 1",
+            "guest_team": "Vasco",
+            "stadium": "Nabi Abi Chedid",
+            "date_added": "2025-05-14T19:52:43.862740"
+        },
+        "14": {
+            "round": "Rodada 2",
+            "date": "17/04/2024 20:00",
+            "home_team": "Atlético-MG",
+            "score": "1 x 1",
+            "guest_team": "Criciúma",
+            "stadium": "Arena MRV",
+            "date_added": "2025-05-14T19:52:43.883498"
+        },
+        "15": {
+            "round": "Rodada 2",
+            "date": "17/04/2024 20:00",
+            "home_team": "Palmeiras",
+            "score": "0 x 1",
+            "guest_team": "Internacional",
+            "stadium": "Arena Barueri",
+            "date_added": "2025-05-14T19:52:43.916040"
+        },
+        "16": {
+            "round": "Rodada 2",
+            "date": "17/04/2024 20:00",
+            "home_team": "Fortaleza",
+            "score": "1 x 1",
+            "guest_team": "Cruzeiro",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:43.938543"
+        },
+        "17": {
+            "round": "Rodada 2",
+            "date": "17/04/2024 20:00",
+            "home_team": "Juventude",
+            "score": "2 x 0",
+            "guest_team": "Corinthians",
+            "stadium": "Alfredo Jaconi",
+            "date_added": "2025-05-14T19:52:43.956843"
+        },
+        "18": {
+            "round": "Rodada 2",
+            "date": "17/04/2024 21:30",
+            "home_team": "Flamengo",
+            "score": "2 x 1",
+            "guest_team": "São Paulo",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:43.987890"
+        },
+        "19": {
+            "round": "Rodada 2",
+            "date": "18/04/2024 21:30",
+            "home_team": "Botafogo",
+            "score": "1 x 0",
+            "guest_team": "Atlético-GO",
+            "stadium": "Nilton Santos (Engenhão)",
+            "date_added": "2025-05-14T19:52:44.010683"
+        },
+        "20": {
+            "round": "Rodada 2",
+            "date": "05/06/2024 20:00",
+            "home_team": "Cuiabá",
+            "score": "0 x 0",
+            "guest_team": "Vitória",
+            "stadium": "Arena Pantanal",
+            "date_added": "2025-05-14T19:52:44.031363"
+        },
+        "21": {
+            "round": "Rodada 3",
+            "date": "20/04/2024 16:00",
+            "home_team": "Fluminense",
+            "score": "2 x 1",
+            "guest_team": "Vasco",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:44.571872"
+        },
+        "22": {
+            "round": "Rodada 3",
+            "date": "20/04/2024 18:30",
+            "home_team": "Grêmio",
+            "score": "1 x 0",
+            "guest_team": "Cuiabá",
+            "stadium": "Arena do Grêmio",
+            "date_added": "2025-05-14T19:52:44.576155"
+        },
+        "23": {
+            "round": "Rodada 3",
+            "date": "20/04/2024 18:30",
+            "home_team": "Bragantino",
+            "score": "1 x 0",
+            "guest_team": "Corinthians",
+            "stadium": "Nabi Abi Chedid",
+            "date_added": "2025-05-14T19:52:44.592315"
+        },
+        "24": {
+            "round": "Rodada 3",
+            "date": "20/04/2024 21:00",
+            "home_team": "Atlético-MG",
+            "score": "3 x 0",
+            "guest_team": "Cruzeiro",
+            "stadium": "Arena MRV",
+            "date_added": "2025-05-14T19:52:44.609105"
+        },
+        "25": {
+            "round": "Rodada 3",
+            "date": "21/04/2024 16:00",
+            "home_team": "Vitória",
+            "score": "2 x 2",
+            "guest_team": "Bahia",
+            "stadium": "Barradão",
+            "date_added": "2025-05-14T19:52:44.623964"
+        },
+        "26": {
+            "round": "Rodada 3",
+            "date": "21/04/2024 16:00",
+            "home_team": "Palmeiras",
+            "score": "0 x 0",
+            "guest_team": "Flamengo",
+            "stadium": "Arena Palmeiras",
+            "date_added": "2025-05-14T19:52:44.644248"
+        },
+        "27": {
+            "round": "Rodada 3",
+            "date": "21/04/2024 16:00",
+            "home_team": "Athletico-PR",
+            "score": "1 x 0",
+            "guest_team": "Internacional",
+            "stadium": "Arena da Baixada",
+            "date_added": "2025-05-14T19:52:44.656132"
+        },
+        "28": {
+            "round": "Rodada 3",
+            "date": "21/04/2024 18:30",
+            "home_team": "Botafogo",
+            "score": "5 x 1",
+            "guest_team": "Juventude",
+            "stadium": "Nilton Santos (Engenhão)",
+            "date_added": "2025-05-14T19:52:44.688580"
+        },
+        "29": {
+            "round": "Rodada 3",
+            "date": "21/04/2024 18:30",
+            "home_team": "Atlético-GO",
+            "score": "0 x 3",
+            "guest_team": "São Paulo",
+            "stadium": "Antônio Accioly",
+            "date_added": "2025-05-14T19:52:44.715108"
+        },
+        "30": {
+            "round": "Rodada 3",
+            "date": "24/07/2024 19:00",
+            "home_team": "Criciúma",
+            "score": "1 x 1",
+            "guest_team": "Fortaleza",
+            "stadium": "Heriberto Hülse",
+            "date_added": "2025-05-14T19:52:44.737199"
+        },
+        "31": {
+            "round": "Rodada 4",
+            "date": "27/04/2024 16:00",
+            "home_team": "Vasco",
+            "score": "0 x 4",
+            "guest_team": "Criciúma",
+            "stadium": "São Januário",
+            "date_added": "2025-05-14T19:52:45.393296"
+        },
+        "32": {
+            "round": "Rodada 4",
+            "date": "27/04/2024 18:30",
+            "home_team": "Cuiabá",
+            "score": "0 x 3",
+            "guest_team": "Atlético-MG",
+            "stadium": "Arena Pantanal",
+            "date_added": "2025-05-14T19:52:45.395907"
+        },
+        "33": {
+            "round": "Rodada 4",
+            "date": "27/04/2024 21:00",
+            "home_team": "Bahia",
+            "score": "1 x 0",
+            "guest_team": "Grêmio",
+            "stadium": "Fonte Nova",
+            "date_added": "2025-05-14T19:52:45.414376"
+        },
+        "34": {
+            "round": "Rodada 4",
+            "date": "28/04/2024 11:00",
+            "home_team": "Flamengo",
+            "score": "0 x 2",
+            "guest_team": "Botafogo",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:45.436079"
+        },
+        "35": {
+            "round": "Rodada 4",
+            "date": "28/04/2024 16:00",
+            "home_team": "Cruzeiro",
+            "score": "3 x 1",
+            "guest_team": "Vitória",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:45.478947"
+        },
+        "36": {
+            "round": "Rodada 4",
+            "date": "28/04/2024 16:00",
+            "home_team": "Corinthians",
+            "score": "3 x 0",
+            "guest_team": "Fluminense",
+            "stadium": "Arena Corinthians",
+            "date_added": "2025-05-14T19:52:45.528719"
+        },
+        "37": {
+            "round": "Rodada 4",
+            "date": "28/04/2024 18:30",
+            "home_team": "Fortaleza",
+            "score": "1 x 1",
+            "guest_team": "Bragantino",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:45.572443"
+        },
+        "38": {
+            "round": "Rodada 4",
+            "date": "28/04/2024 18:30",
+            "home_team": "Juventude",
+            "score": "1 x 1",
+            "guest_team": "Athletico-PR",
+            "stadium": "Alfredo Jaconi",
+            "date_added": "2025-05-14T19:52:45.598803"
+        },
+        "39": {
+            "round": "Rodada 4",
+            "date": "28/04/2024 20:00",
+            "home_team": "Internacional",
+            "score": "1 x 1",
+            "guest_team": "Atlético-GO",
+            "stadium": "Beira-Rio",
+            "date_added": "2025-05-14T19:52:45.618929"
+        },
+        "40": {
+            "round": "Rodada 4",
+            "date": "29/04/2024 20:00",
+            "home_team": "São Paulo",
+            "score": "0 x 0",
+            "guest_team": "Palmeiras",
+            "stadium": "Morumbi",
+            "date_added": "2025-05-14T19:52:45.641443"
+        },
+        "41": {
+            "round": "Rodada 5",
+            "date": "04/05/2024 16:00",
+            "home_team": "Fluminense",
+            "score": "2 x 2",
+            "guest_team": "Atlético-MG",
+            "stadium": "Kleber Andrade",
+            "date_added": "2025-05-14T19:52:46.236681"
+        },
+        "42": {
+            "round": "Rodada 5",
+            "date": "04/05/2024 18:30",
+            "home_team": "Bragantino",
+            "score": "1 x 1",
+            "guest_team": "Flamengo",
+            "stadium": "Nabi Abi Chedid",
+            "date_added": "2025-05-14T19:52:46.239682"
+        },
+        "43": {
+            "round": "Rodada 5",
+            "date": "04/05/2024 21:00",
+            "home_team": "Corinthians",
+            "score": "0 x 0",
+            "guest_team": "Fortaleza",
+            "stadium": "Arena Corinthians",
+            "date_added": "2025-05-14T19:52:46.263111"
+        },
+        "44": {
+            "round": "Rodada 5",
+            "date": "05/05/2024 16:00",
+            "home_team": "Vitória",
+            "score": "1 x 3",
+            "guest_team": "São Paulo",
+            "stadium": "Barradão",
+            "date_added": "2025-05-14T19:52:46.296509"
+        },
+        "45": {
+            "round": "Rodada 5",
+            "date": "05/05/2024 16:00",
+            "home_team": "Athletico-PR",
+            "score": "1 x 0",
+            "guest_team": "Vasco",
+            "stadium": "Arena da Baixada",
+            "date_added": "2025-05-14T19:52:46.325689"
+        },
+        "46": {
+            "round": "Rodada 5",
+            "date": "05/05/2024 18:30",
+            "home_team": "Botafogo",
+            "score": "1 x 2",
+            "guest_team": "Bahia",
+            "stadium": "Nilton Santos (Engenhão)",
+            "date_added": "2025-05-14T19:52:46.339387"
+        },
+        "47": {
+            "round": "Rodada 5",
+            "date": "05/05/2024 18:30",
+            "home_team": "Cuiabá",
+            "score": "0 x 2",
+            "guest_team": "Palmeiras",
+            "stadium": "Arena Pantanal",
+            "date_added": "2025-05-14T19:52:46.372666"
+        },
+        "48": {
+            "round": "Rodada 5",
+            "date": "05/06/2024 19:00",
+            "home_team": "Juventude",
+            "score": "1 x 0",
+            "guest_team": "Atlético-GO",
+            "stadium": "Alfredo Jaconi",
+            "date_added": "2025-05-14T19:52:46.396087"
+        },
+        "49": {
+            "round": "Rodada 5",
+            "date": "28/08/2024 19:30",
+            "home_team": "Cruzeiro",
+            "score": "0 x 0",
+            "guest_team": "Internacional",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:46.420415"
+        },
+        "50": {
+            "round": "Rodada 5",
+            "date": "25/09/2024 19:00",
+            "home_team": "Grêmio",
+            "score": "1 x 2",
+            "guest_team": "Criciúma",
+            "stadium": "Arena do Grêmio",
+            "date_added": "2025-05-14T19:52:46.442710"
+        },
+        "51": {
+            "round": "Rodada 6",
+            "date": "11/05/2024 16:00",
+            "home_team": "Flamengo",
+            "score": "2 x 0",
+            "guest_team": "Corinthians",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:47.037889"
+        },
+        "52": {
+            "round": "Rodada 6",
+            "date": "12/05/2024 16:00",
+            "home_team": "Palmeiras",
+            "score": "0 x 2",
+            "guest_team": "Athletico-PR",
+            "stadium": "Arena Barueri",
+            "date_added": "2025-05-14T19:52:47.042801"
+        },
+        "53": {
+            "round": "Rodada 6",
+            "date": "12/05/2024 16:00",
+            "home_team": "Fortaleza",
+            "score": "1 x 1",
+            "guest_team": "Botafogo",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:47.065236"
+        },
+        "54": {
+            "round": "Rodada 6",
+            "date": "12/05/2024 16:00",
+            "home_team": "Atlético-GO",
+            "score": "0 x 1",
+            "guest_team": "Cruzeiro",
+            "stadium": "Antônio Accioly",
+            "date_added": "2025-05-14T19:52:47.098898"
+        },
+        "55": {
+            "round": "Rodada 6",
+            "date": "12/05/2024 18:30",
+            "home_team": "Bahia",
+            "score": "1 x 0",
+            "guest_team": "Bragantino",
+            "stadium": "Fonte Nova",
+            "date_added": "2025-05-14T19:52:47.124340"
+        },
+        "56": {
+            "round": "Rodada 6",
+            "date": "12/05/2024 18:30",
+            "home_team": "Vasco",
+            "score": "2 x 1",
+            "guest_team": "Vitória",
+            "stadium": "São Januário",
+            "date_added": "2025-05-14T19:52:47.146843"
+        },
+        "57": {
+            "round": "Rodada 6",
+            "date": "13/05/2024 20:00",
+            "home_team": "São Paulo",
+            "score": "2 x 1",
+            "guest_team": "Fluminense",
+            "stadium": "Morumbi",
+            "date_added": "2025-05-14T19:52:47.171128"
+        },
+        "58": {
+            "round": "Rodada 6",
+            "date": "09/06/2024 16:00",
+            "home_team": "Criciúma",
+            "score": "2 x 5",
+            "guest_team": "Cuiabá",
+            "stadium": "Heriberto Hülse",
+            "date_added": "2025-05-14T19:52:47.188534"
+        },
+        "59": {
+            "round": "Rodada 6",
+            "date": "14/08/2024 19:30",
+            "home_team": "Internacional",
+            "score": "2 x 1",
+            "guest_team": "Juventude",
+            "stadium": "Beira-Rio",
+            "date_added": "2025-05-14T19:52:47.220259"
+        },
+        "60": {
+            "round": "Rodada 6",
+            "date": "09/10/2024 19:30",
+            "home_team": "Atlético-MG",
+            "score": "2 x 1",
+            "guest_team": "Grêmio",
+            "stadium": "Arena MRV",
+            "date_added": "2025-05-14T19:52:47.240705"
+        },
+        "61": {
+            "round": "Rodada 7",
+            "date": "01/06/2024 16:00",
+            "home_team": "Grêmio",
+            "score": "0 x 2",
+            "guest_team": "Bragantino",
+            "stadium": "Couto Pereira",
+            "date_added": "2025-05-14T19:52:47.796887"
+        },
+        "62": {
+            "round": "Rodada 7",
+            "date": "01/06/2024 16:00",
+            "home_team": "Vitória",
+            "score": "0 x 2",
+            "guest_team": "Atlético-GO",
+            "stadium": "Barradão",
+            "date_added": "2025-05-14T19:52:47.805287"
+        },
+        "63": {
+            "round": "Rodada 7",
+            "date": "01/06/2024 18:30",
+            "home_team": "Fluminense",
+            "score": "1 x 1",
+            "guest_team": "Juventude",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:47.830774"
+        },
+        "64": {
+            "round": "Rodada 7",
+            "date": "01/06/2024 18:30",
+            "home_team": "Cuiabá",
+            "score": "0 x 1",
+            "guest_team": "Internacional",
+            "stadium": "Arena Pantanal",
+            "date_added": "2025-05-14T19:52:47.862594"
+        },
+        "65": {
+            "round": "Rodada 7",
+            "date": "01/06/2024 21:00",
+            "home_team": "Corinthians",
+            "score": "0 x 1",
+            "guest_team": "Botafogo",
+            "stadium": "Arena Corinthians",
+            "date_added": "2025-05-14T19:52:47.890301"
+        },
+        "66": {
+            "round": "Rodada 7",
+            "date": "02/06/2024 16:00",
+            "home_team": "Atlético-MG",
+            "score": "1 x 1",
+            "guest_team": "Bahia",
+            "stadium": "Arena MRV",
+            "date_added": "2025-05-14T19:52:47.931806"
+        },
+        "67": {
+            "round": "Rodada 7",
+            "date": "02/06/2024 16:00",
+            "home_team": "Vasco",
+            "score": "1 x 6",
+            "guest_team": "Flamengo",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:47.965589"
+        },
+        "68": {
+            "round": "Rodada 7",
+            "date": "02/06/2024 16:00",
+            "home_team": "Criciúma",
+            "score": "1 x 2",
+            "guest_team": "Palmeiras",
+            "stadium": "Heriberto Hülse",
+            "date_added": "2025-05-14T19:52:48.000735"
+        },
+        "69": {
+            "round": "Rodada 7",
+            "date": "02/06/2024 18:30",
+            "home_team": "São Paulo",
+            "score": "2 x 0",
+            "guest_team": "Cruzeiro",
+            "stadium": "Morumbi",
+            "date_added": "2025-05-14T19:52:48.032564"
+        },
+        "70": {
+            "round": "Rodada 7",
+            "date": "02/06/2024 18:30",
+            "home_team": "Fortaleza",
+            "score": "1 x 0",
+            "guest_team": "Athletico-PR",
+            "stadium": "Presidente Vargas (CE)",
+            "date_added": "2025-05-14T19:52:48.065683"
+        },
+        "71": {
+            "round": "Rodada 1",
+            "date": "29/03/2025 18:30",
+            "home_team": "São Paulo",
+            "score": "0 x 0",
+            "guest_team": "Sport",
+            "stadium": "Morumbi",
+            "date_added": "2025-05-14T19:52:48.585353"
+        },
+        "72": {
+            "round": "Rodada 1",
+            "date": "29/03/2025 18:30",
+            "home_team": "Cruzeiro",
+            "score": "2 x 1",
+            "guest_team": "Mirassol",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:48.589249"
+        },
+        "73": {
+            "round": "Rodada 1",
+            "date": "29/03/2025 18:30",
+            "home_team": "Grêmio",
+            "score": "2 x 1",
+            "guest_team": "Atlético-MG",
+            "stadium": "Arena do Grêmio",
+            "date_added": "2025-05-14T19:52:48.621931"
+        },
+        "74": {
+            "round": "Rodada 1",
+            "date": "29/03/2025 18:30",
+            "home_team": "Fortaleza",
+            "score": "2 x 0",
+            "guest_team": "Fluminense",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:48.660662"
+        },
+        "75": {
+            "round": "Rodada 1",
+            "date": "29/03/2025 18:30",
+            "home_team": "Juventude",
+            "score": "2 x 0",
+            "guest_team": "Vitória",
+            "stadium": "Alfredo Jaconi",
+            "date_added": "2025-05-14T19:52:48.698016"
+        },
+        "76": {
+            "round": "Rodada 1",
+            "date": "29/03/2025 21:00",
+            "home_team": "Flamengo",
+            "score": "1 x 1",
+            "guest_team": "Internacional",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:48.720122"
+        },
+        "77": {
+            "round": "Rodada 1",
+            "date": "30/03/2025 16:00",
+            "home_team": "Palmeiras",
+            "score": "0 x 0",
+            "guest_team": "Botafogo",
+            "stadium": "Arena Palmeiras",
+            "date_added": "2025-05-14T19:52:48.755989"
+        },
+        "78": {
+            "round": "Rodada 1",
+            "date": "30/03/2025 18:30",
+            "home_team": "Vasco",
+            "score": "2 x 1",
+            "guest_team": "Santos",
+            "stadium": "São Januário",
+            "date_added": "2025-05-14T19:52:48.791875"
+        },
+        "79": {
+            "round": "Rodada 1",
+            "date": "30/03/2025 20:00",
+            "home_team": "Bahia",
+            "score": "1 x 1",
+            "guest_team": "Corinthians",
+            "stadium": "Fonte Nova",
+            "date_added": "2025-05-14T19:52:48.818700"
+        },
+        "80": {
+            "round": "Rodada 1",
+            "date": "31/03/2025 20:00",
+            "home_team": "Bragantino",
+            "score": "2 x 2",
+            "guest_team": "Ceará",
+            "stadium": "Nabi Abi Chedid",
+            "date_added": "2025-05-14T19:52:48.843545"
+        },
+        "81": {
+            "round": "Rodada 2",
+            "date": "05/04/2025 18:30",
+            "home_team": "Corinthians",
+            "score": "3 x 0",
+            "guest_team": "Vasco",
+            "stadium": "Arena Corinthians",
+            "date_added": "2025-05-14T19:52:51.984944"
+        },
+        "82": {
+            "round": "Rodada 2",
+            "date": "05/04/2025 18:30",
+            "home_team": "Ceará",
+            "score": "2 x 0",
+            "guest_team": "Grêmio",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:52.000553"
+        },
+        "83": {
+            "round": "Rodada 2",
+            "date": "05/04/2025 21:00",
+            "home_team": "Botafogo",
+            "score": "2 x 0",
+            "guest_team": "Juventude",
+            "stadium": "Nilton Santos (Engenhão)",
+            "date_added": "2025-05-14T19:52:52.019849"
+        },
+        "84": {
+            "round": "Rodada 2",
+            "date": "06/04/2025 16:00",
+            "home_team": "Fluminense",
+            "score": "2 x 1",
+            "guest_team": "Bragantino",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:52.043197"
+        },
+        "85": {
+            "round": "Rodada 2",
+            "date": "06/04/2025 16:00",
+            "home_team": "Atlético-MG",
+            "score": "0 x 0",
+            "guest_team": "São Paulo",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:52.065546"
+        },
+        "86": {
+            "round": "Rodada 2",
+            "date": "06/04/2025 18:30",
+            "home_team": "Mirassol",
+            "score": "1 x 1",
+            "guest_team": "Fortaleza",
+            "stadium": "Municipal de Mirassol",
+            "date_added": "2025-05-14T19:52:52.092283"
+        },
+        "87": {
+            "round": "Rodada 2",
+            "date": "06/04/2025 18:30",
+            "home_team": "Internacional",
+            "score": "3 x 0",
+            "guest_team": "Cruzeiro",
+            "stadium": "Beira-Rio",
+            "date_added": "2025-05-14T19:52:52.116936"
+        },
+        "88": {
+            "round": "Rodada 2",
+            "date": "06/04/2025 18:30",
+            "home_team": "Vitória",
+            "score": "1 x 2",
+            "guest_team": "Flamengo",
+            "stadium": "Barradão",
+            "date_added": "2025-05-14T19:52:52.139526"
+        },
+        "89": {
+            "round": "Rodada 2",
+            "date": "06/04/2025 18:30",
+            "home_team": "Sport",
+            "score": "1 x 2",
+            "guest_team": "Palmeiras",
+            "stadium": "Ilha do Retiro",
+            "date_added": "2025-05-14T19:52:52.164490"
+        },
+        "90": {
+            "round": "Rodada 2",
+            "date": "06/04/2025 20:30",
+            "home_team": "Santos",
+            "score": "2 x 2",
+            "guest_team": "Bahia",
+            "stadium": "Vila Belmiro",
+            "date_added": "2025-05-14T19:52:52.186855"
+        },
+        "91": {
+            "round": "Rodada 3",
+            "date": "12/04/2025 16:00",
+            "home_team": "Bragantino",
+            "score": "1 x 0",
+            "guest_team": "Botafogo",
+            "stadium": "Nabi Abi Chedid",
+            "date_added": "2025-05-14T19:52:52.829066"
+        },
+        "92": {
+            "round": "Rodada 3",
+            "date": "12/04/2025 16:00",
+            "home_team": "Juventude",
+            "score": "2 x 1",
+            "guest_team": "Ceará",
+            "stadium": "Alfredo Jaconi",
+            "date_added": "2025-05-14T19:52:52.832651"
+        },
+        "93": {
+            "round": "Rodada 3",
+            "date": "12/04/2025 18:30",
+            "home_team": "Palmeiras",
+            "score": "2 x 0",
+            "guest_team": "Corinthians",
+            "stadium": "Arena Barueri",
+            "date_added": "2025-05-14T19:52:52.865469"
+        },
+        "94": {
+            "round": "Rodada 3",
+            "date": "12/04/2025 21:00",
+            "home_team": "Vasco",
+            "score": "3 x 1",
+            "guest_team": "Sport",
+            "stadium": "São Januário",
+            "date_added": "2025-05-14T19:52:52.885356"
+        },
+        "95": {
+            "round": "Rodada 3",
+            "date": "13/04/2025 16:00",
+            "home_team": "Bahia",
+            "score": "1 x 1",
+            "guest_team": "Mirassol",
+            "stadium": "Fonte Nova",
+            "date_added": "2025-05-14T19:52:52.921296"
+        },
+        "96": {
+            "round": "Rodada 3",
+            "date": "13/04/2025 17:30",
+            "home_team": "São Paulo",
+            "score": "1 x 1",
+            "guest_team": "Cruzeiro",
+            "stadium": "Morumbi",
+            "date_added": "2025-05-14T19:52:52.952946"
+        },
+        "97": {
+            "round": "Rodada 3",
+            "date": "13/04/2025 17:30",
+            "home_team": "Grêmio",
+            "score": "0 x 2",
+            "guest_team": "Flamengo",
+            "stadium": "Arena do Grêmio",
+            "date_added": "2025-05-14T19:52:52.985706"
+        },
+        "98": {
+            "round": "Rodada 3",
+            "date": "13/04/2025 19:30",
+            "home_team": "Fluminense",
+            "score": "1 x 0",
+            "guest_team": "Santos",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:53.015899"
+        },
+        "99": {
+            "round": "Rodada 3",
+            "date": "13/04/2025 20:00",
+            "home_team": "Fortaleza",
+            "score": "0 x 0",
+            "guest_team": "Internacional",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:53.049331"
+        },
+        "100": {
+            "round": "Rodada 3",
+            "date": "13/04/2025 20:30",
+            "home_team": "Atlético-MG",
+            "score": "2 x 2",
+            "guest_team": "Vitória",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:53.070472"
+        },
+        "101": {
+            "round": "Rodada 4",
+            "date": "15/04/2025 21:30",
+            "home_team": "Ceará",
+            "score": "2 x 1",
+            "guest_team": "Vasco",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:53.652991"
+        },
+        "102": {
+            "round": "Rodada 4",
+            "date": "16/04/2025 18:30",
+            "home_team": "Botafogo",
+            "score": "2 x 2",
+            "guest_team": "São Paulo",
+            "stadium": "Nilton Santos (Engenhão)",
+            "date_added": "2025-05-14T19:52:53.664759"
+        },
+        "103": {
+            "round": "Rodada 4",
+            "date": "16/04/2025 19:00",
+            "home_team": "Mirassol",
+            "score": "4 x 1",
+            "guest_team": "Grêmio",
+            "stadium": "Municipal de Mirassol",
+            "date_added": "2025-05-14T19:52:53.691801"
+        },
+        "104": {
+            "round": "Rodada 4",
+            "date": "16/04/2025 19:00",
+            "home_team": "Sport",
+            "score": "0 x 1",
+            "guest_team": "Bragantino",
+            "stadium": "Ilha do Retiro",
+            "date_added": "2025-05-14T19:52:53.719236"
+        },
+        "105": {
+            "round": "Rodada 4",
+            "date": "16/04/2025 19:30",
+            "home_team": "Corinthians",
+            "score": "0 x 2",
+            "guest_team": "Fluminense",
+            "stadium": "Arena Corinthians",
+            "date_added": "2025-05-14T19:52:53.737025"
+        },
+        "106": {
+            "round": "Rodada 4",
+            "date": "16/04/2025 19:30",
+            "home_team": "Internacional",
+            "score": "0 x 1",
+            "guest_team": "Palmeiras",
+            "stadium": "Beira-Rio",
+            "date_added": "2025-05-14T19:52:53.775922"
+        },
+        "107": {
+            "round": "Rodada 4",
+            "date": "16/04/2025 21:30",
+            "home_team": "Flamengo",
+            "score": "6 x 0",
+            "guest_team": "Juventude",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:53.813955"
+        },
+        "108": {
+            "round": "Rodada 4",
+            "date": "16/04/2025 21:30",
+            "home_team": "Santos",
+            "score": "2 x 0",
+            "guest_team": "Atlético-MG",
+            "stadium": "Vila Belmiro",
+            "date_added": "2025-05-14T19:52:53.852282"
+        },
+        "109": {
+            "round": "Rodada 4",
+            "date": "16/04/2025 21:30",
+            "home_team": "Vitória",
+            "score": "2 x 1",
+            "guest_team": "Fortaleza",
+            "stadium": "Barradão",
+            "date_added": "2025-05-14T19:52:53.882589"
+        },
+        "110": {
+            "round": "Rodada 4",
+            "date": "17/04/2025 21:30",
+            "home_team": "Cruzeiro",
+            "score": "3 x 0",
+            "guest_team": "Bahia",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:53.913816"
+        },
+        "111": {
+            "round": "Rodada 5",
+            "date": "19/04/2025 16:00",
+            "home_team": "Corinthians",
+            "score": "2 x 1",
+            "guest_team": "Sport",
+            "stadium": "Arena Corinthians",
+            "date_added": "2025-05-14T19:52:54.462854"
+        },
+        "112": {
+            "round": "Rodada 5",
+            "date": "19/04/2025 18:30",
+            "home_team": "Vasco",
+            "score": "0 x 0",
+            "guest_team": "Flamengo",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:54.472331"
+        },
+        "113": {
+            "round": "Rodada 5",
+            "date": "19/04/2025 21:00",
+            "home_team": "Grêmio",
+            "score": "1 x 1",
+            "guest_team": "Internacional",
+            "stadium": "Arena do Grêmio",
+            "date_added": "2025-05-14T19:52:54.500770"
+        },
+        "114": {
+            "round": "Rodada 5",
+            "date": "20/04/2025 11:00",
+            "home_team": "Juventude",
+            "score": "2 x 2",
+            "guest_team": "Mirassol",
+            "stadium": "Alfredo Jaconi",
+            "date_added": "2025-05-14T19:52:54.534264"
+        },
+        "115": {
+            "round": "Rodada 5",
+            "date": "20/04/2025 16:00",
+            "home_team": "São Paulo",
+            "score": "2 x 1",
+            "guest_team": "Santos",
+            "stadium": "Morumbi",
+            "date_added": "2025-05-14T19:52:54.565069"
+        },
+        "116": {
+            "round": "Rodada 5",
+            "date": "20/04/2025 16:00",
+            "home_team": "Atlético-MG",
+            "score": "1 x 0",
+            "guest_team": "Botafogo",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:54.594176"
+        },
+        "117": {
+            "round": "Rodada 5",
+            "date": "20/04/2025 18:30",
+            "home_team": "Fluminense",
+            "score": "1 x 1",
+            "guest_team": "Vitória",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:54.613259"
+        },
+        "118": {
+            "round": "Rodada 5",
+            "date": "20/04/2025 18:30",
+            "home_team": "Fortaleza",
+            "score": "1 x 2",
+            "guest_team": "Palmeiras",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:54.638951"
+        },
+        "119": {
+            "round": "Rodada 5",
+            "date": "20/04/2025 20:30",
+            "home_team": "Bragantino",
+            "score": "1 x 0",
+            "guest_team": "Cruzeiro",
+            "stadium": "Nabi Abi Chedid",
+            "date_added": "2025-05-14T19:52:54.667715"
+        },
+        "120": {
+            "round": "Rodada 5",
+            "date": "21/04/2025 20:00",
+            "home_team": "Bahia",
+            "score": "1 x 0",
+            "guest_team": "Ceará",
+            "stadium": "Fonte Nova",
+            "date_added": "2025-05-14T19:52:54.697260"
+        },
+        "121": {
+            "round": "Rodada 6",
+            "date": "26/04/2025 16:00",
+            "home_team": "Internacional",
+            "score": "3 x 1",
+            "guest_team": "Juventude",
+            "stadium": "Beira-Rio",
+            "date_added": "2025-05-14T19:52:55.258203"
+        },
+        "122": {
+            "round": "Rodada 6",
+            "date": "26/04/2025 18:30",
+            "home_team": "Mirassol",
+            "score": "2 x 2",
+            "guest_team": "Atlético-MG",
+            "stadium": "Municipal de Mirassol",
+            "date_added": "2025-05-14T19:52:55.268081"
+        },
+        "123": {
+            "round": "Rodada 6",
+            "date": "26/04/2025 18:30",
+            "home_team": "Ceará",
+            "score": "1 x 1",
+            "guest_team": "São Paulo",
+            "stadium": "Castelão (CE)",
+            "date_added": "2025-05-14T19:52:55.305301"
+        },
+        "124": {
+            "round": "Rodada 6",
+            "date": "26/04/2025 20:00",
+            "home_team": "Sport",
+            "score": "0 x 0",
+            "guest_team": "Fortaleza",
+            "stadium": "Ilha do Retiro",
+            "date_added": "2025-05-14T19:52:55.330504"
+        },
+        "125": {
+            "round": "Rodada 6",
+            "date": "26/04/2025 21:00",
+            "home_team": "Botafogo",
+            "score": "2 x 0",
+            "guest_team": "Fluminense",
+            "stadium": "Nilton Santos (Engenhão)",
+            "date_added": "2025-05-14T19:52:55.358896"
+        },
+        "126": {
+            "round": "Rodada 6",
+            "date": "27/04/2025 16:00",
+            "home_team": "Flamengo",
+            "score": "4 x 0",
+            "guest_team": "Corinthians",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:55.382659"
+        },
+        "127": {
+            "round": "Rodada 6",
+            "date": "27/04/2025 18:30",
+            "home_team": "Palmeiras",
+            "score": "0 x 1",
+            "guest_team": "Bahia",
+            "stadium": "Arena Palmeiras",
+            "date_added": "2025-05-14T19:52:55.413329"
+        },
+        "128": {
+            "round": "Rodada 6",
+            "date": "27/04/2025 18:30",
+            "home_team": "Cruzeiro",
+            "score": "1 x 0",
+            "guest_team": "Vasco",
+            "stadium": "Parque do Sabiá",
+            "date_added": "2025-05-14T19:52:55.430290"
+        },
+        "129": {
+            "round": "Rodada 6",
+            "date": "27/04/2025 18:30",
+            "home_team": "Vitória",
+            "score": "1 x 1",
+            "guest_team": "Grêmio",
+            "stadium": "Barradão",
+            "date_added": "2025-05-14T19:52:55.462693"
+        },
+        "130": {
+            "round": "Rodada 6",
+            "date": "27/04/2025 20:30",
+            "home_team": "Santos",
+            "score": "1 x 2",
+            "guest_team": "Bragantino",
+            "stadium": "Vila Belmiro",
+            "date_added": "2025-05-14T19:52:55.485492"
+        },
+        "131": {
+            "round": "Rodada 7",
+            "date": "02/05/2025 21:30",
+            "home_team": "São Paulo",
+            "score": "0 x 0",
+            "guest_team": "Fortaleza",
+            "stadium": "Morumbi",
+            "date_added": "2025-05-14T19:52:55.945548"
+        },
+        "132": {
+            "round": "Rodada 7",
+            "date": "03/05/2025 18:30",
+            "home_team": "Fluminense",
+            "score": "2 x 1",
+            "guest_team": "Sport",
+            "stadium": "Maracanã",
+            "date_added": "2025-05-14T19:52:55.948211"
+        },
+        "133": {
+            "round": "Rodada 7",
+            "date": "03/05/2025 18:30",
+            "home_team": "Corinthians",
+            "score": "4 x 2",
+            "guest_team": "Internacional",
+            "stadium": "Arena Corinthians",
+            "date_added": "2025-05-14T19:52:55.978565"
+        },
+        "134": {
+            "round": "Rodada 7",
+            "date": "03/05/2025 18:30",
+            "home_team": "Ceará",
+            "score": "1 x 0",
+            "guest_team": "Vitória",
+            "stadium": "Presidente Vargas (CE)",
+            "date_added": "2025-05-14T19:52:56.000464"
+        },
+        "135": {
+            "round": "Rodada 7",
+            "date": "03/05/2025 21:00",
+            "home_team": "Bahia",
+            "score": "1 x 0",
+            "guest_team": "Botafogo",
+            "stadium": "Fonte Nova",
+            "date_added": "2025-05-14T19:52:56.030591"
+        },
+        "136": {
+            "round": "Rodada 7",
+            "date": "04/05/2025 16:00",
+            "home_team": "Vasco",
+            "score": "0 x 1",
+            "guest_team": "Palmeiras",
+            "stadium": "Mané Garrincha",
+            "date_added": "2025-05-14T19:52:56.054046"
+        },
+        "137": {
+            "round": "Rodada 7",
+            "date": "04/05/2025 16:00",
+            "home_team": "Grêmio",
+            "score": "1 x 0",
+            "guest_team": "Santos",
+            "stadium": "Arena do Grêmio",
+            "date_added": "2025-05-14T19:52:56.083009"
+        },
+        "138": {
+            "round": "Rodada 7",
+            "date": "04/05/2025 18:30",
+            "home_team": "Cruzeiro",
+            "score": "2 x 1",
+            "guest_team": "Flamengo",
+            "stadium": "Mineirão",
+            "date_added": "2025-05-14T19:52:56.114180"
+        },
+        "139": {
+            "round": "Rodada 7",
+            "date": "05/05/2025 19:00",
+            "home_team": "Bragantino",
+            "score": "1 x 0",
+            "guest_team": "Mirassol",
+            "stadium": "Cícero de Souza Marques",
+            "date_added": "2025-05-14T19:52:56.138030"
+        },
+        "140": {
+            "round": "Rodada 7",
+            "date": "05/05/2025 20:00",
+            "home_team": "Juventude",
+            "score": "0 x 1",
+            "guest_team": "Atlético-MG",
+            "stadium": "Alfredo Jaconi",
+            "date_added": "2025-05-14T19:52:56.165892"
+        }
+    }
+}
