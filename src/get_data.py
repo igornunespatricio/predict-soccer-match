@@ -1,9 +1,7 @@
-import json
 import requests
 from bs4 import BeautifulSoup
 
-from src.utils import save_json, read_config
-from tinydb import TinyDB
+from src.utils import read_config
 from src.db import get_db, insert_match  # Import your TinyDB helpers
 
 
@@ -42,7 +40,7 @@ def parse_content(content: str) -> list:
             home_team = score = guest_team = None
         row_data = {
             "round": round_number,
-            "date": date,
+            "match_date": date,
             "home_team": home_team,
             "score": score,
             "guest_team": guest_team,

@@ -1,4 +1,5 @@
 from datetime import datetime
+import pandas as pd
 from tinydb import TinyDB
 from tinydb.storages import JSONStorage
 from tinydb.middlewares import CachingMiddleware
@@ -38,6 +39,25 @@ def insert_match(db_table, match: dict):
         "date_added": datetime.now().isoformat(),  # Local time in ISO 8601 format
     }
     db_table.insert(match_with_timestamp)
+
+
+def load_table_as_dataframe(path: str, table_name: str = "matches") -> pd.DataFrame:
+    """
+    Load a TinyDB table into a pandas DataFrame using UTF-8 encoding.
+
+    Args:
+        path (str): Path to the TinyDB JSON file.
+        table_name (str): The name of the table to load (default is 'matches').
+
+    Returns:
+        pd.DataFrame: DataFrame containing the table data.
+    """
+    db = TinyDB(path, storage=UTF8JSONStorage)
+    table = db.table(table_name)
+    records = table.all()
+    db.close()
+
+    return pd.DataFrame(records)
 
 
 # Example usage

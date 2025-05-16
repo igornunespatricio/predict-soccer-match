@@ -1,5 +1,5 @@
 import pandas as pd
-from datetime import datetime
+
 
 # ─────────────────────────────────────────────────────────────
 # 1. BASIC MATCH FEATURES
@@ -11,8 +11,12 @@ def add_is_weekend(df, date_col="date"):
     return df
 
 
-def add_match_hour(df, date_col="date"):
-    df["hour"] = df[date_col].dt.hour
+def add_match_period(df: pd.DataFrame, date_col="date"):
+    hour_column = df[date_col].dt.hour
+
+    df["match_period"] = hour_column.apply(
+        lambda x: "morning" if 0 <= x < 12 else "afternoon" if 12 <= x < 18 else "night"
+    )
     return df
 
 
@@ -21,14 +25,18 @@ def add_day_of_week(df, date_col="date"):
     return df
 
 
-def feature_engineering(path: str):
-    df = pd.read_parquet(path)
-    df = add_is_weekend(df)
-    df = add_match_hour(df)
-    df = add_day_of_week(df)
+def feature_engineering(
+    read_path: str = "data/matches.parquet",
+    save_path: str = "data/matches_feature_engineered.parquet",
+):
+    df = pd.read_parquet(read_path)
+    df = add_is_weekend(df, date_col="match_date")
+    df = add_match_period(df, date_col="match_date")
+    df = add_day_of_week(df, date_col="match_date")
+    df.to_parquet(save_path, index=False)
     return df
 
 
 if __name__ == "__main__":
-    df = feature_engineering(path="data/matches.parquet")
+    df = feature_engineering(read_path="data/matches.parquet")
     print(df.head())
