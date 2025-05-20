@@ -1,5 +1,6 @@
 import pandas as pd
-from db import load_table_as_dataframe
+
+from src.db import load_table_as_dataframe
 
 
 def test_load_table_as_dataframe():
@@ -13,5 +14,11 @@ def test_parquet_has_value():
     print(df.head())
 
 
+def feature_engineered_table():
+    df = pd.read_parquet("data/matches_feature_engineered.parquet")
+    print(df.head())
+    assert not df.empty
+
+
 if __name__ == "__main__":
-    test_parquet_has_value()
+    feature_engineered_table()

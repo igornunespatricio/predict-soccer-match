@@ -25,6 +25,17 @@ def add_day_of_week(df, date_col="date"):
     return df
 
 
+# ─────────────────────────────────────────────────────────────
+# 1. HISTORY FEATURES
+# ─────────────────────────────────────────────────────────────
+
+
+def add_history_last_five_matches_each_team() -> pd.DataFrame:
+    df = pd.read_parquet("data/matches.parquet")
+
+    print(df.head())
+
+
 def feature_engineering(
     read_path: str = "data/matches.parquet",
     save_path: str = "data/matches_feature_engineered.parquet",
@@ -38,5 +49,6 @@ def feature_engineering(
 
 
 if __name__ == "__main__":
-    df = feature_engineering(read_path="data/matches.parquet")
-    print(df.head())
+    # df = feature_engineering(read_path="data/matches.parquet")
+    # print(df.head())
+    add_history_last_five_matches_each_team()

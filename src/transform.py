@@ -11,8 +11,19 @@ def split_score_column(df):
     return df.drop(columns=["score"])
 
 
-def parse_date_column(df, date_column="match_date", format="%d/%m/%Y %H:%M"):
+def define_winning_team(df):
+    df["winning_team"] = df.apply(
+        lambda row: (
+            "home"
+            if row["score_home_team"] > row["score_guest_team"]
+            else "guest" if row["score_home_team"] < row["score_guest_team"] else "draw"
+        ),
+        axis=1,
+    )
+    return df
 
+
+def parse_date_column(df, date_column="match_date", format="%d/%m/%Y %H:%M"):
     df[date_column] = pd.to_datetime(df[date_column], format=format, errors="coerce")
     return df
 
@@ -24,6 +35,7 @@ def transform_data(
 ):
     df = db.load_table_as_dataframe(path=read_path, table_name=table)
     df = split_score_column(df)
+    df = define_winning_team(df)
     df = parse_date_column(df, date_column="match_date", format="%d/%m/%Y %H:%M")
     df = parse_date_column(df, date_column="date_added", format="%Y-%m-%dT%H:%M:%S.%f")
     df.to_parquet(save_path, index=False)
