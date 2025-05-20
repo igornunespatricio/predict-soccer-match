@@ -13,14 +13,30 @@ def main():
         save_path="data/matches.parquet",
     )
 
-    print("Feature engineering")
-    _ = feature_engineering.feature_engineering(
-        read_path="data/matches.parquet",
-        save_path="data/matches_feature_engineered.parquet",
-    )
+    # print("Feature engineering")
+    # _ = feature_engineering.feature_engineering(
+    #     read_path="data/matches.parquet",
+    #     save_path="data/matches_feature_engineered.parquet",
+    # )
 
-    print("Done")
+    # print("Done")
 
 
 if __name__ == "__main__":
     main()
+
+
+# TODO:
+# 1. Feature engineering:
+#   add for the last 5 matches:
+#       - add goals scored
+#       - add goals conceded
+#       - add goals difference
+#   add for the season:
+#       - current position
+#       - percentage wins
+#       - percentage defeats
+#       - percentage draws
+#       - add goals scored
+#       - add goals conceded
+#       - add goals difference

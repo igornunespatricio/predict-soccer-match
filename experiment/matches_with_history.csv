@@ -1,0 +1,611 @@
+round,match_date,home_team,guest_team,stadium,date_added,score_home_team,score_guest_team,winning_team,home_team_wins_last_5,home_team_draws_last_5,home_team_loses_last_5,guest_team_wins_last_5,guest_team_draws_last_5,guest_team_loses_last_5
+Rodada 1,2024-04-13 18:30:00,Internacional,Bahia,Beira-Rio,2025-05-16 19:06:34.071216,2,1,home,0,0,0,0,0,0
+Rodada 1,2024-04-13 18:30:00,Criciúma,Juventude,Heriberto Hülse,2025-05-19 23:20:34.060893,1,1,draw,0,0,0,0,0,0
+Rodada 1,2024-04-13 18:30:00,Internacional,Bahia,Beira-Rio,2025-05-19 23:20:34.050979,2,1,home,0,0,0,0,0,0
+Rodada 1,2024-04-13 18:30:00,Criciúma,Juventude,Heriberto Hülse,2025-05-16 19:06:34.079502,1,1,draw,0,0,0,0,0,0
+Rodada 1,2024-04-13 21:00:00,São Paulo,Fortaleza,Morumbi,2025-05-16 19:06:34.114096,1,2,guest,0,0,0,0,0,0
+Rodada 1,2024-04-13 21:00:00,Fluminense,Bragantino,Maracanã,2025-05-16 19:06:34.097091,2,2,draw,0,0,0,0,0,0
+Rodada 1,2024-04-13 21:00:00,São Paulo,Fortaleza,Morumbi,2025-05-19 23:20:34.135108,1,2,guest,0,0,0,0,0,0
+Rodada 1,2024-04-13 21:00:00,Fluminense,Bragantino,Maracanã,2025-05-19 23:20:34.102835,2,2,draw,0,0,0,0,0,0
+Rodada 1,2024-04-14 16:00:00,Vasco,Grêmio,São Januário,2025-05-16 19:06:34.134199,2,1,home,0,0,0,0,0,0
+Rodada 1,2024-04-14 16:00:00,Corinthians,Atlético-MG,Arena Corinthians,2025-05-16 19:06:34.157870,0,0,draw,0,0,0,0,0,0
+Rodada 1,2024-04-14 16:00:00,Athletico-PR,Cuiabá,Arena da Baixada,2025-05-16 19:06:34.193174,4,0,home,0,0,0,0,0,0
+Rodada 1,2024-04-14 16:00:00,Atlético-GO,Flamengo,Serra Dourada,2025-05-16 19:06:34.211896,1,2,guest,0,0,0,0,0,0
+Rodada 1,2024-04-14 16:00:00,Atlético-GO,Flamengo,Serra Dourada,2025-05-19 23:20:34.252441,1,2,guest,0,0,0,0,0,0
+Rodada 1,2024-04-14 16:00:00,Athletico-PR,Cuiabá,Arena da Baixada,2025-05-19 23:20:34.225075,4,0,home,0,0,0,0,0,0
+Rodada 1,2024-04-14 16:00:00,Corinthians,Atlético-MG,Arena Corinthians,2025-05-19 23:20:34.199959,0,0,draw,0,0,0,0,0,0
+Rodada 1,2024-04-14 16:00:00,Vasco,Grêmio,São Januário,2025-05-19 23:20:34.166977,2,1,home,0,0,0,0,0,0
+Rodada 1,2024-04-14 17:00:00,Cruzeiro,Botafogo,Mineirão,2025-05-19 23:20:34.282893,3,2,home,0,0,0,0,0,0
+Rodada 1,2024-04-14 17:00:00,Cruzeiro,Botafogo,Mineirão,2025-05-16 19:06:34.235784,3,2,home,0,0,0,0,0,0
+Rodada 1,2024-04-14 18:30:00,Vitória,Palmeiras,Barradão,2025-05-16 19:06:34.260207,0,1,guest,0,0,0,0,0,0
+Rodada 1,2024-04-14 18:30:00,Vitória,Palmeiras,Barradão,2025-05-19 23:20:34.317341,0,1,guest,0,0,0,0,0,0
+Rodada 2,2024-04-16 21:30:00,Bahia,Fluminense,Fonte Nova,2025-05-19 23:20:34.799941,2,1,home,0,0,2,0,2,0
+Rodada 2,2024-04-16 21:30:00,Bahia,Fluminense,Fonte Nova,2025-05-16 19:06:34.763545,2,1,home,0,0,2,0,2,0
+Rodada 2,2024-04-17 19:00:00,Grêmio,Athletico-PR,Arena do Grêmio,2025-05-19 23:20:34.843382,2,0,home,0,0,2,2,0,0
+Rodada 2,2024-04-17 19:00:00,Bragantino,Vasco,Nabi Abi Chedid,2025-05-19 23:20:34.872896,2,1,home,0,2,0,2,0,0
+Rodada 2,2024-04-17 19:00:00,Bragantino,Vasco,Nabi Abi Chedid,2025-05-16 19:06:34.788824,2,1,home,0,2,0,2,0,0
+Rodada 2,2024-04-17 19:00:00,Grêmio,Athletico-PR,Arena do Grêmio,2025-05-16 19:06:34.763545,2,0,home,0,0,2,2,0,0
+Rodada 2,2024-04-17 20:00:00,Atlético-MG,Criciúma,Arena MRV,2025-05-16 19:06:34.811021,1,1,draw,0,2,0,0,2,0
+Rodada 2,2024-04-17 20:00:00,Fortaleza,Cruzeiro,Castelão (CE),2025-05-16 19:06:34.868634,1,1,draw,2,0,0,2,0,0
+Rodada 2,2024-04-17 20:00:00,Atlético-MG,Criciúma,Arena MRV,2025-05-19 23:20:34.910118,1,1,draw,0,2,0,0,2,0
+Rodada 2,2024-04-17 20:00:00,Palmeiras,Internacional,Arena Barueri,2025-05-16 19:06:34.844528,0,1,guest,2,0,0,2,0,0
+Rodada 2,2024-04-17 20:00:00,Juventude,Corinthians,Alfredo Jaconi,2025-05-19 23:20:35.018385,2,0,home,0,2,0,0,2,0
+Rodada 2,2024-04-17 20:00:00,Juventude,Corinthians,Alfredo Jaconi,2025-05-16 19:06:34.892939,2,0,home,0,2,0,0,2,0
+Rodada 2,2024-04-17 20:00:00,Palmeiras,Internacional,Arena Barueri,2025-05-19 23:20:34.962045,0,1,guest,2,0,0,2,0,0
+Rodada 2,2024-04-17 20:00:00,Fortaleza,Cruzeiro,Castelão (CE),2025-05-19 23:20:34.985807,1,1,draw,2,0,0,2,0,0
+Rodada 2,2024-04-17 21:30:00,Flamengo,São Paulo,Maracanã,2025-05-19 23:20:35.054477,2,1,home,2,0,0,0,0,2
+Rodada 2,2024-04-17 21:30:00,Flamengo,São Paulo,Maracanã,2025-05-16 19:06:34.914517,2,1,home,2,0,0,0,0,2
+Rodada 2,2024-04-18 21:30:00,Botafogo,Atlético-GO,Nilton Santos (Engenhão),2025-05-19 23:20:35.082348,1,0,home,0,0,2,0,0,2
+Rodada 2,2024-04-18 21:30:00,Botafogo,Atlético-GO,Nilton Santos (Engenhão),2025-05-16 19:06:34.947086,1,0,home,0,0,2,0,0,2
+Rodada 3,2024-04-20 16:00:00,Fluminense,Vasco,Maracanã,2025-05-19 23:20:35.598155,2,1,home,0,2,2,2,0,2
+Rodada 3,2024-04-20 16:00:00,Fluminense,Vasco,Maracanã,2025-05-16 19:06:35.466976,2,1,home,0,2,2,2,0,2
+Rodada 3,2024-04-20 18:30:00,Bragantino,Corinthians,Nabi Abi Chedid,2025-05-19 23:20:35.644960,1,0,home,2,2,0,0,2,2
+Rodada 3,2024-04-20 18:30:00,Grêmio,Cuiabá,Arena do Grêmio,2025-05-19 23:20:35.622739,1,0,home,2,0,2,0,0,2
+Rodada 3,2024-04-20 18:30:00,Grêmio,Cuiabá,Arena do Grêmio,2025-05-16 19:06:35.469022,1,0,home,2,0,2,0,0,2
+Rodada 3,2024-04-20 18:30:00,Bragantino,Corinthians,Nabi Abi Chedid,2025-05-16 19:06:35.489277,1,0,home,2,2,0,0,2,2
+Rodada 3,2024-04-20 21:00:00,Atlético-MG,Cruzeiro,Arena MRV,2025-05-19 23:20:35.665269,3,0,home,0,4,0,2,2,0
+Rodada 3,2024-04-20 21:00:00,Atlético-MG,Cruzeiro,Arena MRV,2025-05-16 19:06:35.510952,3,0,home,0,4,0,2,2,0
+Rodada 3,2024-04-21 16:00:00,Vitória,Bahia,Barradão,2025-05-19 23:20:35.686228,2,2,draw,0,0,2,2,0,2
+Rodada 3,2024-04-21 16:00:00,Athletico-PR,Internacional,Arena da Baixada,2025-05-19 23:20:35.731015,1,0,home,2,0,2,4,0,0
+Rodada 3,2024-04-21 16:00:00,Vitória,Bahia,Barradão,2025-05-16 19:06:35.530626,2,2,draw,0,0,2,2,0,2
+Rodada 3,2024-04-21 16:00:00,Palmeiras,Flamengo,Arena Palmeiras,2025-05-16 19:06:35.554986,0,0,draw,2,0,2,4,0,0
+Rodada 3,2024-04-21 16:00:00,Athletico-PR,Internacional,Arena da Baixada,2025-05-16 19:06:35.589028,1,0,home,2,0,2,4,0,0
+Rodada 3,2024-04-21 16:00:00,Palmeiras,Flamengo,Arena Palmeiras,2025-05-19 23:20:35.713835,0,0,draw,2,0,2,4,0,0
+Rodada 3,2024-04-21 18:30:00,Atlético-GO,São Paulo,Antônio Accioly,2025-05-19 23:20:35.782949,0,3,guest,0,0,4,0,0,4
+Rodada 3,2024-04-21 18:30:00,Botafogo,Juventude,Nilton Santos (Engenhão),2025-05-16 19:06:35.606895,5,1,home,2,0,2,2,2,0
+Rodada 3,2024-04-21 18:30:00,Atlético-GO,São Paulo,Antônio Accioly,2025-05-16 19:06:35.633432,0,3,guest,0,0,4,0,0,4
+Rodada 3,2024-04-21 18:30:00,Botafogo,Juventude,Nilton Santos (Engenhão),2025-05-19 23:20:35.751872,5,1,home,2,0,2,2,2,0
+Rodada 4,2024-04-27 16:00:00,Vasco,Criciúma,São Januário,2025-05-16 19:06:36.119123,0,4,guest,1,0,4,0,4,0
+Rodada 4,2024-04-27 16:00:00,Vasco,Criciúma,São Januário,2025-05-19 23:20:36.499128,0,4,guest,1,0,4,0,4,0
+Rodada 4,2024-04-27 18:30:00,Cuiabá,Atlético-MG,Arena Pantanal,2025-05-16 19:06:36.119123,0,3,guest,0,0,4,2,3,0
+Rodada 4,2024-04-27 18:30:00,Cuiabá,Atlético-MG,Arena Pantanal,2025-05-19 23:20:36.531429,0,3,guest,0,0,4,2,3,0
+Rodada 4,2024-04-27 21:00:00,Bahia,Grêmio,Fonte Nova,2025-05-19 23:20:36.571513,1,0,home,2,2,1,4,0,1
+Rodada 4,2024-04-27 21:00:00,Bahia,Grêmio,Fonte Nova,2025-05-16 19:06:36.135869,1,0,home,2,2,1,4,0,1
+Rodada 4,2024-04-28 11:00:00,Flamengo,Botafogo,Maracanã,2025-05-19 23:20:36.622547,0,2,guest,3,2,0,4,0,1
+Rodada 4,2024-04-28 11:00:00,Flamengo,Botafogo,Maracanã,2025-05-16 19:06:36.169392,0,2,guest,3,2,0,4,0,1
+Rodada 4,2024-04-28 16:00:00,Corinthians,Fluminense,Arena Corinthians,2025-05-16 19:06:36.212327,3,0,home,0,1,4,2,1,2
+Rodada 4,2024-04-28 16:00:00,Corinthians,Fluminense,Arena Corinthians,2025-05-19 23:20:36.715004,3,0,home,0,1,4,2,1,2
+Rodada 4,2024-04-28 16:00:00,Cruzeiro,Vitória,Mineirão,2025-05-16 19:06:36.190945,3,1,home,1,2,2,0,2,2
+Rodada 4,2024-04-28 16:00:00,Cruzeiro,Vitória,Mineirão,2025-05-19 23:20:36.668393,3,1,home,1,2,2,0,2,2
+Rodada 4,2024-04-28 18:30:00,Fortaleza,Bragantino,Castelão (CE),2025-05-16 19:06:36.237206,1,1,draw,2,2,0,4,1,0
+Rodada 4,2024-04-28 18:30:00,Juventude,Athletico-PR,Alfredo Jaconi,2025-05-19 23:20:36.803950,1,1,draw,2,1,2,3,0,2
+Rodada 4,2024-04-28 18:30:00,Juventude,Athletico-PR,Alfredo Jaconi,2025-05-16 19:06:36.257856,1,1,draw,2,1,2,3,0,2
+Rodada 4,2024-04-28 18:30:00,Fortaleza,Bragantino,Castelão (CE),2025-05-19 23:20:36.757372,1,1,draw,2,2,0,4,1,0
+Rodada 4,2024-04-28 20:00:00,Internacional,Atlético-GO,Beira-Rio,2025-05-16 19:06:36.289659,1,1,draw,3,0,2,0,0,5
+Rodada 4,2024-04-28 20:00:00,Internacional,Atlético-GO,Beira-Rio,2025-05-19 23:20:36.838834,1,1,draw,3,0,2,0,0,5
+Rodada 4,2024-04-29 20:00:00,São Paulo,Palmeiras,Morumbi,2025-05-16 19:06:36.321091,0,0,draw,2,0,3,1,2,2
+Rodada 4,2024-04-29 20:00:00,São Paulo,Palmeiras,Morumbi,2025-05-19 23:20:36.880226,0,0,draw,2,0,3,1,2,2
+Rodada 5,2024-05-04 16:00:00,Fluminense,Atlético-MG,Kleber Andrade,2025-05-19 23:20:37.522684,2,2,draw,2,0,3,4,1,0
+Rodada 5,2024-05-04 16:00:00,Fluminense,Atlético-MG,Kleber Andrade,2025-05-16 19:06:36.861511,2,2,draw,2,0,3,4,1,0
+Rodada 5,2024-05-04 18:30:00,Bragantino,Flamengo,Nabi Abi Chedid,2025-05-16 19:06:36.865074,1,1,draw,3,2,0,1,2,2
+Rodada 5,2024-05-04 18:30:00,Bragantino,Flamengo,Nabi Abi Chedid,2025-05-19 23:20:37.564316,1,1,draw,3,2,0,1,2,2
+Rodada 5,2024-05-04 21:00:00,Corinthians,Fortaleza,Arena Corinthians,2025-05-16 19:06:36.887470,0,0,draw,2,0,3,1,4,0
+Rodada 5,2024-05-04 21:00:00,Corinthians,Fortaleza,Arena Corinthians,2025-05-19 23:20:37.614073,0,0,draw,2,0,3,1,4,0
+Rodada 5,2024-05-05 16:00:00,Vitória,São Paulo,Barradão,2025-05-19 23:20:37.649275,1,3,guest,0,2,3,2,2,1
+Rodada 5,2024-05-05 16:00:00,Athletico-PR,Vasco,Arena da Baixada,2025-05-19 23:20:37.692410,1,0,home,2,2,1,0,0,5
+Rodada 5,2024-05-05 16:00:00,Athletico-PR,Vasco,Arena da Baixada,2025-05-16 19:06:36.945642,1,0,home,2,2,1,0,0,5
+Rodada 5,2024-05-05 16:00:00,Vitória,São Paulo,Barradão,2025-05-16 19:06:36.911255,1,3,guest,0,2,3,2,2,1
+Rodada 5,2024-05-05 18:30:00,Cuiabá,Palmeiras,Arena Pantanal,2025-05-19 23:20:37.761740,0,2,guest,0,0,5,0,4,1
+Rodada 5,2024-05-05 18:30:00,Botafogo,Bahia,Nilton Santos (Engenhão),2025-05-19 23:20:37.726307,1,2,guest,5,0,0,3,2,0
+Rodada 5,2024-05-05 18:30:00,Cuiabá,Palmeiras,Arena Pantanal,2025-05-16 19:06:37.005350,0,2,guest,0,0,5,0,4,1
+Rodada 5,2024-05-05 18:30:00,Botafogo,Bahia,Nilton Santos (Engenhão),2025-05-16 19:06:36.978328,1,2,guest,5,0,0,3,2,0
+Rodada 6,2024-05-11 16:00:00,Flamengo,Corinthians,Maracanã,2025-05-19 23:20:38.398770,2,0,home,0,3,2,2,2,1
+Rodada 6,2024-05-11 16:00:00,Flamengo,Corinthians,Maracanã,2025-05-16 19:06:37.565312,2,0,home,0,3,2,2,2,1
+Rodada 6,2024-05-12 16:00:00,Atlético-GO,Cruzeiro,Antônio Accioly,2025-05-16 19:06:37.615821,0,1,guest,0,2,3,2,1,2
+Rodada 6,2024-05-12 16:00:00,Atlético-GO,Cruzeiro,Antônio Accioly,2025-05-19 23:20:38.516912,0,1,guest,0,2,3,2,1,2
+Rodada 6,2024-05-12 16:00:00,Fortaleza,Botafogo,Castelão (CE),2025-05-19 23:20:38.484714,1,1,draw,0,5,0,3,0,2
+Rodada 6,2024-05-12 16:00:00,Palmeiras,Athletico-PR,Arena Barueri,2025-05-19 23:20:38.452669,0,2,guest,2,3,0,3,2,0
+Rodada 6,2024-05-12 16:00:00,Palmeiras,Athletico-PR,Arena Barueri,2025-05-16 19:06:37.569849,0,2,guest,2,3,0,3,2,0
+Rodada 6,2024-05-12 16:00:00,Fortaleza,Botafogo,Castelão (CE),2025-05-16 19:06:37.593084,1,1,draw,0,5,0,3,0,2
+Rodada 6,2024-05-12 18:30:00,Vasco,Vitória,São Januário,2025-05-19 23:20:38.580752,2,1,home,0,0,5,0,1,4
+Rodada 6,2024-05-12 18:30:00,Vasco,Vitória,São Januário,2025-05-16 19:06:37.673729,2,1,home,0,0,5,0,1,4
+Rodada 6,2024-05-12 18:30:00,Bahia,Bragantino,Fonte Nova,2025-05-16 19:06:37.640802,1,0,home,4,1,0,1,4,0
+Rodada 6,2024-05-12 18:30:00,Bahia,Bragantino,Fonte Nova,2025-05-19 23:20:38.554285,1,0,home,4,1,0,1,4,0
+Rodada 6,2024-05-13 20:00:00,São Paulo,Fluminense,Morumbi,2025-05-16 19:06:37.696232,2,1,home,3,2,0,1,2,2
+Rodada 6,2024-05-13 20:00:00,São Paulo,Fluminense,Morumbi,2025-05-19 23:20:38.615429,2,1,home,3,2,0,1,2,2
+Rodada 7,2024-06-01 16:00:00,Vitória,Atlético-GO,Barradão,2025-05-19 23:20:39.398865,0,2,guest,0,0,5,0,2,3
+Rodada 7,2024-06-01 16:00:00,Vitória,Atlético-GO,Barradão,2025-05-16 19:06:38.258445,0,2,guest,0,0,5,0,2,3
+Rodada 7,2024-06-01 16:00:00,Grêmio,Bragantino,Couto Pereira,2025-05-16 19:06:38.240202,0,2,guest,3,0,2,0,3,2
+Rodada 7,2024-06-01 16:00:00,Grêmio,Bragantino,Couto Pereira,2025-05-19 23:20:39.365230,0,2,guest,3,0,2,0,3,2
+Rodada 7,2024-06-01 18:30:00,Fluminense,Juventude,Maracanã,2025-05-19 23:20:39.454158,1,1,draw,0,2,3,1,2,2
+Rodada 7,2024-06-01 18:30:00,Cuiabá,Internacional,Arena Pantanal,2025-05-19 23:20:39.485969,0,1,guest,0,0,5,1,2,2
+Rodada 7,2024-06-01 18:30:00,Cuiabá,Internacional,Arena Pantanal,2025-05-16 19:06:38.304093,0,1,guest,0,0,5,1,2,2
+Rodada 7,2024-06-01 18:30:00,Fluminense,Juventude,Maracanã,2025-05-16 19:06:38.279253,1,1,draw,0,2,3,1,2,2
+Rodada 7,2024-06-01 21:00:00,Corinthians,Botafogo,Arena Corinthians,2025-05-19 23:20:39.514492,0,1,guest,1,2,2,1,2,2
+Rodada 7,2024-06-01 21:00:00,Corinthians,Botafogo,Arena Corinthians,2025-05-16 19:06:38.328972,0,1,guest,1,2,2,1,2,2
+Rodada 7,2024-06-02 16:00:00,Criciúma,Palmeiras,Heriberto Hülse,2025-05-16 19:06:38.409254,1,2,guest,2,3,0,2,1,2
+Rodada 7,2024-06-02 16:00:00,Atlético-MG,Bahia,Arena MRV,2025-05-19 23:20:39.548497,1,1,draw,3,2,0,5,0,0
+Rodada 7,2024-06-02 16:00:00,Vasco,Flamengo,Maracanã,2025-05-19 23:20:39.582708,1,6,guest,2,0,3,2,2,1
+Rodada 7,2024-06-02 16:00:00,Criciúma,Palmeiras,Heriberto Hülse,2025-05-19 23:20:39.613932,1,2,guest,2,3,0,2,1,2
+Rodada 7,2024-06-02 16:00:00,Vasco,Flamengo,Maracanã,2025-05-16 19:06:38.385676,1,6,guest,2,0,3,2,2,1
+Rodada 7,2024-06-02 16:00:00,Atlético-MG,Bahia,Arena MRV,2025-05-16 19:06:38.352493,1,1,draw,3,2,0,5,0,0
+Rodada 7,2024-06-02 18:30:00,São Paulo,Cruzeiro,Morumbi,2025-05-19 23:20:39.648698,2,0,home,4,1,0,4,0,1
+Rodada 7,2024-06-02 18:30:00,Fortaleza,Athletico-PR,Presidente Vargas (CE),2025-05-19 23:20:39.676975,1,0,home,0,5,0,4,1,0
+Rodada 7,2024-06-02 18:30:00,Fortaleza,Athletico-PR,Presidente Vargas (CE),2025-05-16 19:06:38.472546,1,0,home,0,5,0,4,1,0
+Rodada 7,2024-06-02 18:30:00,São Paulo,Cruzeiro,Morumbi,2025-05-16 19:06:38.437327,2,0,home,4,1,0,4,0,1
+Rodada 5,2024-06-05 19:00:00,Juventude,Atlético-GO,Alfredo Jaconi,2025-05-19 23:20:37.791053,1,0,home,0,4,1,2,1,2
+Rodada 5,2024-06-05 19:00:00,Juventude,Atlético-GO,Alfredo Jaconi,2025-05-16 19:06:37.029247,1,0,home,0,4,1,2,1,2
+Rodada 2,2024-06-05 20:00:00,Cuiabá,Vitória,Arena Pantanal,2025-05-19 23:20:35.118063,0,0,draw,0,0,5,0,0,5
+Rodada 2,2024-06-05 20:00:00,Cuiabá,Vitória,Arena Pantanal,2025-05-16 19:06:34.973372,0,0,draw,0,0,5,0,0,5
+Rodada 6,2024-06-09 16:00:00,Criciúma,Cuiabá,Heriberto Hülse,2025-05-19 23:20:38.639259,2,5,guest,2,1,2,0,2,3
+Rodada 6,2024-06-09 16:00:00,Criciúma,Cuiabá,Heriberto Hülse,2025-05-16 19:06:37.721906,2,5,guest,2,1,2,0,2,3
+Rodada 8,2024-06-11 19:00:00,Atlético-GO,Corinthians,Antônio Accioly,2025-05-19 23:20:40.316784,2,2,draw,2,0,3,0,1,4
+Rodada 8,2024-06-11 19:00:00,Juventude,Vitória,Alfredo Jaconi,2025-05-19 23:20:40.363928,1,1,draw,2,3,0,0,2,3
+Rodada 8,2024-06-11 20:00:00,Botafogo,Fluminense,Nilton Santos (Engenhão),2025-05-19 23:20:40.400510,1,0,home,2,2,1,0,3,2
+Rodada 8,2024-06-11 21:30:00,Bragantino,Atlético-MG,Nabi Abi Chedid,2025-05-19 23:20:40.433624,1,2,guest,2,1,2,1,4,0
+Rodada 8,2024-06-13 19:00:00,Cruzeiro,Cuiabá,Mineirão,2025-05-19 23:20:40.468931,2,1,home,3,0,2,2,2,1
+Rodada 8,2024-06-13 20:00:00,Internacional,São Paulo,Heriberto Hülse,2025-05-19 23:20:40.502144,0,0,draw,2,2,1,5,0,0
+Rodada 8,2024-06-13 20:00:00,Flamengo,Grêmio,Maracanã,2025-05-19 23:20:40.548194,2,1,home,4,1,0,1,0,4
+Rodada 8,2024-06-13 20:00:00,Athletico-PR,Criciúma,Arena da Baixada,2025-05-19 23:20:40.596986,3,1,home,3,0,2,1,0,4
+Rodada 8,2024-06-13 21:30:00,Bahia,Fortaleza,Fonte Nova,2025-05-19 23:20:40.647597,1,0,home,3,2,0,2,3,0
+Rodada 8,2024-06-13 21:30:00,Palmeiras,Vasco,Arena Palmeiras,2025-05-19 23:20:40.690531,2,0,home,3,0,2,2,0,3
+Rodada 9,2024-06-15 18:30:00,Bragantino,Juventude,Nabi Abi Chedid,2025-05-19 23:20:41.384607,2,1,home,2,0,3,2,3,0
+Rodada 9,2024-06-15 21:00:00,Fluminense,Atlético-GO,Maracanã,2025-05-19 23:20:41.430347,1,2,guest,0,2,3,2,1,2
+Rodada 9,2024-06-16 16:00:00,Athletico-PR,Flamengo,Arena da Baixada,2025-05-19 23:20:41.536889,1,1,draw,3,0,2,5,0,0
+Rodada 9,2024-06-16 16:00:00,Corinthians,São Paulo,Arena Corinthians,2025-05-19 23:20:41.500350,2,2,draw,0,1,4,4,1,0
+Rodada 9,2024-06-16 16:00:00,Vitória,Internacional,Barradão,2025-05-19 23:20:41.462839,2,1,home,0,3,2,2,3,0
+Rodada 9,2024-06-16 18:30:00,Criciúma,Bahia,Heriberto Hülse,2025-05-19 23:20:41.662125,2,2,draw,0,0,5,3,2,0
+Rodada 9,2024-06-16 18:30:00,Vasco,Cruzeiro,São Januário,2025-05-19 23:20:41.595309,0,0,draw,2,0,3,3,0,2
+Rodada 9,2024-06-16 18:30:00,Grêmio,Botafogo,Kleber Andrade,2025-05-19 23:20:41.565362,1,2,guest,0,0,5,3,2,0
+Rodada 9,2024-06-16 18:30:00,Cuiabá,Fortaleza,Arena Pantanal,2025-05-19 23:20:41.629250,5,0,home,2,2,1,2,2,1
+Rodada 9,2024-06-17 20:30:00,Atlético-MG,Palmeiras,Arena MRV,2025-05-19 23:20:41.703872,0,4,guest,1,4,0,3,0,2
+Rodada 10,2024-06-19 19:00:00,Botafogo,Athletico-PR,Nilton Santos (Engenhão),2025-05-19 23:20:42.234288,1,1,draw,4,1,0,2,1,2
+Rodada 10,2024-06-19 19:00:00,Atlético-GO,Criciúma,Antônio Accioly,2025-05-19 23:20:42.277712,1,2,guest,2,1,2,0,1,4
+Rodada 10,2024-06-19 20:00:00,Fortaleza,Grêmio,Castelão (CE),2025-05-19 23:20:42.347385,1,0,home,2,1,2,0,0,5
+Rodada 10,2024-06-19 20:00:00,Juventude,Vasco,Alfredo Jaconi,2025-05-19 23:20:42.383592,2,0,home,2,2,1,1,1,3
+Rodada 10,2024-06-19 20:00:00,São Paulo,Cuiabá,Morumbi,2025-05-19 23:20:42.315666,0,1,guest,3,2,0,3,1,1
+Rodada 10,2024-06-19 21:30:00,Internacional,Corinthians,Orlando Scarpelli,2025-05-19 23:20:42.417403,1,0,home,2,2,1,0,2,3
+Rodada 10,2024-06-19 21:30:00,Cruzeiro,Fluminense,Mineirão,2025-05-19 23:20:42.448966,2,0,home,2,1,2,0,2,3
+Rodada 10,2024-06-20 18:30:00,Vitória,Atlético-MG,Barradão,2025-05-19 23:20:42.495597,4,2,home,1,3,1,1,3,1
+Rodada 10,2024-06-20 20:00:00,Flamengo,Bahia,Maracanã,2025-05-19 23:20:42.530084,2,1,home,4,1,0,2,3,0
+Rodada 10,2024-06-20 21:30:00,Palmeiras,Bragantino,Arena Palmeiras,2025-05-19 23:20:42.561619,2,1,home,4,0,1,3,0,2
+Rodada 11,2024-06-22 16:00:00,Criciúma,Botafogo,Heriberto Hülse,2025-05-19 23:20:43.093101,2,1,home,1,1,3,4,1,0
+Rodada 11,2024-06-22 17:30:00,Grêmio,Internacional,Couto Pereira,2025-05-19 23:20:43.123645,0,1,guest,0,0,5,3,1,1
+Rodada 11,2024-06-22 18:30:00,Cuiabá,Atlético-GO,Arena Pantanal,2025-05-19 23:20:43.177073,0,0,draw,4,0,1,1,1,3
+Rodada 11,2024-06-22 21:30:00,Vasco,São Paulo,São Januário,2025-05-19 23:20:43.211814,4,1,home,0,1,4,2,2,1
+Rodada 11,2024-06-23 16:00:00,Bahia,Cruzeiro,Fonte Nova,2025-05-19 23:20:43.246509,4,1,home,1,3,1,2,1,2
+Rodada 11,2024-06-23 16:00:00,Athletico-PR,Corinthians,Arena da Baixada,2025-05-19 23:20:43.310773,1,1,draw,1,2,2,0,2,3
+Rodada 11,2024-06-23 16:00:00,Fluminense,Flamengo,Maracanã,2025-05-19 23:20:43.278995,0,1,guest,0,2,3,4,1,0
+Rodada 11,2024-06-23 18:30:00,Bragantino,Vitória,Nabi Abi Chedid,2025-05-19 23:20:43.411595,2,1,home,3,0,2,2,3,0
+Rodada 11,2024-06-23 18:30:00,Palmeiras,Juventude,Arena Palmeiras,2025-05-19 23:20:43.384204,3,1,home,5,0,0,3,1,1
+Rodada 11,2024-06-23 18:30:00,Atlético-MG,Fortaleza,Arena MRV,2025-05-19 23:20:43.343021,1,1,draw,1,2,2,3,0,2
+Rodada 12,2024-06-26 19:00:00,Botafogo,Bragantino,Nilton Santos (Engenhão),2025-05-19 23:20:43.982492,2,1,home,3,1,1,3,0,2
+Rodada 12,2024-06-26 19:00:00,Cruzeiro,Athletico-PR,Mineirão,2025-05-19 23:20:43.940059,2,0,home,2,1,2,1,3,1
+Rodada 12,2024-06-26 20:00:00,Corinthians,Cuiabá,Arena Corinthians,2025-05-19 23:20:44.034346,1,1,draw,0,3,2,3,1,1
+Rodada 12,2024-06-26 20:00:00,Atlético-GO,Grêmio,Antônio Accioly,2025-05-19 23:20:44.064066,1,1,draw,1,2,2,0,0,5
+Rodada 12,2024-06-26 20:00:00,Juventude,Flamengo,Alfredo Jaconi,2025-05-19 23:20:44.094917,2,1,home,2,1,2,4,1,0
+Rodada 12,2024-06-26 21:30:00,Bahia,Vasco,Fonte Nova,2025-05-19 23:20:44.161596,2,1,home,2,2,1,1,1,3
+Rodada 12,2024-06-26 21:30:00,Fortaleza,Palmeiras,Castelão (CE),2025-05-19 23:20:44.200000,3,0,home,2,1,2,5,0,0
+Rodada 12,2024-06-26 21:30:00,Internacional,Atlético-MG,Heriberto Hülse,2025-05-19 23:20:44.131770,1,2,guest,3,1,1,1,2,2
+Rodada 12,2024-06-27 19:00:00,Fluminense,Vitória,Maracanã,2025-05-19 23:20:44.242598,0,1,guest,0,1,4,2,2,1
+Rodada 12,2024-06-27 20:00:00,São Paulo,Criciúma,Morumbi,2025-05-19 23:20:44.271831,2,1,home,1,2,2,2,1,2
+Rodada 13,2024-06-29 18:30:00,Cuiabá,Bragantino,Arena Pantanal,2025-05-19 23:20:44.894959,1,1,draw,2,2,1,2,0,3
+Rodada 13,2024-06-29 18:30:00,Vasco,Botafogo,São Januário,2025-05-19 23:20:44.846448,1,1,draw,1,1,3,3,1,1
+Rodada 13,2024-06-30 11:00:00,Atlético-MG,Atlético-GO,Arena MRV,2025-05-19 23:20:44.948103,1,1,draw,2,1,2,1,3,1
+Rodada 13,2024-06-30 16:00:00,Grêmio,Fluminense,Centenário,2025-05-19 23:20:45.010488,1,0,home,0,1,4,0,0,5
+Rodada 13,2024-06-30 16:00:00,São Paulo,Bahia,Morumbi,2025-05-19 23:20:45.068517,3,1,home,1,2,2,3,1,1
+Rodada 13,2024-06-30 16:00:00,Fortaleza,Juventude,Castelão (CE),2025-05-19 23:20:45.112322,2,1,home,2,1,2,2,1,2
+Rodada 13,2024-06-30 18:30:00,Flamengo,Cruzeiro,Maracanã,2025-05-19 23:20:45.189676,2,1,home,3,1,1,3,1,1
+Rodada 13,2024-06-30 18:30:00,Criciúma,Internacional,Heriberto Hülse,2025-05-19 23:20:45.225182,1,1,draw,2,1,2,2,1,2
+Rodada 13,2024-06-30 18:30:00,Vitória,Athletico-PR,Barradão,2025-05-19 23:20:45.145634,0,1,guest,3,1,1,1,3,1
+Rodada 13,2024-07-01 20:00:00,Palmeiras,Corinthians,Arena Palmeiras,2025-05-19 23:20:45.259842,2,0,home,4,0,1,0,4,1
+Rodada 14,2024-07-03 19:00:00,Cuiabá,Botafogo,Arena Pantanal,2025-05-19 23:20:45.943369,1,2,guest,2,3,0,2,2,1
+Rodada 14,2024-07-03 20:00:00,Criciúma,Cruzeiro,Heriberto Hülse,2025-05-19 23:20:46.025010,1,0,home,2,2,1,2,1,2
+Rodada 14,2024-07-03 20:00:00,Vasco,Fortaleza,São Januário,2025-05-19 23:20:45.976595,2,0,home,1,2,2,3,1,1
+Rodada 14,2024-07-03 21:30:00,Bragantino,Atlético-GO,Nabi Abi Chedid,2025-05-19 23:20:46.093361,3,1,home,2,1,2,1,3,1
+Rodada 14,2024-07-03 21:30:00,Athletico-PR,São Paulo,Arena da Baixada,2025-05-19 23:20:46.128005,1,2,guest,1,3,1,2,1,2
+Rodada 14,2024-07-03 21:30:00,Atlético-MG,Flamengo,Arena MRV,2025-05-19 23:20:46.065288,2,4,guest,1,2,2,3,1,1
+Rodada 14,2024-07-04 19:00:00,Grêmio,Palmeiras,Centenário,2025-05-19 23:20:46.176508,2,2,draw,1,1,3,4,0,1
+Rodada 14,2024-07-04 19:00:00,Bahia,Juventude,Fonte Nova,2025-05-19 23:20:46.210698,2,0,home,2,1,2,2,0,3
+Rodada 14,2024-07-04 20:00:00,Fluminense,Internacional,Maracanã,2025-05-19 23:20:46.242852,1,1,draw,0,0,5,2,1,2
+Rodada 14,2024-07-04 20:00:00,Corinthians,Vitória,Arena Corinthians,2025-05-19 23:20:46.278005,3,2,home,0,3,2,3,0,2
+Rodada 15,2024-07-06 20:00:00,Flamengo,Cuiabá,Maracanã,2025-05-19 23:20:46.896923,1,1,draw,4,0,1,1,3,1
+Rodada 15,2024-07-06 20:00:00,São Paulo,Bragantino,Morumbi,2025-05-19 23:20:46.942147,2,0,home,3,0,2,2,1,2
+Rodada 15,2024-07-07 16:00:00,Juventude,Grêmio,Alfredo Jaconi,2025-05-19 23:20:47.045410,3,0,home,2,0,3,1,2,2
+Rodada 15,2024-07-07 16:00:00,Fortaleza,Fluminense,Castelão (CE),2025-05-19 23:20:47.006209,1,0,home,3,1,1,0,1,4
+Rodada 15,2024-07-07 16:00:00,Cruzeiro,Corinthians,Mineirão,2025-05-19 23:20:46.974585,3,0,home,2,0,3,1,2,2
+Rodada 15,2024-07-07 18:00:00,Internacional,Vasco,Beira-Rio,2025-05-19 23:20:47.088720,1,2,guest,2,2,1,2,1,2
+Rodada 15,2024-07-07 18:30:00,Palmeiras,Bahia,Arena Palmeiras,2025-05-19 23:20:47.164561,2,0,home,3,1,1,3,0,2
+Rodada 15,2024-07-07 18:30:00,Vitória,Criciúma,Barradão,2025-05-19 23:20:47.123551,2,1,home,2,0,3,3,1,1
+Rodada 15,2024-07-07 18:30:00,Atlético-GO,Athletico-PR,Antônio Accioly,2025-05-19 23:20:47.191231,1,2,guest,0,3,2,1,2,2
+Rodada 15,2024-07-07 20:30:00,Botafogo,Atlético-MG,Nilton Santos (Engenhão),2025-05-19 23:20:47.244027,3,0,home,2,2,1,1,2,2
+Rodada 16,2024-07-10 18:30:00,Grêmio,Cruzeiro,Centenário,2025-05-19 23:20:47.791046,0,2,guest,1,2,2,2,0,3
+Rodada 16,2024-07-10 19:00:00,Vasco,Corinthians,São Januário,2025-05-19 23:20:47.821715,2,0,home,3,1,1,1,2,2
+Rodada 16,2024-07-10 19:00:00,Athletico-PR,Bahia,Arena da Baixada,2025-05-19 23:20:47.873993,1,3,guest,2,1,2,3,0,2
+Rodada 16,2024-07-11 19:30:00,Palmeiras,Atlético-GO,Arena Palmeiras,2025-05-19 23:20:47.905878,3,1,home,3,1,1,0,3,2
+Rodada 16,2024-07-11 20:00:00,Criciúma,Fluminense,Heriberto Hülse,2025-05-19 23:20:47.973393,1,1,draw,2,1,2,0,1,4
+Rodada 16,2024-07-11 20:00:00,Flamengo,Fortaleza,Maracanã,2025-05-19 23:20:47.939626,1,2,guest,3,1,1,3,1,1
+Rodada 16,2024-07-11 21:30:00,Atlético-MG,São Paulo,Arena MRV,2025-05-19 23:20:48.011984,2,1,home,1,2,2,4,0,1
+Rodada 16,2024-07-11 21:30:00,Vitória,Botafogo,Barradão,2025-05-19 23:20:48.039765,0,1,guest,2,0,3,3,1,1
+Rodada 17,2024-07-13 16:00:00,Cruzeiro,Bragantino,Independência,2025-05-19 23:20:48.706329,2,1,home,3,0,2,2,1,2
+Rodada 17,2024-07-13 16:00:00,Bahia,Cuiabá,Fonte Nova,2025-05-19 23:20:48.759737,1,2,guest,3,0,2,0,4,1
+Rodada 17,2024-07-16 19:00:00,Juventude,Atlético-MG,Mané Garrincha,2025-05-19 23:20:48.790008,1,1,draw,2,0,3,2,1,2
+Rodada 17,2024-07-16 21:00:00,Corinthians,Criciúma,Arena Corinthians,2025-05-19 23:20:48.834206,2,1,home,1,1,3,1,2,2
+Rodada 17,2024-07-17 19:00:00,Atlético-GO,Vasco,Antônio Accioly,2025-05-19 23:20:48.874998,0,1,guest,0,2,3,3,1,1
+Rodada 17,2024-07-17 20:00:00,São Paulo,Grêmio,Morumbi,2025-05-19 23:20:48.904741,1,0,home,4,0,1,1,2,2
+Rodada 17,2024-07-17 21:30:00,Fortaleza,Vitória,Castelão (CE),2025-05-19 23:20:48.981929,3,1,home,4,0,1,2,0,3
+Rodada 17,2024-07-17 21:30:00,Botafogo,Palmeiras,Nilton Santos (Engenhão),2025-05-19 23:20:48.938865,1,0,home,4,1,0,3,1,1
+Rodada 18,2024-07-20 16:00:00,Flamengo,Criciúma,Mané Garrincha,2025-05-19 23:20:49.663470,2,1,home,2,1,2,1,2,2
+Rodada 18,2024-07-20 18:30:00,Botafogo,Internacional,Nilton Santos (Engenhão),2025-05-19 23:20:49.741732,1,0,home,4,1,0,1,2,2
+Rodada 18,2024-07-20 21:00:00,Palmeiras,Cruzeiro,Arena Palmeiras,2025-05-19 23:20:49.804001,2,0,home,3,1,1,3,0,2
+Rodada 18,2024-07-21 11:00:00,Grêmio,Vitória,Centenário,2025-05-19 23:20:49.842597,2,0,home,1,1,3,1,0,4
+Rodada 18,2024-07-21 16:00:00,Bahia,Corinthians,Fonte Nova,2025-05-19 23:20:49.905619,0,1,guest,2,0,3,2,0,3
+Rodada 18,2024-07-21 16:00:00,Atlético-MG,Vasco,Arena MRV,2025-05-19 23:20:49.880422,2,0,home,1,2,2,4,1,0
+Rodada 18,2024-07-21 18:30:00,Bragantino,Athletico-PR,Nabi Abi Chedid,2025-05-19 23:20:49.953269,1,0,home,1,1,3,2,0,3
+Rodada 18,2024-07-21 18:30:00,Fortaleza,Atlético-GO,Castelão (CE),2025-05-19 23:20:50.003772,3,1,home,4,0,1,0,1,4
+Rodada 18,2024-07-21 18:30:00,Juventude,São Paulo,Mané Garrincha,2025-05-19 23:20:50.059589,0,0,draw,2,1,2,4,0,1
+Rodada 18,2024-07-21 20:00:00,Cuiabá,Fluminense,Arena Pantanal,2025-05-19 23:20:50.103960,0,1,guest,1,3,1,0,2,3
+Rodada 19,2024-07-24 19:00:00,Cruzeiro,Juventude,Mineirão,2025-05-19 23:20:50.724383,2,0,home,3,0,2,1,2,2
+Rodada 3,2024-07-24 19:00:00,Criciúma,Fortaleza,Heriberto Hülse,2025-05-19 23:20:35.803296,1,1,draw,1,1,3,4,0,1
+Rodada 3,2024-07-24 19:00:00,Criciúma,Fortaleza,Heriberto Hülse,2025-05-16 19:06:35.657405,1,1,draw,1,1,3,4,0,1
+Rodada 19,2024-07-24 19:30:00,São Paulo,Botafogo,Morumbi,2025-05-19 23:20:50.768325,2,2,draw,3,1,1,5,0,0
+Rodada 19,2024-07-24 20:00:00,Vitória,Flamengo,Barradão,2025-05-19 23:20:50.820128,1,2,guest,1,0,4,3,1,1
+Rodada 19,2024-07-24 21:30:00,Atlético-GO,Bahia,Antônio Accioly,2025-05-19 23:20:50.885378,1,1,draw,0,0,5,2,0,3
+Rodada 19,2024-07-24 21:30:00,Fluminense,Palmeiras,Maracanã,2025-05-19 23:20:50.852493,1,0,home,1,2,2,3,1,1
+Rodada 19,2024-07-25 20:00:00,Corinthians,Grêmio,Arena Corinthians,2025-05-19 23:20:50.924452,2,2,draw,3,0,2,1,1,3
+Rodada 20,2024-07-27 19:00:00,Palmeiras,Vitória,Arena Palmeiras,2025-05-19 23:20:51.800115,0,2,guest,3,0,2,1,0,4
+Rodada 20,2024-07-27 19:00:00,Juventude,Criciúma,Alfredo Jaconi,2025-05-19 23:20:51.903261,1,2,guest,1,2,2,0,3,2
+Rodada 20,2024-07-27 20:00:00,Bahia,Internacional,Fonte Nova,2025-05-19 23:20:51.936352,1,1,draw,1,1,3,0,2,3
+Rodada 20,2024-07-27 21:30:00,Botafogo,Cruzeiro,Nilton Santos (Engenhão),2025-05-19 23:20:51.967545,0,3,guest,4,1,0,4,0,1
+Rodada 20,2024-07-27 21:30:00,Fortaleza,São Paulo,Castelão (CE),2025-05-19 23:20:52.029469,1,0,home,3,2,0,2,2,1
+Rodada 20,2024-07-28 11:00:00,Bragantino,Fluminense,Nabi Abi Chedid,2025-05-19 23:20:52.128991,0,1,guest,2,1,2,2,2,1
+Rodada 20,2024-07-28 16:00:00,Flamengo,Atlético-GO,Maracanã,2025-05-19 23:20:52.185688,2,0,home,3,1,1,0,1,4
+Rodada 20,2024-07-28 19:00:00,Grêmio,Vasco,Arena Condá,2025-05-19 23:20:52.243675,1,0,home,1,1,3,4,0,1
+Rodada 20,2024-07-28 19:00:00,Atlético-MG,Corinthians,Arena MRV,2025-05-19 23:20:52.269863,2,1,home,2,1,2,2,1,2
+Rodada 20,2024-07-28 19:00:00,Cuiabá,Athletico-PR,Arena Pantanal,2025-05-19 23:20:52.317523,1,2,guest,1,2,2,2,0,3
+Rodada 21,2024-08-03 16:00:00,Vitória,Cuiabá,Barradão,2025-05-19 23:20:53.000127,1,0,home,1,0,4,1,1,3
+Rodada 21,2024-08-03 19:00:00,Vasco,Bragantino,São Januário,2025-05-19 23:20:53.116007,2,2,draw,3,0,2,2,0,3
+Rodada 21,2024-08-03 20:00:00,Atlético-GO,Botafogo,Antônio Accioly,2025-05-19 23:20:53.203668,1,4,guest,0,1,4,3,1,1
+Rodada 21,2024-08-03 20:00:00,Criciúma,Atlético-MG,Heriberto Hülse,2025-05-19 23:20:53.273977,2,1,home,1,2,2,3,1,1
+Rodada 21,2024-08-03 21:30:00,São Paulo,Flamengo,Morumbi,2025-05-19 23:20:53.338154,1,0,home,1,2,2,3,1,1
+Rodada 21,2024-08-04 16:00:00,Athletico-PR,Grêmio,Arena da Baixada,2025-05-19 23:20:53.467727,0,2,guest,2,0,3,2,1,2
+Rodada 21,2024-08-04 16:00:00,Fluminense,Bahia,Maracanã,2025-05-19 23:20:53.367460,1,0,home,3,1,1,1,2,2
+Rodada 21,2024-08-04 16:00:00,Corinthians,Juventude,Arena Corinthians,2025-05-19 23:20:53.423633,1,1,draw,2,1,2,1,2,2
+Rodada 21,2024-08-04 17:00:00,Internacional,Palmeiras,Beira-Rio,2025-05-19 23:20:53.517424,1,1,draw,0,3,2,2,0,3
+Rodada 21,2024-08-05 21:00:00,Cruzeiro,Fortaleza,Kleber Andrade,2025-05-19 23:20:53.568297,1,2,guest,4,0,1,3,2,0
+Rodada 22,2024-08-10 16:00:00,Fortaleza,Criciúma,Castelão (CE),2025-05-19 23:20:54.180048,1,0,home,3,2,0,2,2,1
+Rodada 22,2024-08-10 19:00:00,Cuiabá,Grêmio,Arena Pantanal,2025-05-19 23:20:54.251932,1,3,guest,1,1,3,3,1,1
+Rodada 22,2024-08-10 21:30:00,Cruzeiro,Atlético-MG,Mineirão,2025-05-19 23:20:54.306072,0,0,draw,3,0,2,3,1,1
+Rodada 22,2024-08-10 21:30:00,Vasco,Fluminense,Nilton Santos (Engenhão),2025-05-19 23:20:54.354929,2,0,home,2,1,2,4,1,0
+Rodada 22,2024-08-10 21:30:00,Corinthians,Bragantino,Arena Corinthians,2025-05-19 23:20:54.400192,1,1,draw,2,2,1,1,1,3
+Rodada 22,2024-08-11 11:00:00,Juventude,Botafogo,Alfredo Jaconi,2025-05-19 23:20:54.471655,3,2,home,0,3,2,3,1,1
+Rodada 22,2024-08-11 16:00:00,Bahia,Vitória,Fonte Nova,2025-05-19 23:20:54.520576,2,0,home,0,2,3,2,0,3
+Rodada 22,2024-08-11 16:00:00,Flamengo,Palmeiras,Maracanã,2025-05-19 23:20:54.571094,1,1,draw,3,0,2,1,1,3
+Rodada 22,2024-08-11 16:00:00,São Paulo,Atlético-GO,Morumbi,2025-05-19 23:20:54.614704,1,0,home,2,2,1,0,1,4
+Rodada 22,2024-08-11 19:00:00,Internacional,Athletico-PR,Beira-Rio,2025-05-19 23:20:54.648953,2,2,draw,0,3,2,2,0,3
+Rodada 6,2024-08-14 19:30:00,Internacional,Juventude,Beira-Rio,2025-05-16 19:06:37.745414,2,1,home,0,3,2,1,2,2
+Rodada 6,2024-08-14 19:30:00,Internacional,Juventude,Beira-Rio,2025-05-19 23:20:38.670215,2,1,home,0,3,2,1,2,2
+Rodada 23,2024-08-17 16:00:00,Grêmio,Bahia,Alfredo Jaconi,2025-05-19 23:20:55.287038,0,2,guest,4,1,0,1,2,2
+Rodada 23,2024-08-17 16:00:00,Atlético-MG,Cuiabá,Arena MRV,2025-05-19 23:20:55.332995,1,1,draw,2,2,1,1,0,4
+Rodada 23,2024-08-17 18:30:00,Bragantino,Fortaleza,Nabi Abi Chedid,2025-05-19 23:20:55.382269,1,2,guest,1,2,2,3,2,0
+Rodada 23,2024-08-17 21:00:00,Fluminense,Corinthians,Maracanã,2025-05-19 23:20:55.417861,0,0,draw,4,0,1,1,3,1
+Rodada 23,2024-08-18 16:00:00,Criciúma,Vasco,Heriberto Hülse,2025-05-19 23:20:55.565474,2,2,draw,2,2,1,2,1,2
+Rodada 23,2024-08-18 16:00:00,Atlético-GO,Internacional,Antônio Accioly,2025-05-19 23:20:55.501291,1,0,home,0,1,4,2,3,0
+Rodada 23,2024-08-18 16:00:00,Palmeiras,São Paulo,Arena Palmeiras,2025-05-19 23:20:55.470264,2,1,home,1,2,2,2,2,1
+Rodada 23,2024-08-18 18:30:00,Athletico-PR,Juventude,Arena da Baixada,2025-05-19 23:20:55.666237,1,2,guest,1,1,3,1,1,3
+Rodada 23,2024-08-18 18:30:00,Botafogo,Flamengo,Nilton Santos (Engenhão),2025-05-19 23:20:55.614814,4,1,home,2,1,2,3,1,1
+Rodada 23,2024-08-19 20:00:00,Vitória,Cruzeiro,Barradão,2025-05-19 23:20:55.717801,2,2,draw,2,0,3,2,1,2
+Rodada 24,2024-08-24 16:00:00,Atlético-GO,Juventude,Antônio Accioly,2025-05-19 23:20:56.302978,2,1,home,1,1,3,2,1,2
+Rodada 24,2024-08-24 18:30:00,Palmeiras,Cuiabá,Brinco de Ouro,2025-05-19 23:20:56.349487,5,0,home,1,2,2,0,1,4
+Rodada 24,2024-08-24 21:00:00,Atlético-MG,Fluminense,Mineirão,2025-05-19 23:20:56.383131,0,2,guest,2,2,1,3,1,1
+Rodada 24,2024-08-25 16:00:00,Bahia,Botafogo,Fonte Nova,2025-05-19 23:20:56.433142,0,0,draw,2,2,1,2,1,2
+Rodada 24,2024-08-25 16:00:00,Fortaleza,Corinthians,Castelão (CE),2025-05-19 23:20:56.463779,1,0,home,4,1,0,0,4,1
+Rodada 24,2024-08-25 16:00:00,Criciúma,Grêmio,Heriberto Hülse,2025-05-19 23:20:56.497051,0,1,guest,2,2,1,3,1,1
+Rodada 24,2024-08-25 18:30:00,São Paulo,Vitória,Morumbi,2025-05-19 23:20:56.534745,2,1,home,2,1,2,2,1,2
+Rodada 24,2024-08-25 19:00:00,Internacional,Cruzeiro,Beira-Rio,2025-05-19 23:20:56.581137,1,0,home,2,2,1,2,2,1
+Rodada 24,2024-08-25 20:00:00,Flamengo,Bragantino,Maracanã,2025-05-19 23:20:56.612804,2,1,home,2,1,2,1,2,2
+Rodada 24,2024-08-26 21:00:00,Vasco,Athletico-PR,São Januário,2025-05-19 23:20:56.634331,2,1,home,1,2,2,1,1,3
+Rodada 19,2024-08-28 19:30:00,Criciúma,Bragantino,Heriberto Hülse,2025-05-19 23:20:50.970292,1,0,home,2,1,2,0,2,3
+Rodada 5,2024-08-28 19:30:00,Cruzeiro,Internacional,Mineirão,2025-05-19 23:20:37.819760,0,0,draw,1,2,2,3,1,1
+Rodada 5,2024-08-28 19:30:00,Cruzeiro,Internacional,Mineirão,2025-05-16 19:06:37.054806,0,0,draw,1,2,2,3,1,1
+Rodada 25,2024-08-31 18:30:00,Cuiabá,Criciúma,Arena Pantanal,2025-05-19 23:20:57.713824,2,1,home,0,1,4,2,1,2
+Rodada 25,2024-08-31 21:00:00,Botafogo,Fortaleza,Nilton Santos (Engenhão),2025-05-19 23:20:57.767860,2,0,home,2,1,2,5,0,0
+Rodada 25,2024-09-01 11:00:00,Cruzeiro,Atlético-GO,Mineirão,2025-05-19 23:20:57.912853,3,1,home,0,4,1,2,0,3
+Rodada 25,2024-09-01 11:00:00,Grêmio,Atlético-MG,Arena do Grêmio,2025-05-19 23:20:57.815523,2,3,guest,4,0,1,1,2,2
+Rodada 25,2024-09-01 16:00:00,Corinthians,Flamengo,Arena Corinthians,2025-05-19 23:20:58.013517,2,1,home,0,3,2,2,1,2
+Rodada 25,2024-09-01 18:30:00,Vitória,Vasco,Barradão,2025-05-19 23:20:58.102843,0,1,guest,2,1,2,2,2,1
+Rodada 25,2024-09-01 18:30:00,Fluminense,São Paulo,Maracanã,2025-05-19 23:20:58.216456,2,0,home,3,1,1,3,0,2
+Rodada 25,2024-09-01 18:30:00,Bragantino,Bahia,Nabi Abi Chedid,2025-05-19 23:20:58.287474,2,1,home,0,2,3,2,2,1
+Rodada 25,2024-09-01 18:30:00,Athletico-PR,Palmeiras,Arena da Baixada,2025-05-19 23:20:58.381419,0,2,guest,1,1,3,2,2,1
+Rodada 25,2024-09-01 18:30:00,Juventude,Internacional,Alfredo Jaconi,2025-05-19 23:20:58.463117,1,3,guest,2,0,3,2,2,1
+Rodada 16,2024-09-05 20:00:00,Cuiabá,Juventude,Arena Pantanal,2025-05-19 23:20:48.071786,0,0,draw,1,1,3,1,0,4
+Rodada 19,2024-09-11 19:30:00,Internacional,Fortaleza,Beira-Rio,2025-05-19 23:20:51.012692,2,1,home,2,2,1,4,0,1
+Rodada 26,2024-09-14 16:00:00,Atlético-GO,Vitória,Antônio Accioly,2025-05-19 23:20:59.059616,0,2,guest,2,0,3,1,1,3
+Rodada 26,2024-09-14 18:30:00,Athletico-PR,Fortaleza,Arena da Baixada,2025-05-19 23:20:59.114418,1,1,draw,0,1,4,3,0,2
+Rodada 26,2024-09-14 21:00:00,Botafogo,Corinthians,Nilton Santos (Engenhão),2025-05-19 23:20:59.165155,2,1,home,3,1,1,1,3,1
+Rodada 26,2024-09-15 16:00:00,Bragantino,Grêmio,Nabi Abi Chedid,2025-05-19 23:20:59.278595,2,2,draw,1,1,3,3,0,2
+Rodada 26,2024-09-15 16:00:00,Juventude,Fluminense,Alfredo Jaconi,2025-05-19 23:20:59.332829,2,1,home,1,1,3,3,1,1
+Rodada 26,2024-09-15 16:00:00,Palmeiras,Criciúma,Arena Palmeiras,2025-05-19 23:20:59.235242,5,0,home,3,2,0,1,1,3
+Rodada 26,2024-09-15 18:30:00,Cruzeiro,São Paulo,Mineirão,2025-05-19 23:20:59.363149,0,1,guest,1,3,1,3,0,2
+Rodada 26,2024-09-15 18:30:00,Flamengo,Vasco,Maracanã,2025-05-19 23:20:59.497159,1,1,draw,1,1,3,3,2,0
+Rodada 26,2024-09-15 18:30:00,Bahia,Atlético-MG,Fonte Nova,2025-05-19 23:20:59.452941,3,0,home,2,1,2,1,2,2
+Rodada 26,2024-09-16 20:00:00,Internacional,Cuiabá,Beira-Rio,2025-05-19 23:20:59.544981,3,0,home,3,2,0,1,2,2
+Rodada 27,2024-09-21 16:00:00,Vitória,Juventude,Barradão,2025-05-19 23:21:00.261826,1,0,home,1,1,3,2,1,2
+Rodada 27,2024-09-21 16:00:00,Corinthians,Atlético-GO,Arena Corinthians,2025-05-19 23:21:00.310780,3,0,home,1,2,2,2,0,3
+Rodada 27,2024-09-21 18:30:00,Fluminense,Botafogo,Maracanã,2025-05-19 23:21:00.360294,0,1,guest,2,1,2,3,1,1
+Rodada 27,2024-09-21 21:00:00,Fortaleza,Bahia,Castelão (CE),2025-05-19 23:21:00.393466,4,1,home,2,1,2,3,1,1
+Rodada 27,2024-09-22 16:00:00,Atlético-MG,Bragantino,Arena MRV,2025-05-19 23:21:00.426910,3,0,home,1,2,2,1,1,3
+Rodada 27,2024-09-22 16:00:00,Vasco,Palmeiras,Mané Garrincha,2025-05-19 23:21:00.471504,0,1,guest,3,2,0,4,1,0
+Rodada 27,2024-09-22 18:30:00,Grêmio,Flamengo,Arena do Grêmio,2025-05-19 23:21:00.510091,3,2,home,2,1,2,1,2,2
+Rodada 27,2024-09-22 18:30:00,São Paulo,Internacional,Morumbi,2025-05-19 23:21:00.542766,1,3,guest,3,0,2,3,2,0
+Rodada 27,2024-09-22 18:30:00,Cuiabá,Cruzeiro,Arena Pantanal,2025-05-19 23:21:00.580267,0,0,draw,1,2,2,1,2,2
+Rodada 27,2024-09-22 20:00:00,Criciúma,Athletico-PR,Heriberto Hülse,2025-05-19 23:21:00.624673,0,0,draw,1,1,3,0,2,3
+Rodada 16,2024-09-25 19:00:00,Bragantino,Internacional,Nabi Abi Chedid,2025-05-19 23:20:48.117808,2,2,draw,1,1,3,4,1,0
+Rodada 5,2024-09-25 19:00:00,Grêmio,Criciúma,Arena do Grêmio,2025-05-19 23:20:37.847258,1,2,guest,2,1,2,1,1,3
+Rodada 5,2024-09-25 19:00:00,Grêmio,Criciúma,Arena do Grêmio,2025-05-16 19:06:37.079208,1,2,guest,2,1,2,1,1,3
+Rodada 28,2024-09-28 18:30:00,Palmeiras,Atlético-MG,Brinco de Ouro,2025-05-19 23:21:01.149921,2,1,home,5,0,0,2,1,2
+Rodada 28,2024-09-28 21:00:00,Botafogo,Grêmio,Mané Garrincha,2025-05-19 23:21:01.202798,0,0,draw,4,1,0,1,1,3
+Rodada 28,2024-09-29 11:00:00,Juventude,Bragantino,Alfredo Jaconi,2025-05-19 23:21:01.264866,1,1,draw,1,1,3,1,2,2
+Rodada 28,2024-09-29 16:00:00,São Paulo,Corinthians,Mané Garrincha,2025-05-19 23:21:01.327185,3,1,home,2,0,3,2,1,2
+Rodada 28,2024-09-29 16:00:00,Fortaleza,Cuiabá,Castelão (CE),2025-05-19 23:21:01.375407,1,0,home,2,1,2,1,2,2
+Rodada 28,2024-09-29 16:00:00,Atlético-GO,Fluminense,Antônio Accioly,2025-05-19 23:21:01.426463,1,0,home,2,0,3,2,1,2
+Rodada 28,2024-09-29 18:30:00,Cruzeiro,Vasco,Mineirão,2025-05-19 23:21:01.544000,1,1,draw,1,3,1,2,2,1
+Rodada 28,2024-09-29 18:30:00,Bahia,Criciúma,Fonte Nova,2025-05-19 23:21:01.604813,1,0,home,2,1,2,2,1,2
+Rodada 28,2024-09-29 18:30:00,Internacional,Vitória,Beira-Rio,2025-05-19 23:21:01.478532,3,1,home,4,1,0,2,1,2
+Rodada 28,2024-09-29 20:00:00,Flamengo,Athletico-PR,Maracanã,2025-05-19 23:21:01.646261,1,0,home,1,1,3,0,2,3
+Rodada 29,2024-10-03 19:00:00,Criciúma,Atlético-GO,Heriberto Hülse,2025-05-19 23:21:02.340818,2,0,home,2,1,2,2,0,3
+Rodada 29,2024-10-03 21:30:00,Fluminense,Cruzeiro,Maracanã,2025-05-19 23:21:02.397020,1,0,home,2,0,3,1,3,1
+Rodada 29,2024-10-04 21:30:00,Grêmio,Fortaleza,Arena do Grêmio,2025-05-19 23:21:02.442118,3,1,home,1,2,2,2,1,2
+Rodada 29,2024-10-05 16:30:00,Atlético-MG,Vitória,Arena MRV,2025-05-19 23:21:02.491403,2,2,draw,2,0,3,2,0,3
+Rodada 29,2024-10-05 16:30:00,Bragantino,Palmeiras,Nabi Abi Chedid,2025-05-19 23:21:02.524450,0,0,draw,1,3,1,5,0,0
+Rodada 29,2024-10-05 16:30:00,Athletico-PR,Botafogo,Arena da Baixada,2025-05-19 23:21:02.574497,0,1,guest,0,2,3,3,2,0
+Rodada 29,2024-10-05 19:00:00,Corinthians,Internacional,Arena Corinthians,2025-05-19 23:21:02.658312,2,2,draw,2,0,3,4,1,0
+Rodada 29,2024-10-05 19:00:00,Bahia,Flamengo,Fonte Nova,2025-05-19 23:21:02.628411,0,2,guest,2,1,2,2,1,2
+Rodada 29,2024-10-05 19:00:00,Cuiabá,São Paulo,Arena Pantanal,2025-05-19 23:21:02.709318,2,0,home,1,2,2,3,0,2
+Rodada 29,2024-10-05 21:00:00,Vasco,Juventude,São Januário,2025-05-19 23:21:02.756684,1,1,draw,2,2,1,1,2,2
+Rodada 6,2024-10-09 19:30:00,Atlético-MG,Grêmio,Arena MRV,2025-05-16 19:06:37.771670,2,1,home,2,1,2,2,1,2
+Rodada 6,2024-10-09 19:30:00,Atlético-MG,Grêmio,Arena MRV,2025-05-19 23:20:38.715821,2,1,home,2,1,2,2,1,2
+Rodada 30,2024-10-16 21:45:00,São Paulo,Vasco,Brinco de Ouro,2025-05-19 23:21:03.323504,3,0,home,2,0,3,1,3,1
+Rodada 30,2024-10-16 21:45:00,Fortaleza,Atlético-MG,Castelão (CE),2025-05-19 23:21:03.386381,1,1,draw,2,1,2,3,1,1
+Rodada 30,2024-10-17 20:00:00,Flamengo,Fluminense,Maracanã,2025-05-19 23:21:03.423344,0,2,guest,2,1,2,2,0,3
+Rodada 30,2024-10-17 20:00:00,Corinthians,Athletico-PR,Arena Corinthians,2025-05-19 23:21:03.459135,5,2,home,2,1,2,0,2,3
+Rodada 30,2024-10-18 19:00:00,Atlético-GO,Cuiabá,Antônio Accioly,2025-05-19 23:21:03.490800,0,0,draw,1,0,4,1,2,2
+Rodada 30,2024-10-18 20:00:00,Botafogo,Criciúma,Maracanã,2025-05-19 23:21:03.524271,1,1,draw,4,1,0,3,1,1
+Rodada 30,2024-10-18 21:30:00,Cruzeiro,Bahia,Mineirão,2025-05-19 23:21:03.559038,1,1,draw,1,2,2,2,0,3
+Rodada 30,2024-10-19 16:00:00,Internacional,Grêmio,Beira-Rio,2025-05-19 23:21:03.608305,1,0,home,3,2,0,1,1,3
+Rodada 30,2024-10-19 16:00:00,Vitória,Bragantino,Barradão,2025-05-19 23:21:03.656427,1,0,home,2,1,2,0,4,1
+Rodada 30,2024-10-20 20:00:00,Juventude,Palmeiras,Alfredo Jaconi,2025-05-19 23:21:03.709545,3,5,guest,1,3,1,4,1,0
+Rodada 17,2024-10-22 19:30:00,Fluminense,Athletico-PR,Maracanã,2025-05-19 23:20:49.005258,1,0,home,2,0,3,0,2,3
+Rodada 19,2024-10-24 19:00:00,Vasco,Cuiabá,São Januário,2025-05-19 23:20:51.050708,1,0,home,0,3,2,1,2,2
+Rodada 31,2024-10-26 16:30:00,Vitória,Fluminense,Barradão,2025-05-19 23:21:04.390272,2,1,home,3,1,1,3,0,2
+Rodada 31,2024-10-26 16:30:00,Flamengo,Juventude,Maracanã,2025-05-19 23:21:04.422634,4,2,home,2,1,2,1,2,2
+Rodada 31,2024-10-26 16:30:00,Palmeiras,Fortaleza,Arena Palmeiras,2025-05-19 23:21:04.472640,2,2,draw,4,1,0,2,2,1
+Rodada 31,2024-10-26 16:30:00,Grêmio,Atlético-GO,Arena do Grêmio,2025-05-19 23:21:04.342996,3,1,home,1,1,3,1,1,3
+Rodada 31,2024-10-26 18:30:00,Athletico-PR,Cruzeiro,Arena da Baixada,2025-05-19 23:21:04.507208,3,0,home,0,1,4,0,3,2
+Rodada 31,2024-10-26 19:00:00,Atlético-MG,Internacional,Arena MRV,2025-05-19 23:21:04.555873,1,3,guest,2,2,1,3,2,0
+Rodada 31,2024-10-26 19:00:00,Bragantino,Botafogo,Nabi Abi Chedid,2025-05-19 23:21:04.595626,0,1,guest,0,3,2,3,2,0
+Rodada 31,2024-10-26 21:00:00,Criciúma,São Paulo,Heriberto Hülse,2025-05-19 23:21:04.636806,1,1,draw,3,1,1,3,0,2
+Rodada 31,2024-10-28 19:00:00,Cuiabá,Corinthians,Arena Pantanal,2025-05-19 23:21:04.672054,0,1,guest,1,2,2,2,1,2
+Rodada 31,2024-10-28 21:00:00,Vasco,Bahia,São Januário,2025-05-19 23:21:04.726385,3,2,home,1,2,2,2,1,2
+Rodada 17,2024-10-30 19:00:00,Internacional,Flamengo,Beira-Rio,2025-05-19 23:20:49.039148,1,1,draw,3,2,0,3,0,2
+Rodada 32,2024-11-01 21:00:00,Fluminense,Grêmio,Maracanã,2025-05-19 23:21:05.437437,2,2,draw,3,0,2,2,0,3
+Rodada 32,2024-11-02 16:00:00,Bragantino,Cuiabá,Nabi Abi Chedid,2025-05-19 23:21:05.482233,0,0,draw,0,3,2,1,1,3
+Rodada 32,2024-11-02 18:30:00,Athletico-PR,Vitória,Arena da Baixada,2025-05-19 23:21:05.521518,1,2,guest,1,0,4,3,1,1
+Rodada 32,2024-11-02 18:30:00,Juventude,Fortaleza,Alfredo Jaconi,2025-05-19 23:21:05.569886,0,3,guest,0,2,3,2,2,1
+Rodada 32,2024-11-04 20:00:00,Corinthians,Palmeiras,Arena Corinthians,2025-05-19 23:21:05.611901,2,0,home,3,1,1,3,2,0
+Rodada 32,2024-11-05 21:30:00,Bahia,São Paulo,Fonte Nova,2025-05-19 23:21:05.707876,0,3,guest,1,1,3,2,1,2
+Rodada 32,2024-11-05 21:30:00,Internacional,Criciúma,Beira-Rio,2025-05-19 23:21:05.656572,2,0,home,3,2,0,2,2,1
+Rodada 32,2024-11-05 21:30:00,Botafogo,Vasco,Nilton Santos (Engenhão),2025-05-19 23:21:05.743046,3,0,home,3,2,0,2,2,1
+Rodada 32,2024-11-06 21:00:00,Cruzeiro,Flamengo,Independência,2025-05-19 23:21:05.788098,0,1,guest,0,3,2,3,1,1
+Rodada 32,2024-11-06 21:00:00,Atlético-GO,Atlético-MG,Antônio Accioly,2025-05-19 23:21:05.838527,1,0,home,1,1,3,2,2,1
+Rodada 33,2024-11-08 19:00:00,Internacional,Fluminense,Beira-Rio,2025-05-19 23:21:06.447500,2,0,home,3,2,0,3,1,1
+Rodada 33,2024-11-08 21:30:00,Palmeiras,Grêmio,Arena Palmeiras,2025-05-19 23:21:06.504708,1,0,home,2,2,1,1,1,3
+Rodada 33,2024-11-09 16:30:00,Vitória,Corinthians,Barradão,2025-05-19 23:21:06.536945,1,2,guest,3,1,1,3,1,1
+Rodada 33,2024-11-09 16:30:00,Botafogo,Cuiabá,Nilton Santos (Engenhão),2025-05-19 23:21:06.619469,0,0,draw,3,2,0,1,2,2
+Rodada 33,2024-11-09 19:00:00,Cruzeiro,Criciúma,Mineirão,2025-05-19 23:21:06.669537,2,1,home,0,2,3,1,2,2
+Rodada 33,2024-11-09 19:00:00,Fortaleza,Vasco,Castelão (CE),2025-05-19 23:21:06.737871,3,0,home,2,2,1,2,1,2
+Rodada 33,2024-11-09 19:00:00,Atlético-GO,Bragantino,Antônio Accioly,2025-05-19 23:21:06.787772,0,0,draw,2,1,2,0,3,2
+Rodada 33,2024-11-09 19:00:00,Juventude,Bahia,Alfredo Jaconi,2025-05-19 23:21:06.842892,2,1,home,0,2,3,1,1,3
+Rodada 33,2024-11-09 21:00:00,São Paulo,Athletico-PR,Morumbi,2025-05-19 23:21:06.901877,2,1,home,3,1,1,1,0,4
+Rodada 33,2024-11-13 20:00:00,Flamengo,Atlético-MG,Maracanã,2025-05-19 23:21:06.938969,0,0,draw,3,1,1,2,1,2
+Rodada 19,2024-11-16 18:30:00,Athletico-PR,Atlético-MG,Arena da Baixada,2025-05-19 23:20:51.086040,1,0,home,1,0,4,1,2,2
+Rodada 34,2024-11-20 11:00:00,Corinthians,Cruzeiro,Arena Corinthians,2025-05-19 23:21:07.502843,2,1,home,4,1,0,1,1,3
+Rodada 34,2024-11-20 16:30:00,Bragantino,São Paulo,Nabi Abi Chedid,2025-05-19 23:21:07.540282,1,1,draw,0,3,2,3,1,1
+Rodada 34,2024-11-20 16:30:00,Athletico-PR,Atlético-GO,Arena da Baixada,2025-05-19 23:21:07.587475,2,0,home,2,0,3,1,2,2
+Rodada 34,2024-11-20 16:30:00,Criciúma,Vitória,Heriberto Hülse,2025-05-19 23:21:07.635355,0,1,guest,1,2,2,3,1,1
+Rodada 34,2024-11-20 18:00:00,Bahia,Palmeiras,Fonte Nova,2025-05-19 23:21:07.669323,1,2,guest,0,1,4,2,2,1
+Rodada 34,2024-11-20 19:00:00,Grêmio,Juventude,Arena do Grêmio,2025-05-19 23:21:07.722651,2,2,draw,1,1,3,1,1,3
+Rodada 34,2024-11-20 19:00:00,Cuiabá,Flamengo,Arena Pantanal,2025-05-19 23:21:07.758059,1,2,guest,0,3,2,2,2,1
+Rodada 34,2024-11-20 21:30:00,Atlético-MG,Botafogo,Independência,2025-05-19 23:21:07.802703,0,0,draw,0,2,3,3,2,0
+Rodada 34,2024-11-21 20:00:00,Vasco,Internacional,São Januário,2025-05-19 23:21:07.851632,0,1,guest,2,0,3,4,1,0
+Rodada 34,2024-11-22 21:30:00,Fluminense,Fortaleza,Maracanã,2025-05-19 23:21:07.889702,2,2,draw,2,1,2,2,2,1
+Rodada 35,2024-11-23 19:30:00,Botafogo,Vitória,Nilton Santos (Engenhão),2025-05-19 23:21:08.556917,1,1,draw,2,3,0,4,0,1
+Rodada 35,2024-11-23 19:30:00,Atlético-GO,Palmeiras,Antônio Accioly,2025-05-19 23:21:08.602724,0,1,guest,1,2,2,3,1,1
+Rodada 35,2024-11-23 19:30:00,Juventude,Cuiabá,Alfredo Jaconi,2025-05-19 23:21:08.674180,1,1,draw,1,1,3,0,2,3
+Rodada 35,2024-11-23 21:30:00,São Paulo,Atlético-MG,Morumbi,2025-05-19 23:21:08.753287,2,2,draw,3,2,0,0,2,3
+Rodada 35,2024-11-24 16:00:00,Internacional,Bragantino,Beira-Rio,2025-05-19 23:21:08.793730,4,1,home,4,1,0,0,3,2
+Rodada 35,2024-11-24 16:00:00,Bahia,Athletico-PR,Fonte Nova,2025-05-19 23:21:08.855147,1,1,draw,0,1,4,3,0,2
+Rodada 35,2024-11-24 16:00:00,Corinthians,Vasco,Arena Corinthians,2025-05-19 23:21:09.035603,3,1,home,5,0,0,2,0,3
+Rodada 35,2024-11-26 19:00:00,Fluminense,Criciúma,Maracanã,2025-05-19 23:21:09.102360,0,0,draw,1,2,2,0,2,3
+Rodada 35,2024-11-26 20:00:00,Fortaleza,Flamengo,Castelão (CE),2025-05-19 23:21:09.151904,0,0,draw,2,3,0,3,2,0
+Rodada 36,2024-11-26 21:30:00,Atlético-MG,Juventude,Independência,2025-05-19 23:21:09.790898,2,3,guest,0,3,2,1,2,2
+Rodada 36,2024-11-26 21:30:00,Palmeiras,Botafogo,Arena Palmeiras,2025-05-19 23:21:09.871399,1,3,guest,3,1,1,2,3,0
+Rodada 35,2024-11-27 21:00:00,Cruzeiro,Grêmio,Mineirão,2025-05-19 23:21:09.204541,1,1,draw,1,1,3,1,2,2
+Rodada 36,2024-11-30 19:30:00,Cuiabá,Bahia,Arena Pantanal,2025-05-19 23:21:09.922035,1,2,guest,0,3,2,0,1,4
+Rodada 36,2024-11-30 19:30:00,Criciúma,Corinthians,Heriberto Hülse,2025-05-19 23:21:09.967815,2,4,guest,0,2,3,5,0,0
+Rodada 36,2024-11-30 21:30:00,Vasco,Atlético-GO,São Januário,2025-05-19 23:21:10.004190,2,2,draw,1,0,4,1,1,3
+Rodada 36,2024-12-01 16:00:00,Grêmio,São Paulo,Arena do Grêmio,2025-05-19 23:21:10.051894,2,1,home,1,3,1,2,3,0
+Rodada 36,2024-12-01 16:00:00,Flamengo,Internacional,Maracanã,2025-05-19 23:21:10.099424,3,2,home,2,3,0,4,1,0
+Rodada 36,2024-12-01 18:30:00,Vitória,Fortaleza,Barradão,2025-05-19 23:21:10.137732,2,0,home,3,1,1,2,3,0
+Rodada 36,2024-12-01 18:30:00,Athletico-PR,Fluminense,Arena da Baixada,2025-05-19 23:21:10.234390,1,1,draw,2,1,2,0,3,2
+Rodada 36,2024-12-01 18:30:00,Bragantino,Cruzeiro,Nabi Abi Chedid,2025-05-19 23:21:10.184208,1,1,draw,0,3,2,1,1,3
+Rodada 37,2024-12-03 20:00:00,Corinthians,Bahia,Arena Corinthians,2025-05-19 23:21:10.884555,3,0,home,5,0,0,1,1,3
+Rodada 37,2024-12-04 19:00:00,Vasco,Atlético-MG,São Januário,2025-05-19 23:21:10.951473,2,0,home,0,1,4,0,3,2
+Rodada 37,2024-12-04 20:00:00,Vitória,Grêmio,Barradão,2025-05-19 23:21:11.021876,1,1,draw,3,1,1,1,3,1
+Rodada 37,2024-12-04 20:00:00,São Paulo,Juventude,Morumbi,2025-05-19 23:21:11.114903,1,2,guest,2,2,1,2,2,1
+Rodada 37,2024-12-04 20:00:00,Criciúma,Flamengo,Heriberto Hülse,2025-05-19 23:21:11.171433,0,3,guest,0,1,4,3,2,0
+Rodada 37,2024-12-04 21:30:00,Internacional,Botafogo,Beira-Rio,2025-05-19 23:21:11.249473,0,1,guest,4,0,1,2,3,0
+Rodada 37,2024-12-04 21:30:00,Cruzeiro,Palmeiras,Mineirão,2025-05-19 23:21:11.300487,1,2,guest,1,2,2,3,0,2
+Rodada 37,2024-12-04 21:30:00,Atlético-GO,Fortaleza,Antônio Accioly,2025-05-19 23:21:11.365659,3,1,home,1,2,2,2,2,1
+Rodada 37,2024-12-05 20:00:00,Athletico-PR,Bragantino,Arena da Baixada,2025-05-19 23:21:11.478585,1,2,guest,2,2,1,0,4,1
+Rodada 37,2024-12-05 20:00:00,Fluminense,Cuiabá,Maracanã,2025-05-19 23:21:11.417852,1,0,home,0,4,1,0,3,2
+Rodada 38,2024-12-08 16:00:00,Fortaleza,Internacional,Castelão (CE),2025-05-19 23:21:12.512973,3,0,home,1,2,2,3,0,2
+Rodada 38,2024-12-08 16:00:00,Palmeiras,Fluminense,Arena Palmeiras,2025-05-19 23:21:12.434386,0,1,guest,4,0,1,1,3,1
+Rodada 38,2024-12-08 16:00:00,Botafogo,São Paulo,Nilton Santos (Engenhão),2025-05-19 23:21:12.390028,2,1,home,2,3,0,1,2,2
+Rodada 38,2024-12-08 16:00:00,Flamengo,Vitória,Maracanã,2025-05-19 23:21:12.331879,2,2,draw,3,2,0,2,2,1
+Rodada 38,2024-12-08 16:00:00,Bahia,Atlético-GO,Fonte Nova,2025-05-19 23:21:12.286484,2,0,home,1,1,3,1,2,2
+Rodada 38,2024-12-08 16:00:00,Atlético-MG,Athletico-PR,Arena MRV,2025-05-19 23:21:12.222258,1,0,home,0,2,3,2,2,1
+Rodada 38,2024-12-08 16:00:00,Grêmio,Corinthians,Arena do Grêmio,2025-05-19 23:21:12.137656,0,3,guest,1,3,1,5,0,0
+Rodada 38,2024-12-08 16:00:00,Cuiabá,Vasco,Arena Pantanal,2025-05-19 23:21:12.582041,1,2,guest,0,2,3,1,1,3
+Rodada 38,2024-12-08 16:00:00,Juventude,Cruzeiro,Alfredo Jaconi,2025-05-19 23:21:12.620495,0,1,guest,3,2,0,1,2,2
+Rodada 38,2024-12-08 16:00:00,Bragantino,Criciúma,Nabi Abi Chedid,2025-05-19 23:21:12.480051,5,1,home,1,3,1,0,1,4
+Rodada 1,2025-03-29 18:30:00,Juventude,Vitória,Alfredo Jaconi,2025-05-16 19:06:39.006460,2,0,home,2,2,1,2,3,0
+Rodada 1,2025-03-29 18:30:00,Fortaleza,Fluminense,Castelão (CE),2025-05-16 19:06:38.985059,2,0,home,1,2,2,2,3,0
+Rodada 1,2025-03-29 18:30:00,Grêmio,Atlético-MG,Arena do Grêmio,2025-05-16 19:06:38.959652,2,1,home,1,3,1,1,2,2
+Rodada 1,2025-03-29 18:30:00,Cruzeiro,Mirassol,Mineirão,2025-05-16 19:06:38.937819,2,1,home,1,2,2,0,0,0
+Rodada 1,2025-03-29 18:30:00,São Paulo,Sport,Morumbi,2025-05-16 19:06:38.927158,0,0,draw,0,2,3,0,0,0
+Rodada 1,2025-03-29 18:30:00,Juventude,Vitória,Alfredo Jaconi,2025-05-19 23:21:13.329217,2,0,home,2,2,1,2,3,0
+Rodada 1,2025-03-29 18:30:00,Fortaleza,Fluminense,Castelão (CE),2025-05-19 23:21:13.288772,2,0,home,1,2,2,2,3,0
+Rodada 1,2025-03-29 18:30:00,Grêmio,Atlético-MG,Arena do Grêmio,2025-05-19 23:21:13.229546,2,1,home,1,3,1,1,2,2
+Rodada 1,2025-03-29 18:30:00,Cruzeiro,Mirassol,Mineirão,2025-05-19 23:21:13.169915,2,1,home,1,2,2,0,0,0
+Rodada 1,2025-03-29 18:30:00,São Paulo,Sport,Morumbi,2025-05-19 23:21:13.131752,0,0,draw,0,2,3,0,0,0
+Rodada 1,2025-03-29 21:00:00,Flamengo,Internacional,Maracanã,2025-05-19 23:21:13.379210,1,1,draw,3,2,0,2,0,3
+Rodada 1,2025-03-29 21:00:00,Flamengo,Internacional,Maracanã,2025-05-16 19:06:39.028641,1,1,draw,3,2,0,2,0,3
+Rodada 1,2025-03-30 16:00:00,Palmeiras,Botafogo,Arena Palmeiras,2025-05-16 19:06:39.065061,0,0,draw,3,0,2,3,2,0
+Rodada 1,2025-03-30 16:00:00,Palmeiras,Botafogo,Arena Palmeiras,2025-05-19 23:21:13.486828,0,0,draw,3,0,2,3,2,0
+Rodada 1,2025-03-30 18:30:00,Vasco,Santos,São Januário,2025-05-19 23:21:13.556432,2,1,home,2,1,2,0,0,0
+Rodada 1,2025-03-30 18:30:00,Vasco,Santos,São Januário,2025-05-16 19:06:39.092098,2,1,home,2,1,2,0,0,0
+Rodada 1,2025-03-30 20:00:00,Bahia,Corinthians,Fonte Nova,2025-05-19 23:21:13.613061,1,1,draw,2,1,2,5,0,0
+Rodada 1,2025-03-30 20:00:00,Bahia,Corinthians,Fonte Nova,2025-05-16 19:06:39.120819,1,1,draw,2,1,2,5,0,0
+Rodada 1,2025-03-31 20:00:00,Bragantino,Ceará,Nabi Abi Chedid,2025-05-19 23:21:13.668244,2,2,draw,2,2,1,0,0,0
+Rodada 1,2025-03-31 20:00:00,Bragantino,Ceará,Nabi Abi Chedid,2025-05-16 19:06:39.142408,2,2,draw,2,2,1,0,0,0
+Rodada 2,2025-04-05 18:30:00,Corinthians,Vasco,Arena Corinthians,2025-05-16 19:06:39.586504,3,0,home,3,2,0,4,1,0
+Rodada 2,2025-04-05 18:30:00,Ceará,Grêmio,Castelão (CE),2025-05-19 23:21:14.346501,2,0,home,0,2,0,3,1,1
+Rodada 2,2025-04-05 18:30:00,Ceará,Grêmio,Castelão (CE),2025-05-16 19:06:39.607572,2,0,home,0,2,0,3,1,1
+Rodada 2,2025-04-05 18:30:00,Corinthians,Vasco,Arena Corinthians,2025-05-19 23:21:14.313837,3,0,home,3,2,0,4,1,0
+Rodada 2,2025-04-05 21:00:00,Botafogo,Juventude,Nilton Santos (Engenhão),2025-05-19 23:21:14.396194,2,0,home,3,2,0,4,0,1
+Rodada 2,2025-04-05 21:00:00,Botafogo,Juventude,Nilton Santos (Engenhão),2025-05-16 19:06:39.628589,2,0,home,3,2,0,4,0,1
+Rodada 2,2025-04-06 16:00:00,Atlético-MG,São Paulo,Mineirão,2025-05-16 19:06:39.671979,0,0,draw,1,0,4,0,2,3
+Rodada 2,2025-04-06 16:00:00,Fluminense,Bragantino,Maracanã,2025-05-19 23:21:14.430446,2,1,home,2,1,2,2,3,0
+Rodada 2,2025-04-06 16:00:00,Atlético-MG,São Paulo,Mineirão,2025-05-19 23:21:14.483338,0,0,draw,1,0,4,0,2,3
+Rodada 2,2025-04-06 16:00:00,Fluminense,Bragantino,Maracanã,2025-05-16 19:06:39.651405,2,1,home,2,1,2,2,3,0
+Rodada 2,2025-04-06 18:30:00,Mirassol,Fortaleza,Municipal de Mirassol,2025-05-19 23:21:14.513229,1,1,draw,0,0,2,3,0,2
+Rodada 2,2025-04-06 18:30:00,Internacional,Cruzeiro,Beira-Rio,2025-05-19 23:21:14.564724,3,0,home,0,2,3,3,1,1
+Rodada 2,2025-04-06 18:30:00,Vitória,Flamengo,Barradão,2025-05-19 23:21:14.599814,1,2,guest,1,2,2,2,3,0
+Rodada 2,2025-04-06 18:30:00,Sport,Palmeiras,Ilha do Retiro,2025-05-16 19:06:39.787452,1,2,guest,0,2,0,1,2,2
+Rodada 2,2025-04-06 18:30:00,Vitória,Flamengo,Barradão,2025-05-16 19:06:39.759481,1,2,guest,1,2,2,2,3,0
+Rodada 2,2025-04-06 18:30:00,Internacional,Cruzeiro,Beira-Rio,2025-05-16 19:06:39.725453,3,0,home,0,2,3,3,1,1
+Rodada 2,2025-04-06 18:30:00,Mirassol,Fortaleza,Municipal de Mirassol,2025-05-16 19:06:39.701455,1,1,draw,0,0,2,3,0,2
+Rodada 2,2025-04-06 18:30:00,Sport,Palmeiras,Ilha do Retiro,2025-05-19 23:21:14.646161,1,2,guest,0,2,0,1,2,2
+Rodada 2,2025-04-06 20:30:00,Santos,Bahia,Vila Belmiro,2025-05-16 19:06:39.803086,2,2,draw,0,0,2,2,2,1
+Rodada 2,2025-04-06 20:30:00,Santos,Bahia,Vila Belmiro,2025-05-19 23:21:14.698682,2,2,draw,0,0,2,2,2,1
+Rodada 3,2025-04-12 16:00:00,Bragantino,Botafogo,Nabi Abi Chedid,2025-05-19 23:21:15.245981,1,0,home,1,2,2,3,2,0
+Rodada 3,2025-04-12 16:00:00,Bragantino,Botafogo,Nabi Abi Chedid,2025-05-16 19:06:40.256269,1,0,home,1,2,2,3,2,0
+Rodada 3,2025-04-12 16:00:00,Juventude,Ceará,Alfredo Jaconi,2025-05-16 19:06:40.269751,2,1,home,2,0,3,2,2,0
+Rodada 3,2025-04-12 16:00:00,Juventude,Ceará,Alfredo Jaconi,2025-05-19 23:21:15.291520,2,1,home,2,0,3,2,2,0
+Rodada 3,2025-04-12 18:30:00,Palmeiras,Corinthians,Arena Barueri,2025-05-19 23:21:15.351206,2,0,home,2,2,1,3,2,0
+Rodada 3,2025-04-12 18:30:00,Palmeiras,Corinthians,Arena Barueri,2025-05-16 19:06:40.292497,2,0,home,2,2,1,3,2,0
+Rodada 3,2025-04-12 21:00:00,Vasco,Sport,São Januário,2025-05-16 19:06:40.315814,3,1,home,3,0,2,0,2,2
+Rodada 3,2025-04-12 21:00:00,Vasco,Sport,São Januário,2025-05-19 23:21:15.393555,3,1,home,3,0,2,0,2,2
+Rodada 3,2025-04-13 16:00:00,Bahia,Mirassol,Fonte Nova,2025-05-19 23:21:15.427596,1,1,draw,1,4,0,0,2,2
+Rodada 3,2025-04-13 16:00:00,Bahia,Mirassol,Fonte Nova,2025-05-16 19:06:40.337498,1,1,draw,1,4,0,0,2,2
+Rodada 3,2025-04-13 17:30:00,Grêmio,Flamengo,Arena do Grêmio,2025-05-19 23:21:15.528892,0,2,guest,2,0,3,2,3,0
+Rodada 3,2025-04-13 17:30:00,São Paulo,Cruzeiro,Morumbi,2025-05-19 23:21:15.477719,1,1,draw,0,4,1,3,0,2
+Rodada 3,2025-04-13 17:30:00,Grêmio,Flamengo,Arena do Grêmio,2025-05-16 19:06:40.383765,0,2,guest,2,0,3,2,3,0
+Rodada 3,2025-04-13 17:30:00,São Paulo,Cruzeiro,Morumbi,2025-05-16 19:06:40.358034,1,1,draw,0,4,1,3,0,2
+Rodada 3,2025-04-13 19:30:00,Fluminense,Santos,Maracanã,2025-05-16 19:06:40.420800,1,0,home,3,0,2,0,2,2
+Rodada 3,2025-04-13 19:30:00,Fluminense,Santos,Maracanã,2025-05-19 23:21:15.585423,1,0,home,3,0,2,0,2,2
+Rodada 3,2025-04-13 20:00:00,Fortaleza,Internacional,Castelão (CE),2025-05-19 23:21:15.625908,0,0,draw,3,2,0,2,2,1
+Rodada 3,2025-04-13 20:00:00,Fortaleza,Internacional,Castelão (CE),2025-05-16 19:06:40.452661,0,0,draw,3,2,0,2,2,1
+Rodada 3,2025-04-13 20:30:00,Atlético-MG,Vitória,Mineirão,2025-05-19 23:21:15.661905,2,2,draw,1,2,2,0,1,4
+Rodada 3,2025-04-13 20:30:00,Atlético-MG,Vitória,Mineirão,2025-05-16 19:06:40.469956,2,2,draw,1,2,2,0,1,4
+Rodada 4,2025-04-15 21:30:00,Ceará,Vasco,Castelão (CE),2025-05-19 23:21:16.185296,2,1,home,2,1,2,3,0,2
+Rodada 4,2025-04-15 21:30:00,Ceará,Vasco,Castelão (CE),2025-05-16 19:06:40.939725,2,1,home,2,1,2,3,0,2
+Rodada 4,2025-04-16 18:30:00,Botafogo,São Paulo,Nilton Santos (Engenhão),2025-05-19 23:21:16.232760,2,2,draw,2,1,2,0,5,0
+Rodada 4,2025-04-16 18:30:00,Botafogo,São Paulo,Nilton Santos (Engenhão),2025-05-16 19:06:40.939725,2,2,draw,2,1,2,0,5,0
+Rodada 4,2025-04-16 19:00:00,Mirassol,Grêmio,Municipal de Mirassol,2025-05-19 23:21:16.276144,4,1,home,0,4,1,1,0,4
+Rodada 4,2025-04-16 19:00:00,Mirassol,Grêmio,Municipal de Mirassol,2025-05-16 19:06:40.966350,4,1,home,0,4,1,1,0,4
+Rodada 4,2025-04-16 19:00:00,Sport,Bragantino,Ilha do Retiro,2025-05-16 19:06:40.993803,0,1,guest,0,1,4,2,1,2
+Rodada 4,2025-04-16 19:00:00,Sport,Bragantino,Ilha do Retiro,2025-05-19 23:21:16.365744,0,1,guest,0,1,4,2,1,2
+Rodada 4,2025-04-16 19:30:00,Internacional,Palmeiras,Beira-Rio,2025-05-16 19:06:41.043476,0,1,guest,2,3,0,4,1,0
+Rodada 4,2025-04-16 19:30:00,Corinthians,Fluminense,Arena Corinthians,2025-05-19 23:21:16.410737,0,2,guest,2,1,2,4,0,1
+Rodada 4,2025-04-16 19:30:00,Internacional,Palmeiras,Beira-Rio,2025-05-19 23:21:16.448324,0,1,guest,2,3,0,4,1,0
+Rodada 4,2025-04-16 19:30:00,Corinthians,Fluminense,Arena Corinthians,2025-05-16 19:06:41.016809,0,2,guest,2,1,2,4,0,1
+Rodada 4,2025-04-16 21:30:00,Flamengo,Juventude,Maracanã,2025-05-19 23:21:16.565390,6,0,home,4,1,0,3,0,2
+Rodada 4,2025-04-16 21:30:00,Santos,Atlético-MG,Vila Belmiro,2025-05-19 23:21:16.655550,2,0,home,0,2,3,0,4,1
+Rodada 4,2025-04-16 21:30:00,Vitória,Fortaleza,Barradão,2025-05-19 23:21:16.710422,2,1,home,0,2,3,1,4,0
+Rodada 4,2025-04-16 21:30:00,Santos,Atlético-MG,Vila Belmiro,2025-05-16 19:06:41.103336,2,0,home,0,2,3,0,4,1
+Rodada 4,2025-04-16 21:30:00,Vitória,Fortaleza,Barradão,2025-05-16 19:06:41.126139,2,1,home,0,2,3,1,4,0
+Rodada 4,2025-04-16 21:30:00,Flamengo,Juventude,Maracanã,2025-05-16 19:06:41.075093,6,0,home,4,1,0,3,0,2
+Rodada 4,2025-04-17 21:30:00,Cruzeiro,Bahia,Mineirão,2025-05-19 23:21:16.761465,3,0,home,1,2,2,0,5,0
+Rodada 4,2025-04-17 21:30:00,Cruzeiro,Bahia,Mineirão,2025-05-16 19:06:41.152129,3,0,home,1,2,2,0,5,0
+Rodada 5,2025-04-19 16:00:00,Corinthians,Sport,Arena Corinthians,2025-05-19 23:21:17.396489,2,1,home,1,0,4,0,0,5
+Rodada 5,2025-04-19 16:00:00,Corinthians,Sport,Arena Corinthians,2025-05-16 19:06:41.621260,2,1,home,1,0,4,0,0,5
+Rodada 5,2025-04-19 18:30:00,Vasco,Flamengo,Maracanã,2025-05-19 23:21:17.461510,0,0,draw,2,0,3,5,0,0
+Rodada 5,2025-04-19 18:30:00,Vasco,Flamengo,Maracanã,2025-05-16 19:06:41.637143,0,0,draw,2,0,3,5,0,0
+Rodada 5,2025-04-19 21:00:00,Grêmio,Internacional,Arena do Grêmio,2025-05-16 19:06:41.659060,1,1,draw,0,0,5,1,2,2
+Rodada 5,2025-04-19 21:00:00,Grêmio,Internacional,Arena do Grêmio,2025-05-19 23:21:17.508107,1,1,draw,0,0,5,1,2,2
+Rodada 5,2025-04-20 11:00:00,Juventude,Mirassol,Alfredo Jaconi,2025-05-19 23:21:17.563245,2,2,draw,2,0,3,2,3,0
+Rodada 5,2025-04-20 11:00:00,Juventude,Mirassol,Alfredo Jaconi,2025-05-16 19:06:41.686061,2,2,draw,2,0,3,2,3,0
+Rodada 5,2025-04-20 16:00:00,São Paulo,Santos,Morumbi,2025-05-16 19:06:41.708183,2,1,home,0,5,0,2,1,2
+Rodada 5,2025-04-20 16:00:00,Atlético-MG,Botafogo,Mineirão,2025-05-16 19:06:41.731262,1,0,home,0,3,2,1,2,2
+Rodada 5,2025-04-20 16:00:00,Atlético-MG,Botafogo,Mineirão,2025-05-19 23:21:17.661727,1,0,home,0,3,2,1,2,2
+Rodada 5,2025-04-20 16:00:00,São Paulo,Santos,Morumbi,2025-05-19 23:21:17.619574,2,1,home,0,5,0,2,1,2
+Rodada 5,2025-04-20 18:30:00,Fortaleza,Palmeiras,Castelão (CE),2025-05-19 23:21:17.759604,1,2,guest,0,3,2,5,0,0
+Rodada 5,2025-04-20 18:30:00,Fortaleza,Palmeiras,Castelão (CE),2025-05-16 19:06:41.786990,1,2,guest,0,3,2,5,0,0
+Rodada 5,2025-04-20 18:30:00,Fluminense,Vitória,Maracanã,2025-05-19 23:21:17.713577,1,1,draw,5,0,0,2,2,1
+Rodada 5,2025-04-20 18:30:00,Fluminense,Vitória,Maracanã,2025-05-16 19:06:41.766860,1,1,draw,5,0,0,2,2,1
+Rodada 5,2025-04-20 20:30:00,Bragantino,Cruzeiro,Nabi Abi Chedid,2025-05-19 23:21:17.795669,1,0,home,4,0,1,2,2,1
+Rodada 5,2025-04-20 20:30:00,Bragantino,Cruzeiro,Nabi Abi Chedid,2025-05-16 19:06:41.818329,1,0,home,4,0,1,2,2,1
+Rodada 5,2025-04-21 20:00:00,Bahia,Ceará,Fonte Nova,2025-05-19 23:21:17.842322,1,0,home,0,3,2,3,0,2
+Rodada 5,2025-04-21 20:00:00,Bahia,Ceará,Fonte Nova,2025-05-16 19:06:41.845828,1,0,home,0,3,2,3,0,2
+Rodada 6,2025-04-26 16:00:00,Internacional,Juventude,Beira-Rio,2025-05-16 19:06:42.320029,3,1,home,0,3,2,1,2,2
+Rodada 6,2025-04-26 16:00:00,Internacional,Juventude,Beira-Rio,2025-05-19 23:21:18.394510,3,1,home,0,3,2,1,2,2
+Rodada 6,2025-04-26 18:30:00,Ceará,São Paulo,Castelão (CE),2025-05-19 23:21:18.511296,1,1,draw,2,0,3,2,3,0
+Rodada 6,2025-04-26 18:30:00,Mirassol,Atlético-MG,Municipal de Mirassol,2025-05-19 23:21:18.465877,2,2,draw,2,3,0,2,1,2
+Rodada 6,2025-04-26 18:30:00,Mirassol,Atlético-MG,Municipal de Mirassol,2025-05-16 19:06:42.338628,2,2,draw,2,3,0,2,1,2
+Rodada 6,2025-04-26 18:30:00,Ceará,São Paulo,Castelão (CE),2025-05-16 19:06:42.380529,1,1,draw,2,0,3,2,3,0
+Rodada 6,2025-04-26 20:00:00,Sport,Fortaleza,Ilha do Retiro,2025-05-19 23:21:18.560703,0,0,draw,0,0,5,0,1,4
+Rodada 6,2025-04-26 20:00:00,Sport,Fortaleza,Ilha do Retiro,2025-05-16 19:06:42.412916,0,0,draw,0,0,5,0,1,4
+Rodada 6,2025-04-26 21:00:00,Botafogo,Fluminense,Nilton Santos (Engenhão),2025-05-19 23:21:18.610457,2,0,home,0,2,3,3,2,0
+Rodada 6,2025-04-26 21:00:00,Botafogo,Fluminense,Nilton Santos (Engenhão),2025-05-16 19:06:42.441188,2,0,home,0,2,3,3,2,0
+Rodada 6,2025-04-27 16:00:00,Flamengo,Corinthians,Maracanã,2025-05-19 23:21:18.641268,4,0,home,3,2,0,2,0,3
+Rodada 6,2025-04-27 16:00:00,Flamengo,Corinthians,Maracanã,2025-05-16 19:06:42.467825,4,0,home,3,2,0,2,0,3
+Rodada 6,2025-04-27 18:30:00,Vitória,Grêmio,Barradão,2025-05-16 19:06:42.545896,1,1,draw,2,3,0,0,2,3
+Rodada 6,2025-04-27 18:30:00,Cruzeiro,Vasco,Parque do Sabiá,2025-05-16 19:06:42.519804,1,0,home,2,1,2,1,2,2
+Rodada 6,2025-04-27 18:30:00,Palmeiras,Bahia,Arena Palmeiras,2025-05-19 23:21:18.712677,0,1,guest,5,0,0,2,1,2
+Rodada 6,2025-04-27 18:30:00,Cruzeiro,Vasco,Parque do Sabiá,2025-05-19 23:21:18.763536,1,0,home,2,1,2,1,2,2
+Rodada 6,2025-04-27 18:30:00,Vitória,Grêmio,Barradão,2025-05-19 23:21:18.806334,1,1,draw,2,3,0,0,2,3
+Rodada 6,2025-04-27 18:30:00,Palmeiras,Bahia,Arena Palmeiras,2025-05-16 19:06:42.495086,0,1,guest,5,0,0,2,1,2
+Rodada 6,2025-04-27 20:30:00,Santos,Bragantino,Vila Belmiro,2025-05-19 23:21:18.857469,1,2,guest,2,0,3,5,0,0
+Rodada 6,2025-04-27 20:30:00,Santos,Bragantino,Vila Belmiro,2025-05-16 19:06:42.569215,1,2,guest,2,0,3,5,0,0
+Rodada 7,2025-05-02 21:30:00,São Paulo,Fortaleza,Morumbi,2025-05-16 19:06:43.015100,0,0,draw,2,3,0,0,2,3
+Rodada 7,2025-05-02 21:30:00,São Paulo,Fortaleza,Morumbi,2025-05-19 23:21:19.338328,0,0,draw,2,3,0,0,2,3
+Rodada 7,2025-05-03 18:30:00,Ceará,Vitória,Presidente Vargas (CE),2025-05-16 19:06:43.084731,1,0,home,1,2,2,1,4,0
+Rodada 7,2025-05-03 18:30:00,Corinthians,Internacional,Arena Corinthians,2025-05-16 19:06:43.060407,4,2,home,2,0,3,2,2,1
+Rodada 7,2025-05-03 18:30:00,Fluminense,Sport,Maracanã,2025-05-16 19:06:43.038355,2,1,home,1,2,2,0,2,3
+Rodada 7,2025-05-03 18:30:00,Fluminense,Sport,Maracanã,2025-05-19 23:21:19.377373,2,1,home,1,2,2,0,2,3
+Rodada 7,2025-05-03 18:30:00,Corinthians,Internacional,Arena Corinthians,2025-05-19 23:21:19.431166,4,2,home,2,0,3,2,2,1
+Rodada 7,2025-05-03 18:30:00,Ceará,Vitória,Presidente Vargas (CE),2025-05-19 23:21:19.476162,1,0,home,1,2,2,1,4,0
+Rodada 7,2025-05-03 21:00:00,Bahia,Botafogo,Fonte Nova,2025-05-16 19:06:43.102572,1,0,home,4,0,1,2,1,2
+Rodada 7,2025-05-03 21:00:00,Bahia,Botafogo,Fonte Nova,2025-05-19 23:21:19.531362,1,0,home,4,0,1,2,1,2
+Rodada 7,2025-05-04 16:00:00,Grêmio,Santos,Arena do Grêmio,2025-05-19 23:21:19.637057,1,0,home,0,4,1,1,0,4
+Rodada 7,2025-05-04 16:00:00,Grêmio,Santos,Arena do Grêmio,2025-05-16 19:06:43.153289,1,0,home,0,4,1,1,0,4
+Rodada 7,2025-05-04 16:00:00,Vasco,Palmeiras,Mané Garrincha,2025-05-16 19:06:43.124491,0,1,guest,0,2,3,3,0,2
+Rodada 7,2025-05-04 16:00:00,Vasco,Palmeiras,Mané Garrincha,2025-05-19 23:21:19.592478,0,1,guest,0,2,3,3,0,2
+Rodada 7,2025-05-04 18:30:00,Cruzeiro,Flamengo,Mineirão,2025-05-16 19:06:43.188005,2,1,home,3,0,2,3,2,0
+Rodada 7,2025-05-04 18:30:00,Cruzeiro,Flamengo,Mineirão,2025-05-19 23:21:19.680017,2,1,home,3,0,2,3,2,0
+Rodada 7,2025-05-05 19:00:00,Bragantino,Mirassol,Cícero de Souza Marques,2025-05-19 23:21:19.723752,1,0,home,5,0,0,1,4,0
+Rodada 7,2025-05-05 19:00:00,Bragantino,Mirassol,Cícero de Souza Marques,2025-05-16 19:06:43.215249,1,0,home,5,0,0,1,4,0
+Rodada 7,2025-05-05 20:00:00,Juventude,Atlético-MG,Alfredo Jaconi,2025-05-16 19:06:43.240323,0,1,guest,0,2,3,2,2,1
+Rodada 7,2025-05-05 20:00:00,Juventude,Atlético-MG,Alfredo Jaconi,2025-05-19 23:21:19.777831,0,1,guest,0,2,3,2,2,1
+Rodada 8,2025-05-10 16:00:00,Fortaleza,Juventude,Presidente Vargas (CE),2025-05-19 23:21:20.306963,5,0,home,0,4,1,0,1,4
+Rodada 8,2025-05-10 18:30:00,Mirassol,Corinthians,Municipal de Mirassol,2025-05-19 23:21:20.347634,2,1,home,0,3,2,3,0,2
+Rodada 8,2025-05-10 18:30:00,Grêmio,Bragantino,Arena do Grêmio,2025-05-19 23:21:20.425888,1,1,draw,2,3,0,5,0,0
+Rodada 8,2025-05-10 18:30:00,Vitória,Vasco,Barradão,2025-05-19 23:21:20.489184,2,1,home,0,3,2,0,1,4
+Rodada 8,2025-05-10 21:00:00,Flamengo,Bahia,Maracanã,2025-05-19 23:21:20.574787,1,0,home,2,1,2,5,0,0
+Rodada 8,2025-05-11 16:00:00,Sport,Cruzeiro,Ilha do Retiro,2025-05-19 23:21:20.640144,0,4,guest,0,2,3,4,0,1
+Rodada 8,2025-05-11 17:30:00,Palmeiras,São Paulo,Arena Barueri,2025-05-19 23:21:20.693395,1,0,home,3,0,2,1,4,0
+Rodada 8,2025-05-11 17:30:00,Atlético-MG,Fluminense,Arena MRV,2025-05-19 23:21:20.741839,3,2,home,3,2,0,2,1,2
+Rodada 8,2025-05-11 20:00:00,Botafogo,Internacional,Nilton Santos (Engenhão),2025-05-19 23:21:20.790478,4,0,home,2,0,3,2,1,2
+Rodada 8,2025-05-12 20:00:00,Santos,Ceará,Arena Palmeiras,2025-05-19 23:21:20.839632,0,0,draw,0,0,5,2,2,1
+Rodada 9,2025-05-17 16:00:00,Ceará,Sport,Castelão (CE),2025-05-19 23:21:21.420871,2,0,home,2,3,0,0,2,3
+Rodada 9,2025-05-17 18:30:00,Vasco,Fortaleza,São Januário,2025-05-19 23:21:21.461700,3,0,home,0,0,5,1,4,0
+Rodada 9,2025-05-17 21:00:00,São Paulo,Grêmio,Morumbi,2025-05-19 23:21:21.522636,2,1,home,0,4,1,2,3,0
+Rodada 9,2025-05-18 16:00:00,Corinthians,Santos,Arena Corinthians,2025-05-19 23:21:21.555494,1,0,home,2,0,3,0,1,4
+Rodada 9,2025-05-18 16:00:00,Bahia,Vitória,Fonte Nova,2025-05-19 23:21:21.605348,2,1,home,4,0,1,1,2,2
+Rodada 9,2025-05-18 16:00:00,Juventude,Fluminense,Alfredo Jaconi,2025-05-19 23:21:21.639077,1,1,draw,0,0,5,2,0,3
+Rodada 9,2025-05-18 18:30:00,Flamengo,Botafogo,Maracanã,2025-05-19 23:21:21.697272,0,0,draw,3,0,2,3,0,2
+Rodada 9,2025-05-18 18:30:00,Bragantino,Palmeiras,Cícero de Souza Marques,2025-05-19 23:21:21.757018,1,2,guest,4,1,0,3,0,2
+Rodada 9,2025-05-18 20:30:00,Cruzeiro,Atlético-MG,Mineirão,2025-05-19 23:21:21.807299,0,0,draw,5,0,0,3,2,0
+Rodada 9,2025-05-18 20:30:00,Internacional,Mirassol,Beira-Rio,2025-05-19 23:21:21.855590,1,1,draw,2,0,3,1,2,2

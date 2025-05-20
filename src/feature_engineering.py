@@ -32,8 +32,54 @@ def add_day_of_week(df, date_col="date"):
 
 def add_history_last_five_matches_each_team() -> pd.DataFrame:
     df = pd.read_parquet("data/matches.parquet")
+    df = df.sort_values("match_date").reset_index(drop=True)
 
-    print(df.head())
+    # Initialize new columns
+    for team_type in ["home_team", "guest_team"]:
+        for result in ["wins", "draws", "loses"]:
+            df[f"{team_type}_{result}_last_5"] = 0
+
+    for idx, row in df.iterrows():
+        match_date = row["match_date"]
+
+        for team_col, team_side in [("home_team", "home"), ("guest_team", "guest")]:
+            team_name = row[team_col]
+
+            past_matches = (
+                df[
+                    (
+                        (
+                            (df["home_team"] == team_name)
+                            | (df["guest_team"] == team_name)
+                        )
+                        & (df["match_date"] < match_date)
+                    )
+                ]
+                .sort_values("match_date", ascending=False)
+                .head(5)
+            )
+
+            wins = draws = loses = 0
+
+            for _, match in past_matches.iterrows():
+                if match["winning_team"] == "draw":
+                    draws += 1
+                elif (
+                    match["winning_team"] == "home" and match["home_team"] == team_name
+                ) or (
+                    match["winning_team"] == "guest"
+                    and match["guest_team"] == team_name
+                ):
+                    wins += 1
+                else:
+                    loses += 1
+
+            df.at[idx, f"{team_col}_wins_last_5"] = wins
+            df.at[idx, f"{team_col}_draws_last_5"] = draws
+            df.at[idx, f"{team_col}_loses_last_5"] = loses
+
+    df.to_csv("experiment/matches_with_history.csv", index=False)
+    return df
 
 
 def feature_engineering(
