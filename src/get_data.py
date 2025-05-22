@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-from src.utils import read_config
 from src.db import get_db, insert_match  # Import your TinyDB helpers
 
 
@@ -50,28 +49,37 @@ def parse_content(content: str) -> list:
     return round_data
 
 
-def get_data(
-    base_link,
-    db_path="data/matches_db.json",
+def get_data_for_round(
+    base_link: str, year: int, round_number: int, db_path: str = "data/matches_db.json"
 ):
+    """
+    Fetches data for a specific year and round, parses it, and saves it to TinyDB.
+
+    Args:
+        base_link (str): The base URL for scraping.
+        year (int): The year of the matches to scrape.
+        round_number (int): The round number to scrape.
+        db_path (str): Path to the TinyDB database (default: 'data/matches_db.json').
+    """
     db, db_table = get_db(db_path)
-    config = read_config(path="config.yml")
 
-    for year, rounds in config.items():
-        for round_number in rounds:
-            link = get_round_link(base_link, year, round_number)
-            status_code, content = get_content(link)
-            if status_code != 200:
-                print(f"Error: {status_code}")
-                continue
+    link = get_round_link(base_link, year, round_number)
+    status_code, content = get_content(link)
 
-            round_matches = parse_content(content)
-            for match in round_matches:
-                insert_match(db_table, match)
-    db.close()  # Close the TinyDB database
+    if status_code != 200:
+        print(f"Error fetching data: HTTP {status_code} for {link}")
+        db.close()
+        return
+
+    round_matches = parse_content(content)
+    for match in round_matches:
+        insert_match(db_table, match)
+
+    db.close()  # Always close the DB
+    print(f"✅ Data for year {year}, round {round_number} saved successfully.")
 
 
 if __name__ == "__main__":
     base_link = "https://www.api-futebol.com.br/campeonato/campeonato-brasileiro"
 
-    get_data(base_link)
+    get_data_for_round(base_link, year=2024, round_number=1)

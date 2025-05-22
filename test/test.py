@@ -21,4 +21,4 @@ def feature_engineered_table():
 
 
 if __name__ == "__main__":
-    feature_engineered_table()
+    pass
