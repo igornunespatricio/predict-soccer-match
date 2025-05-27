@@ -2,17 +2,25 @@ import requests
 from bs4 import BeautifulSoup
 
 from src.db import get_db, insert_match  # Import your TinyDB helpers
+from src.logger import setup_logger
+
+logger = setup_logger()
 
 
 def get_round_link(link: str, year: int, round_number: int) -> str:
     round_link = f"{link}/{year}/rodada/{round_number}"
-    print(round_link)
+    # print(round_link)
+    logger.info(f"Generated link: {round_link}")
     return round_link
 
 
 def get_content(link: str) -> tuple:
-    response = requests.get(link)
-    return response.status_code, response.content
+    try:
+        response = requests.get(link)
+        return response.status_code, response.content
+    except Exception as e:
+        logger.error(f"Error fetching content from {link}: {e}")
+        return 500, None
 
 
 def parse_content(content: str) -> list:
@@ -46,6 +54,7 @@ def parse_content(content: str) -> list:
             "stadium": stadium,
         }
         round_data.append(row_data)
+    logger.info(f"Parsed {len(round_data)} matches for round {round_number}")
     return round_data
 
 
@@ -67,16 +76,21 @@ def get_data_for_round(
     status_code, content = get_content(link)
 
     if status_code != 200:
-        print(f"Error fetching data: HTTP {status_code} for {link}")
+        # print(f"Error fetching data: HTTP {status_code} for {link}")
+        logger.error(f"Error fetching data: HTTP {status_code} for {link}")
         db.close()
         return
 
     round_matches = parse_content(content)
-    for match in round_matches:
-        insert_match(db_table, match)
+    if round_matches:
+        for match in round_matches:
+            insert_match(db_table, match)
 
+        logger.info(f"Data for year {year}, round {round_number} saved successfully.")
+    else:
+        logger.warning(f"No matches found for year {year} round {round_number}")
     db.close()  # Always close the DB
-    print(f"✅ Data for year {year}, round {round_number} saved successfully.")
+    # print(f"Data for year {year}, round {round_number} saved successfully.")
 
 
 if __name__ == "__main__":

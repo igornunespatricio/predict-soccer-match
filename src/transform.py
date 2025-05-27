@@ -11,15 +11,37 @@ def split_score_column(df):
     return df.drop(columns=["score"])
 
 
-def define_winning_team(df):
-    df["winning_team"] = df.apply(
-        lambda row: (
-            "home"
-            if row["score_home_team"] > row["score_guest_team"]
-            else "guest" if row["score_home_team"] < row["score_guest_team"] else "draw"
-        ),
-        axis=1,
-    )
+import pandas as pd
+import numpy as np
+
+
+def define_winning_team(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Adds a 'winning_team' column indicating 'home', 'guest', 'draw', or NaN if scores are missing.
+
+    Args:
+        df (pd.DataFrame): DataFrame with 'score_home_team' and 'score_guest_team'.
+
+    Returns:
+        pd.DataFrame: Updated DataFrame with 'winning_team'.
+    """
+
+    def get_winner(row):
+        home = row["score_home_team"]
+        guest = row["score_guest_team"]
+
+        if pd.isna(home) or pd.isna(guest):
+            return np.nan  # Or "unknown" if you prefer a string label
+
+        if home > guest:
+            return "home"
+        elif home < guest:
+            return "guest"
+        else:
+            return "draw"
+
+    df["winning_team"] = df.apply(get_winner, axis=1)
+
     return df
 
 

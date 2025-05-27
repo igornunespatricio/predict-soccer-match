@@ -77,7 +77,7 @@ def add_history_last_five_matches_each_team(df: pd.DataFrame) -> pd.DataFrame:
             df.at[idx, f"{team_col}_draws_last_5"] = draws
             df.at[idx, f"{team_col}_loses_last_5"] = loses
 
-    df.to_csv("experiment/matches_with_history.csv", index=False)
+    df.to_excel("experiment/matches_with_history.xlsx", index=False)
     return df
 
 
