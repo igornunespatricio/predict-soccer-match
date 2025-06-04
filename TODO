@@ -1,9 +1,9 @@
 1. Feature engineering:
   add for the season:
-      - current position
+      - current position - done - needs more checking
       - percentage wins
       - percentage defeats
       - percentage draws
-      - add goals scored
-      - add goals conceded
-      - add goals difference
+      - add goals scored - done
+      - add goals conceded - done
+      - add goals difference - done

@@ -115,6 +115,14 @@ def add_current_position_in_season_optimized(df: pd.DataFrame) -> pd.DataFrame:
     data["home_team_current_position"] = None
     data["guest_team_current_position"] = None
 
+    data["home_team_goals_scored"] = 0
+    data["home_team_goals_conceded"] = 0
+    data["home_team_goal_difference"] = 0
+
+    data["guest_team_goals_scored"] = 0
+    data["guest_team_goals_conceded"] = 0
+    data["guest_team_goal_difference"] = 0
+
     for year in data["year"].unique():
         year_data = data[data["year"] == year].copy()
         year_data = year_data.sort_values("match_date")
@@ -155,6 +163,23 @@ def add_current_position_in_season_optimized(df: pd.DataFrame) -> pd.DataFrame:
             )
             data.loc[idx, "guest_team_current_position"] = (
                 int(guest_pos.values[0]) if not guest_pos.empty else None
+            )
+
+            # Assign current cumulative goals stats before the match
+            data.loc[idx, "home_team_goals_scored"] = standings[home]["goals_scored"]
+            data.loc[idx, "home_team_goals_conceded"] = standings[home][
+                "goals_conceded"
+            ]
+            data.loc[idx, "home_team_goal_difference"] = (
+                standings[home]["goals_scored"] - standings[home]["goals_conceded"]
+            )
+
+            data.loc[idx, "guest_team_goals_scored"] = standings[guest]["goals_scored"]
+            data.loc[idx, "guest_team_goals_conceded"] = standings[guest][
+                "goals_conceded"
+            ]
+            data.loc[idx, "guest_team_goal_difference"] = (
+                standings[guest]["goals_scored"] - standings[guest]["goals_conceded"]
             )
 
             # Only update standings if the match has valid scores
