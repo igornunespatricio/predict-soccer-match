@@ -96,8 +96,90 @@ def add_history_last_five_matches_each_team(df: pd.DataFrame) -> pd.DataFrame:
             df.at[idx, f"{team_col}_goals_conceded_last_5"] = goals_conceded
             df.at[idx, f"{team_col}_goal_difference_last_5"] = goal_difference
 
-    df.to_excel("experiment/matches_with_history.xlsx", index=False)
+    # df.to_excel("experiment/matches_with_history.xlsx", index=False)
     return df
+
+
+def add_current_position_in_season_optimized(df: pd.DataFrame) -> pd.DataFrame:
+    data = df.copy()
+
+    # Convert types
+    data["match_date"] = pd.to_datetime(data["match_date"], unit="ms")
+    data["score_home_team"] = pd.to_numeric(data["score_home_team"], errors="coerce")
+    data["score_guest_team"] = pd.to_numeric(data["score_guest_team"], errors="coerce")
+    data["year"] = data["match_date"].dt.year
+
+    data = data.sort_values("match_date").reset_index(drop=True)
+
+    # Initialize columns
+    data["home_team_current_position"] = None
+    data["guest_team_current_position"] = None
+
+    for year in data["year"].unique():
+        year_data = data[data["year"] == year].copy()
+        year_data = year_data.sort_values("match_date")
+
+        # Initialize standings dict
+        standings = {}
+
+        for idx, row in year_data.iterrows():
+            home = row["home_team"]
+            guest = row["guest_team"]
+
+            # Ensure teams are in standings
+            for team in [home, guest]:
+                if team not in standings:
+                    standings[team] = {
+                        "points": 0,
+                        "goals_scored": 0,
+                        "goals_conceded": 0,
+                    }
+
+            # Calculate current standings before this match
+            table = pd.DataFrame.from_dict(standings, orient="index").assign(
+                team=lambda x: x.index
+            )
+            table["goal_difference"] = table["goals_scored"] - table["goals_conceded"]
+            table = table.sort_values(
+                by=["points", "goal_difference", "goals_scored"],
+                ascending=[False, False, False],
+            ).reset_index(drop=True)
+            table["position"] = table.index + 1
+
+            # Assign current positions
+            home_pos = table.loc[table["team"] == home, "position"]
+            guest_pos = table.loc[table["team"] == guest, "position"]
+
+            data.loc[idx, "home_team_current_position"] = (
+                int(home_pos.values[0]) if not home_pos.empty else None
+            )
+            data.loc[idx, "guest_team_current_position"] = (
+                int(guest_pos.values[0]) if not guest_pos.empty else None
+            )
+
+            # Only update standings if the match has valid scores
+            if pd.notna(row["score_home_team"]) and pd.notna(row["score_guest_team"]):
+                home_goals = row["score_home_team"]
+                guest_goals = row["score_guest_team"]
+
+                # Goals
+                standings[home]["goals_scored"] += home_goals
+                standings[home]["goals_conceded"] += guest_goals
+
+                standings[guest]["goals_scored"] += guest_goals
+                standings[guest]["goals_conceded"] += home_goals
+
+                # Points
+                if row["winning_team"] == "home":
+                    standings[home]["points"] += 3
+                elif row["winning_team"] == "guest":
+                    standings[guest]["points"] += 3
+                elif row["winning_team"] == "draw":
+                    standings[home]["points"] += 1
+                    standings[guest]["points"] += 1
+
+    data.to_excel("experiment/matches_with_history.xlsx", index=False)
+    return data
 
 
 def feature_engineering(
@@ -109,6 +191,7 @@ def feature_engineering(
     df = add_match_period(df, date_col="match_date")
     df = add_day_of_week(df, date_col="match_date")
     df = add_history_last_five_matches_each_team(df=df)
+    df = add_current_position_in_season_optimized(df=df)
     df.to_parquet(save_path, index=False)
     return df
 

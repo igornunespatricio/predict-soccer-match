@@ -1,8 +1,4 @@
 1. Feature engineering:
-  add for the last 5 matches:
-      - add goals scored - done 
-      - add goals conceded - done
-      - add goals difference - done
   add for the season:
       - current position
       - percentage wins

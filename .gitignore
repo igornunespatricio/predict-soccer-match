@@ -3,3 +3,4 @@
 experiment/
 logs/
 *.log
+data/
