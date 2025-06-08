@@ -270,9 +270,10 @@ def add_wins_draws_losses_in_season(df: pd.DataFrame) -> pd.DataFrame:
         losses = data[f"{prefix}_team_losses_so_far"]
         total = wins + draws + losses
 
-        data[f"{prefix}_team_wins_pct_so_far"] = wins / total.replace(0, pd.NA)
-        data[f"{prefix}_team_draws_pct_so_far"] = draws / total.replace(0, pd.NA)
-        data[f"{prefix}_team_losses_pct_so_far"] = losses / total.replace(0, pd.NA)
+        # Avoid NaNs by replacing 0 total matches with 0.0
+        data[f"{prefix}_team_wins_pct_so_far"] = (wins / total).fillna(0.0)
+        data[f"{prefix}_team_draws_pct_so_far"] = (draws / total).fillna(0.0)
+        data[f"{prefix}_team_losses_pct_so_far"] = (losses / total).fillna(0.0)
 
     data.to_excel("experiment/matches_with_history.xlsx", index=False)
     return data
