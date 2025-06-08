@@ -203,6 +203,66 @@ def add_current_position_in_season_optimized(df: pd.DataFrame) -> pd.DataFrame:
                     standings[home]["points"] += 1
                     standings[guest]["points"] += 1
 
+    return data
+
+
+def add_wins_draws_losses_in_season(df: pd.DataFrame) -> pd.DataFrame:
+    data = df.copy()
+
+    # Preprocessing
+    data["match_date"] = pd.to_datetime(data["match_date"], unit="ms")
+    data["score_home_team"] = pd.to_numeric(data["score_home_team"], errors="coerce")
+    data["score_guest_team"] = pd.to_numeric(data["score_guest_team"], errors="coerce")
+    data["year"] = data["match_date"].dt.year
+
+    data = data.sort_values("match_date").reset_index(drop=True)
+
+    # Initialize result columns
+    result_types = ["wins", "draws", "losses"]
+    for prefix in ["home", "guest"]:
+        for r in result_types:
+            data[f"{prefix}_team_{r}_so_far"] = 0
+
+    # Process year by year
+    for year in data["year"].unique():
+        year_data = data[data["year"] == year]
+        year_data = year_data.sort_values("match_date")
+
+        # Track record per team
+        team_stats = {}
+
+        for idx in year_data.index:
+            row = data.loc[idx]
+            home = row["home_team"]
+            guest = row["guest_team"]
+            result = row["winning_team"]
+
+            # Initialize team record if needed
+            for team in [home, guest]:
+                if team not in team_stats:
+                    team_stats[team] = {"wins": 0, "draws": 0, "losses": 0}
+
+            # Assign current stats before the match
+            data.at[idx, "home_team_wins_so_far"] = team_stats[home]["wins"]
+            data.at[idx, "home_team_draws_so_far"] = team_stats[home]["draws"]
+            data.at[idx, "home_team_losses_so_far"] = team_stats[home]["losses"]
+
+            data.at[idx, "guest_team_wins_so_far"] = team_stats[guest]["wins"]
+            data.at[idx, "guest_team_draws_so_far"] = team_stats[guest]["draws"]
+            data.at[idx, "guest_team_losses_so_far"] = team_stats[guest]["losses"]
+
+            # Update stats **after** assigning
+            if pd.notna(result):
+                if result == "home":
+                    team_stats[home]["wins"] += 1
+                    team_stats[guest]["losses"] += 1
+                elif result == "guest":
+                    team_stats[guest]["wins"] += 1
+                    team_stats[home]["losses"] += 1
+                elif result == "draw":
+                    team_stats[home]["draws"] += 1
+                    team_stats[guest]["draws"] += 1
+
     data.to_excel("experiment/matches_with_history.xlsx", index=False)
     return data
 
@@ -217,6 +277,7 @@ def feature_engineering(
     df = add_day_of_week(df, date_col="match_date")
     df = add_history_last_five_matches_each_team(df=df)
     df = add_current_position_in_season_optimized(df=df)
+    df = add_wins_draws_losses_in_season(df=df)
     df.to_parquet(save_path, index=False)
     return df
 
