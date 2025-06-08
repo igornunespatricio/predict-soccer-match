@@ -263,6 +263,17 @@ def add_wins_draws_losses_in_season(df: pd.DataFrame) -> pd.DataFrame:
                     team_stats[home]["draws"] += 1
                     team_stats[guest]["draws"] += 1
 
+    # Compute percentages after all stats are collected
+    for prefix in ["home", "guest"]:
+        wins = data[f"{prefix}_team_wins_so_far"]
+        draws = data[f"{prefix}_team_draws_so_far"]
+        losses = data[f"{prefix}_team_losses_so_far"]
+        total = wins + draws + losses
+
+        data[f"{prefix}_team_wins_pct_so_far"] = wins / total.replace(0, pd.NA)
+        data[f"{prefix}_team_draws_pct_so_far"] = draws / total.replace(0, pd.NA)
+        data[f"{prefix}_team_losses_pct_so_far"] = losses / total.replace(0, pd.NA)
+
     data.to_excel("experiment/matches_with_history.xlsx", index=False)
     return data
 
