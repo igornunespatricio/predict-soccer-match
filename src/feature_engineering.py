@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 
 
@@ -203,6 +204,11 @@ def add_current_position_in_season_optimized(df: pd.DataFrame) -> pd.DataFrame:
                     standings[home]["points"] += 1
                     standings[guest]["points"] += 1
 
+    # calculate difference in team position
+    data["home_team_position_difference"] = (
+        data["home_team_current_position"] - data["guest_team_current_position"]
+    )
+
     return data
 
 
@@ -275,6 +281,9 @@ def add_wins_draws_losses_in_season(df: pd.DataFrame) -> pd.DataFrame:
         data[f"{prefix}_team_draws_pct_so_far"] = (draws / total).fillna(0.0)
         data[f"{prefix}_team_losses_pct_so_far"] = (losses / total).fillna(0.0)
 
+    # create experiment folder
+    if not os.path.exists("experiment"):
+        os.makedirs("experiment")
     data.to_excel("experiment/matches_with_history.xlsx", index=False)
     return data
 

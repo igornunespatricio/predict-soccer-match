@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 import src.db as db
 
@@ -9,10 +10,6 @@ def split_score_column(df):
     df["score_home_team"] = score_split[0].astype("Int64")
     df["score_guest_team"] = score_split[1].astype("Int64")
     return df.drop(columns=["score"])
-
-
-import pandas as pd
-import numpy as np
 
 
 def define_winning_team(df: pd.DataFrame) -> pd.DataFrame:
