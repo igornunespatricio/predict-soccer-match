@@ -209,6 +209,14 @@ def add_current_position_in_season_optimized(df: pd.DataFrame) -> pd.DataFrame:
         data["home_team_current_position"] - data["guest_team_current_position"]
     )
 
+    # calculate difference in goal between home and guest teams
+    data["home_team_goal_scored_difference"] = (
+        data["home_team_goals_scored"] - data["home_team_goals_scored"]
+    )
+    data["home_team_goal_conceded_difference"] = (
+        data["home_team_goals_conceded"] - data["guest_team_goals_conceded"]
+    )
+
     return data
 
 
@@ -280,6 +288,17 @@ def add_wins_draws_losses_in_season(df: pd.DataFrame) -> pd.DataFrame:
         data[f"{prefix}_team_wins_pct_so_far"] = (wins / total).fillna(0.0)
         data[f"{prefix}_team_draws_pct_so_far"] = (draws / total).fillna(0.0)
         data[f"{prefix}_team_losses_pct_so_far"] = (losses / total).fillna(0.0)
+
+    # wins draws and losses difference between home and guest teams
+    data["wins_difference"] = (
+        data["home_team_wins_so_far"] - data["guest_team_wins_so_far"]
+    )
+    data["draws_difference"] = (
+        data["home_team_draws_so_far"] - data["guest_team_draws_so_far"]
+    )
+    data["losses_difference"] = (
+        data["home_team_losses_so_far"] - data["guest_team_losses_so_far"]
+    )
 
     # create experiment folder
     if not os.path.exists("experiment"):
