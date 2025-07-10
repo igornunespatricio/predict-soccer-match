@@ -300,10 +300,6 @@ def add_wins_draws_losses_in_season(df: pd.DataFrame) -> pd.DataFrame:
         data["home_team_losses_so_far"] - data["guest_team_losses_so_far"]
     )
 
-    # create experiment folder
-    if not os.path.exists("experiment"):
-        os.makedirs("experiment")
-    data.to_excel("experiment/matches_with_history.xlsx", index=False)
     return data
 
 

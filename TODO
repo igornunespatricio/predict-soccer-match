@@ -1,1 +1,9 @@
-calculate interaction features between both teams, such as goals scored difference, goals conceded difference, etc, just like the position difference 
+Historical performance: Rolling average of points per game for each team over last N matches (e.g., last 5-10 games) - done
+Last 5 games win/draw/loss ratio for both teams
+Goals scored/conceded in last N matches
+Clean sheet frequency (games without conceding)
+Historical H2H record between the two teams (win %)
+Recent H2H results (last 3-5 meetings)
+Goal difference trend in H2H matches
+Importance of match (teams fighting relegation vs title contenders)
+Month/season period (teams may perform differently early vs late season)
