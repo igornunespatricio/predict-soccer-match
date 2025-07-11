@@ -1,8 +1,1 @@
-Historical performance: Rolling average of points per game for each team over last N matches (e.g., last 5-10 games) - done
-Last 5 games win/draw/loss ratio for both teams - done
-Goals scored/conceded in last N matches - done
-Clean sheet frequency (games without conceding) - done
-Historical H2H record between the two teams (win %) - done
-Goal difference trend in H2H matches - done
-Importance of match (teams fighting relegation vs title contenders)
-Month/season period (teams may perform differently early vs late season)
+try with neural network with pytorch
