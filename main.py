@@ -1,9 +1,8 @@
 from src.scraper import Scraper
-from src import feature_engineering
+from src.feature_engineering import MatchFeatureEngineer  # Updated import
 from src.transform import DataTransformer
 from src.logger import setup_logger
 from src.db import load_table_as_dataframe
-import pandas as pd
 import argparse
 
 logger = setup_logger()
@@ -20,6 +19,11 @@ def main():
     parser.add_argument(
         "--skip-transform", action="store_true", help="Skip the transformation phase"
     )
+    parser.add_argument(
+        "--skip-features",
+        action="store_true",
+        help="Skip the feature engineering phase",
+    )
     args = parser.parse_args()
 
     # Scraping phase
@@ -28,8 +32,12 @@ def main():
         logger.info("Starting data scraping...")
 
         rounds_to_extract = {
-            2023: [1, 2],
-            2024: [1, 2],
+            2020: range(1, 39),
+            2021: range(1, 39),
+            2022: range(1, 39),
+            2023: range(1, 39),
+            2024: range(1, 39),
+            2025: range(1, 14),
         }
 
         for year, rounds in rounds_to_extract.items():
@@ -69,9 +77,27 @@ def main():
     else:
         logger.info("Skipping transformation phase as requested")
 
-    # Feature engineering (currently commented out)
-    # logger.info("Applying feature engineering...")
-    # feature_engineering.feature_engineering(...)
+    # Feature engineering phase
+    if not args.skip_features:
+        logger.info("Starting feature engineering...")
+        try:
+            feature_engineer = MatchFeatureEngineer()
+            engineered_df = feature_engineer.run_pipeline(
+                read_path="data/matches.parquet",
+                save_path="data/matches_feature_engineered.parquet",
+            )
+
+            logger.info("Feature engineering completed successfully")
+
+            # Optional: Show sample of engineered features
+            logger.info("Sample of engineered features:")
+            logger.info(engineered_df.head().to_string())
+
+        except Exception as e:
+            logger.error(f"Feature engineering failed: {str(e)}")
+            raise
+    else:
+        logger.info("Skipping feature engineering phase as requested")
 
     logger.info("Pipeline completed")
 

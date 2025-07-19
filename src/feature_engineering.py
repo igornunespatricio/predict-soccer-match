@@ -1,271 +1,283 @@
-import os
 import pandas as pd
+from typing import Dict, Optional
+from dataclasses import dataclass
 
 
-# ─────────────────────────────────────────────────────────────
-# 1. BASIC MATCH FEATURES
-# ─────────────────────────────────────────────────────────────
+@dataclass
+class FeatureConfig:
+    date_col: str = "match_date"
+    home_team_col: str = "home_team"
+    guest_team_col: str = "guest_team"
+    score_home_col: str = "score_home_team"
+    score_guest_col: str = "score_guest_team"
+    winning_team_col: str = "winning_team"
+    output_path: str = "data/matches_feature_engineered.parquet"
 
 
-def add_is_weekend(df, date_col="date"):
-    df["is_weekend"] = df[date_col].dt.dayofweek >= 5
-    return df
+class MatchFeatureEngineer:
+    def __init__(self, config: FeatureConfig = FeatureConfig()):
+        self.config = config
 
+    def _validate_dataframe(self, df: pd.DataFrame) -> None:
+        """Validate required columns exist in dataframe."""
+        required_cols = [
+            self.config.date_col,
+            self.config.home_team_col,
+            self.config.guest_team_col,
+            self.config.score_home_col,
+            self.config.score_guest_col,
+            self.config.winning_team_col,
+        ]
+        missing_cols = [col for col in required_cols if col not in df.columns]
+        if missing_cols:
+            raise ValueError(f"Missing required columns: {missing_cols}")
 
-def add_match_period(df: pd.DataFrame, date_col="date"):
-    hour_column = df[date_col].dt.hour
+    def _calculate_team_stats_last_n(
+        self,
+        df: pd.DataFrame,
+        team_name: str,
+        match_date: pd.Timestamp,
+        n_matches: int = 5,
+    ) -> Dict[str, float]:
+        """Calculate team statistics from last n matches before given date."""
+        past_matches = (
+            df[
+                (
+                    (df[self.config.home_team_col] == team_name)
+                    | (df[self.config.guest_team_col] == team_name)
+                )
+                & (df[self.config.date_col] < match_date)
+            ]
+            .sort_values(self.config.date_col, ascending=False)
+            .head(n_matches)
+        )
 
-    df["match_period"] = hour_column.apply(
-        lambda x: "morning" if 0 <= x < 12 else "afternoon" if 12 <= x < 18 else "night"
-    )
-    return df
+        stats = {
+            "wins": 0,
+            "draws": 0,
+            "loses": 0,
+            "goals_scored": 0,
+            "goals_conceded": 0,
+        }
 
+        for _, match in past_matches.iterrows():
+            is_home = match[self.config.home_team_col] == team_name
 
-def add_day_of_week(df, date_col="date"):
-    df["day_of_week"] = df[date_col].dt.day_name()
-    return df
+            # Goals calculation
+            if is_home:
+                stats["goals_scored"] += match[self.config.score_home_col]
+                stats["goals_conceded"] += match[self.config.score_guest_col]
+            else:
+                stats["goals_scored"] += match[self.config.score_guest_col]
+                stats["goals_conceded"] += match[self.config.score_home_col]
 
+            # Match result calculation
+            if match[self.config.winning_team_col] == "draw":
+                stats["draws"] += 1
+            elif (match[self.config.winning_team_col] == "home" and is_home) or (
+                match[self.config.winning_team_col] == "guest" and not is_home
+            ):
+                stats["wins"] += 1
+            else:
+                stats["loses"] += 1
 
-# ─────────────────────────────────────────────────────────────
-# 1. HISTORY FEATURES
-# ─────────────────────────────────────────────────────────────
+        stats["goal_difference"] = stats["goals_scored"] - stats["goals_conceded"]
+        return stats
 
+    def add_recent_performance_features(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add features about team performance in last 5 matches."""
+        df = df.copy().sort_values(self.config.date_col).reset_index(drop=True)
 
-def add_history_last_five_matches_each_team(df: pd.DataFrame) -> pd.DataFrame:
-    df = df.sort_values("match_date").reset_index(drop=True)
+        # Initialize columns
+        for team_type in ["home_team", "guest_team"]:
+            for result in ["wins", "draws", "loses"]:
+                df[f"{team_type}_{result}_last_5"] = 0
+            df[f"{team_type}_goals_scored_last_5"] = 0
+            df[f"{team_type}_goals_conceded_last_5"] = 0
+            df[f"{team_type}_goal_difference_last_5"] = 0
 
-    # Initialize new columns
-    for team_type in ["home_team", "guest_team"]:
-        for result in ["wins", "draws", "loses"]:
-            df[f"{team_type}_{result}_last_5"] = 0
+        # Calculate stats for each match
+        for idx, row in df.iterrows():
+            for team_col, team_name in [
+                (self.config.home_team_col, row[self.config.home_team_col]),
+                (self.config.guest_team_col, row[self.config.guest_team_col]),
+            ]:
+                stats = self._calculate_team_stats_last_n(
+                    df, team_name, row[self.config.date_col]
+                )
 
-        df[f"{team_type}_goals_scored_last_5"] = 0
-        df[f"{team_type}_goals_conceded_last_5"] = 0
-        df[f"{team_type}_goal_difference_last_5"] = 0
+                prefix = (
+                    "home_team"
+                    if team_col == self.config.home_team_col
+                    else "guest_team"
+                )
 
-    for idx, row in df.iterrows():
-        match_date = row["match_date"]
-
-        for team_col, team_side in [("home_team", "home"), ("guest_team", "guest")]:
-            team_name = row[team_col]
-
-            past_matches = (
-                df[
-                    (
-                        (
-                            (df["home_team"] == team_name)
-                            | (df["guest_team"] == team_name)
-                        )
-                        & (df["match_date"] < match_date)
-                    )
+                df.at[idx, f"{prefix}_wins_last_5"] = stats["wins"]
+                df.at[idx, f"{prefix}_draws_last_5"] = stats["draws"]
+                df.at[idx, f"{prefix}_loses_last_5"] = stats["loses"]
+                df.at[idx, f"{prefix}_goals_scored_last_5"] = stats["goals_scored"]
+                df.at[idx, f"{prefix}_goals_conceded_last_5"] = stats["goals_conceded"]
+                df.at[idx, f"{prefix}_goal_difference_last_5"] = stats[
+                    "goal_difference"
                 ]
-                .sort_values("match_date", ascending=False)
-                .head(5)
-            )
 
-            wins = draws = loses = 0
-            goals_scored = 0
-            goals_conceded = 0
+        return df
 
-            for _, match in past_matches.iterrows():
-                # Count goals scored based on whether the team was home or guest
-                if match["home_team"] == team_name:
-                    goals_scored += match["score_home_team"]
-                    goals_conceded += match["score_guest_team"]
-                elif match["guest_team"] == team_name:
-                    goals_scored += match["score_guest_team"]
-                    goals_conceded += match["score_home_team"]
+    def _update_standings(
+        self,
+        standings: Dict[str, Dict[str, int]],
+        home_team: str,
+        guest_team: str,
+        home_goals: int,
+        guest_goals: int,
+        result: str,
+    ) -> None:
+        """Update league standings based on match result."""
+        for team, goals_for, goals_against in [
+            (home_team, home_goals, guest_goals),
+            (guest_team, guest_goals, home_goals),
+        ]:
+            if team not in standings:
+                standings[team] = {
+                    "points": 0,
+                    "goals_scored": 0,
+                    "goals_conceded": 0,
+                }
 
-                if match["winning_team"] == "draw":
-                    draws += 1
-                elif (
-                    match["winning_team"] == "home" and match["home_team"] == team_name
-                ) or (
-                    match["winning_team"] == "guest"
-                    and match["guest_team"] == team_name
-                ):
-                    wins += 1
-                else:
-                    loses += 1
+            standings[team]["goals_scored"] += goals_for
+            standings[team]["goals_conceded"] += goals_against
 
-            goal_difference = goals_scored - goals_conceded
+            if result == "draw":
+                standings[team]["points"] += 1
+            elif (result == "home" and team == home_team) or (
+                result == "guest" and team == guest_team
+            ):
+                standings[team]["points"] += 3
 
-            df.at[idx, f"{team_col}_wins_last_5"] = wins
-            df.at[idx, f"{team_col}_draws_last_5"] = draws
-            df.at[idx, f"{team_col}_loses_last_5"] = loses
-            df.at[idx, f"{team_col}_goals_scored_last_5"] = goals_scored
-            df.at[idx, f"{team_col}_goals_conceded_last_5"] = goals_conceded
-            df.at[idx, f"{team_col}_goal_difference_last_5"] = goal_difference
+    def add_season_position_features(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add features about current position in the season."""
+        df = df.copy()
+        df["year"] = pd.to_datetime(df[self.config.date_col]).dt.year
+        df = df.sort_values(self.config.date_col).reset_index(drop=True)
 
-    # df.to_excel("experiment/matches_with_history.xlsx", index=False)
-    return df
+        # Initialize columns
+        for prefix in ["home_team", "guest_team"]:
+            df[f"{prefix}_current_position"] = None
+            df[f"{prefix}_goals_scored"] = 0
+            df[f"{prefix}_goals_conceded"] = 0
+            df[f"{prefix}_goal_difference"] = 0
 
-
-def add_current_position_in_season_optimized(df: pd.DataFrame) -> pd.DataFrame:
-    data = df.copy()
-
-    # Convert types
-    data["match_date"] = pd.to_datetime(data["match_date"], unit="ms")
-    data["score_home_team"] = pd.to_numeric(data["score_home_team"], errors="coerce")
-    data["score_guest_team"] = pd.to_numeric(data["score_guest_team"], errors="coerce")
-    data["year"] = data["match_date"].dt.year
-
-    data = data.sort_values("match_date").reset_index(drop=True)
-
-    # Initialize columns
-    data["home_team_current_position"] = None
-    data["guest_team_current_position"] = None
-
-    data["home_team_goals_scored"] = 0
-    data["home_team_goals_conceded"] = 0
-    data["home_team_goal_difference"] = 0
-
-    data["guest_team_goals_scored"] = 0
-    data["guest_team_goals_conceded"] = 0
-    data["guest_team_goal_difference"] = 0
-
-    for year in data["year"].unique():
-        year_data = data[data["year"] == year].copy()
-        year_data = year_data.sort_values("match_date")
-
-        # Initialize standings dict
         standings = {}
+        current_year = None
 
-        for idx, row in year_data.iterrows():
-            home = row["home_team"]
-            guest = row["guest_team"]
+        for idx, row in df.iterrows():
+            year = row["year"]
 
-            # Ensure teams are in standings
-            for team in [home, guest]:
-                if team not in standings:
-                    standings[team] = {
-                        "points": 0,
-                        "goals_scored": 0,
-                        "goals_conceded": 0,
-                    }
+            # Reset standings for new year
+            if year != current_year:
+                standings = {}
+                current_year = year
+
+            home = row[self.config.home_team_col]
+            guest = row[self.config.guest_team_col]
 
             # Calculate current standings before this match
-            table = pd.DataFrame.from_dict(standings, orient="index").assign(
-                team=lambda x: x.index
-            )
-            table["goal_difference"] = table["goals_scored"] - table["goals_conceded"]
-            table = table.sort_values(
-                by=["points", "goal_difference", "goals_scored"],
-                ascending=[False, False, False],
-            ).reset_index(drop=True)
-            table["position"] = table.index + 1
+            table = pd.DataFrame.from_dict(standings, orient="index")
+            if not table.empty:
+                table = table.reset_index()
+                table.columns = ["team", "points", "goals_scored", "goals_conceded"]
+                table["goal_difference"] = (
+                    table["goals_scored"] - table["goals_conceded"]
+                )
 
-            # Assign current positions
-            home_pos = table.loc[table["team"] == home, "position"]
-            guest_pos = table.loc[table["team"] == guest, "position"]
+                table = table.sort_values(
+                    by=["points", "goal_difference", "goals_scored"],
+                    ascending=[False, False, False],
+                ).reset_index(drop=True)
+                table["position"] = table.index + 1
 
-            data.loc[idx, "home_team_current_position"] = (
-                int(home_pos.values[0]) if not home_pos.empty else None
-            )
-            data.loc[idx, "guest_team_current_position"] = (
-                int(guest_pos.values[0]) if not guest_pos.empty else None
-            )
+                # Assign current positions
+                for team, prefix in [(home, "home_team"), (guest, "guest_team")]:
+                    if team in table["team"].values:
+                        team_stats = table[table["team"] == team].iloc[0]
+                        df.at[idx, f"{prefix}_current_position"] = team_stats[
+                            "position"
+                        ]
+                        df.at[idx, f"{prefix}_goals_scored"] = team_stats[
+                            "goals_scored"
+                        ]
+                        df.at[idx, f"{prefix}_goals_conceded"] = team_stats[
+                            "goals_conceded"
+                        ]
+                        df.at[idx, f"{prefix}_goal_difference"] = team_stats[
+                            "goal_difference"
+                        ]
 
-            # Assign current cumulative goals stats before the match
-            data.loc[idx, "home_team_goals_scored"] = standings[home]["goals_scored"]
-            data.loc[idx, "home_team_goals_conceded"] = standings[home][
-                "goals_conceded"
-            ]
-            data.loc[idx, "home_team_goal_difference"] = (
-                standings[home]["goals_scored"] - standings[home]["goals_conceded"]
-            )
+            # Update standings after match (if scores are valid)
+            if pd.notna(row[self.config.score_home_col]) and pd.notna(
+                row[self.config.score_guest_col]
+            ):
+                self._update_standings(
+                    standings,
+                    home,
+                    guest,
+                    row[self.config.score_home_col],
+                    row[self.config.score_guest_col],
+                    row[self.config.winning_team_col],
+                )
 
-            data.loc[idx, "guest_team_goals_scored"] = standings[guest]["goals_scored"]
-            data.loc[idx, "guest_team_goals_conceded"] = standings[guest][
-                "goals_conceded"
-            ]
-            data.loc[idx, "guest_team_goal_difference"] = (
-                standings[guest]["goals_scored"] - standings[guest]["goals_conceded"]
-            )
+        # Calculate position and goal differences
+        df["home_team_position_difference"] = (
+            df["home_team_current_position"] - df["guest_team_current_position"]
+        )
+        df["home_team_goal_scored_difference"] = (
+            df["home_team_goals_scored"] - df["guest_team_goals_scored"]
+        )
+        df["home_team_goal_conceded_difference"] = (
+            df["home_team_goals_conceded"] - df["guest_team_goals_conceded"]
+        )
 
-            # Only update standings if the match has valid scores
-            if pd.notna(row["score_home_team"]) and pd.notna(row["score_guest_team"]):
-                home_goals = row["score_home_team"]
-                guest_goals = row["score_guest_team"]
+        return df
 
-                # Goals
-                standings[home]["goals_scored"] += home_goals
-                standings[home]["goals_conceded"] += guest_goals
+    def add_season_performance_features(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add features about team performance in current season."""
+        df = df.copy()
+        df["year"] = pd.to_datetime(df[self.config.date_col]).dt.year
+        df = df.sort_values(self.config.date_col).reset_index(drop=True)
 
-                standings[guest]["goals_scored"] += guest_goals
-                standings[guest]["goals_conceded"] += home_goals
+        # Initialize columns
+        for prefix in ["home_team", "guest_team"]:
+            for result in ["wins", "draws", "losses"]:
+                df[f"{prefix}_{result}_so_far"] = 0
 
-                # Points
-                if row["winning_team"] == "home":
-                    standings[home]["points"] += 3
-                elif row["winning_team"] == "guest":
-                    standings[guest]["points"] += 3
-                elif row["winning_team"] == "draw":
-                    standings[home]["points"] += 1
-                    standings[guest]["points"] += 1
-
-    # calculate difference in team position
-    data["home_team_position_difference"] = (
-        data["home_team_current_position"] - data["guest_team_current_position"]
-    )
-
-    # calculate difference in goal between home and guest teams
-    data["home_team_goal_scored_difference"] = (
-        data["home_team_goals_scored"] - data["home_team_goals_scored"]
-    )
-    data["home_team_goal_conceded_difference"] = (
-        data["home_team_goals_conceded"] - data["guest_team_goals_conceded"]
-    )
-
-    return data
-
-
-def add_wins_draws_losses_in_season(df: pd.DataFrame) -> pd.DataFrame:
-    data = df.copy()
-
-    # Preprocessing
-    data["match_date"] = pd.to_datetime(data["match_date"], unit="ms")
-    data["score_home_team"] = pd.to_numeric(data["score_home_team"], errors="coerce")
-    data["score_guest_team"] = pd.to_numeric(data["score_guest_team"], errors="coerce")
-    data["year"] = data["match_date"].dt.year
-
-    data = data.sort_values("match_date").reset_index(drop=True)
-
-    # Initialize result columns
-    result_types = ["wins", "draws", "losses"]
-    for prefix in ["home", "guest"]:
-        for r in result_types:
-            data[f"{prefix}_team_{r}_so_far"] = 0
-
-    # Process year by year
-    for year in data["year"].unique():
-        year_data = data[data["year"] == year]
-        year_data = year_data.sort_values("match_date")
-
-        # Track record per team
+        # Track season stats per team
         team_stats = {}
+        current_year = None
 
-        for idx in year_data.index:
-            row = data.loc[idx]
-            home = row["home_team"]
-            guest = row["guest_team"]
-            result = row["winning_team"]
+        for idx, row in df.iterrows():
+            year = row["year"]
 
-            # Initialize team record if needed
+            # Reset stats for new year
+            if year != current_year:
+                team_stats = {}
+                current_year = year
+
+            home = row[self.config.home_team_col]
+            guest = row[self.config.guest_team_col]
+            result = row[self.config.winning_team_col]
+
+            # Initialize team records if needed
             for team in [home, guest]:
                 if team not in team_stats:
                     team_stats[team] = {"wins": 0, "draws": 0, "losses": 0}
 
             # Assign current stats before the match
-            data.at[idx, "home_team_wins_so_far"] = team_stats[home]["wins"]
-            data.at[idx, "home_team_draws_so_far"] = team_stats[home]["draws"]
-            data.at[idx, "home_team_losses_so_far"] = team_stats[home]["losses"]
+            for team, prefix in [(home, "home_team"), (guest, "guest_team")]:
+                df.at[idx, f"{prefix}_wins_so_far"] = team_stats[team]["wins"]
+                df.at[idx, f"{prefix}_draws_so_far"] = team_stats[team]["draws"]
+                df.at[idx, f"{prefix}_losses_so_far"] = team_stats[team]["losses"]
 
-            data.at[idx, "guest_team_wins_so_far"] = team_stats[guest]["wins"]
-            data.at[idx, "guest_team_draws_so_far"] = team_stats[guest]["draws"]
-            data.at[idx, "guest_team_losses_so_far"] = team_stats[guest]["losses"]
-
-            # Update stats **after** assigning
+            # Update stats after the match (if result is valid)
             if pd.notna(result):
                 if result == "home":
                     team_stats[home]["wins"] += 1
@@ -277,46 +289,67 @@ def add_wins_draws_losses_in_season(df: pd.DataFrame) -> pd.DataFrame:
                     team_stats[home]["draws"] += 1
                     team_stats[guest]["draws"] += 1
 
-    # Compute percentages after all stats are collected
-    for prefix in ["home", "guest"]:
-        wins = data[f"{prefix}_team_wins_so_far"]
-        draws = data[f"{prefix}_team_draws_so_far"]
-        losses = data[f"{prefix}_team_losses_so_far"]
-        total = wins + draws + losses
+        # Calculate percentages
+        for prefix in ["home_team", "guest_team"]:
+            wins = df[f"{prefix}_wins_so_far"]
+            draws = df[f"{prefix}_draws_so_far"]
+            losses = df[f"{prefix}_losses_so_far"]
+            total = wins + draws + losses
 
-        # Avoid NaNs by replacing 0 total matches with 0.0
-        data[f"{prefix}_team_wins_pct_so_far"] = (wins / total).fillna(0.0)
-        data[f"{prefix}_team_draws_pct_so_far"] = (draws / total).fillna(0.0)
-        data[f"{prefix}_team_losses_pct_so_far"] = (losses / total).fillna(0.0)
+            # Avoid division by zero
+            mask = total > 0
+            df.loc[mask, f"{prefix}_wins_pct_so_far"] = wins[mask] / total[mask]
+            df.loc[mask, f"{prefix}_draws_pct_so_far"] = draws[mask] / total[mask]
+            df.loc[mask, f"{prefix}_losses_pct_so_far"] = losses[mask] / total[mask]
 
-    # wins draws and losses difference between home and guest teams
-    data["wins_difference"] = (
-        data["home_team_wins_so_far"] - data["guest_team_wins_so_far"]
-    )
-    data["draws_difference"] = (
-        data["home_team_draws_so_far"] - data["guest_team_draws_so_far"]
-    )
-    data["losses_difference"] = (
-        data["home_team_losses_so_far"] - data["guest_team_losses_so_far"]
-    )
+            # Fill NaN values (where total=0)
+            df[f"{prefix}_wins_pct_so_far"] = df[f"{prefix}_wins_pct_so_far"].fillna(
+                0.0
+            )
+            df[f"{prefix}_draws_pct_so_far"] = df[f"{prefix}_draws_pct_so_far"].fillna(
+                0.0
+            )
+            df[f"{prefix}_losses_pct_so_far"] = df[
+                f"{prefix}_losses_pct_so_far"
+            ].fillna(0.0)
 
-    return data
+        # Calculate differences
+        df["wins_difference"] = (
+            df["home_team_wins_so_far"] - df["guest_team_wins_so_far"]
+        )
+        df["draws_difference"] = (
+            df["home_team_draws_so_far"] - df["guest_team_draws_so_far"]
+        )
+        df["losses_difference"] = (
+            df["home_team_losses_so_far"] - df["guest_team_losses_so_far"]
+        )
 
+        return df
 
-def feature_engineering(
-    read_path: str = "data/matches.parquet",
-    save_path: str = "data/matches_feature_engineered.parquet",
-):
-    df = pd.read_parquet(read_path)
-    df = add_is_weekend(df, date_col="match_date")
-    df = add_match_period(df, date_col="match_date")
-    df = add_day_of_week(df, date_col="match_date")
-    df = add_history_last_five_matches_each_team(df=df)
-    df = add_current_position_in_season_optimized(df=df)
-    df = add_wins_draws_losses_in_season(df=df)
-    df.to_parquet(save_path, index=False)
-    return df
+    def process(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Run the complete feature engineering pipeline."""
+        self._validate_dataframe(df)
+
+        df = self.add_recent_performance_features(df)
+        df = self.add_season_position_features(df)
+        df = self.add_season_performance_features(df)
+
+        return df
+
+    def run_pipeline(
+        self, read_path: str = "data/matches.parquet", save_path: Optional[str] = None
+    ) -> pd.DataFrame:
+        """Run complete pipeline from reading data to saving results."""
+        df = pd.read_parquet(read_path)
+        df = self.process(df)
+
+        if save_path is None:
+            save_path = self.config.output_path
+
+        df.to_parquet(save_path, index=False)
+        return df
 
 
 if __name__ == "__main__":
-    df = feature_engineering(read_path="data/matches.parquet")
+    feature_engineer = MatchFeatureEngineer()
+    df = feature_engineer.run_pipeline(read_path="data/matches.parquet")
