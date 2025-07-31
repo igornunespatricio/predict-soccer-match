@@ -5,3 +5,6 @@ Explore new websites to scrap matches: scores, statistics and etc. Options below
 - Check type and quantity of data available and easiness to scrap of both websites.
 
 
+Using the link https://fbref.com/en/comps/24/Serie-A-Stats
+
+- scraping scores code is completed, now need to scrap the match report link and figure out a way to connect each match to the data scraped from the match report link
