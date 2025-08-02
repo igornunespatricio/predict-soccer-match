@@ -2,6 +2,8 @@
 FBref Match Report Scraper - Complete Team Statistics
 """
 
+from pathlib import Path
+import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -9,7 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
-from typing import Dict, Optional
+from typing import Dict, List, Optional
 from urllib.parse import urljoin
 import time
 import logging
@@ -174,40 +176,140 @@ class MatchReportScraper:
         except Exception as e:
             logger.error(f"Error closing WebDriver: {str(e)}")
 
+    def process_csv(
+        self, input_file: str, output_file: str, batch_size: int = 5
+    ) -> bool:
+        """
+        Process a CSV file containing match_report_link column.
+        Adds extracted stats as new columns and saves to output file.
+
+        Args:
+            input_file: Path to input CSV file
+            output_file: Path to save enhanced CSV file
+            batch_size: Number of matches to process between saves
+
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            # Read input CSV
+            df = pd.read_csv(input_file)
+
+            if "match_report_link" not in df.columns:
+                logger.error("Input CSV missing 'match_report_link' column")
+                return False
+
+            # Prepare output directory
+            output_path = Path(output_file)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+
+            # Process matches in batches
+            processed_count = 0
+            results = []
+
+            for idx, row in df.iterrows():
+                if pd.isna(row["match_report_link"]):
+                    logger.warning(f"Skipping row {idx} - empty match_report_link")
+                    results.append({})
+                    continue
+
+                try:
+                    logger.info(f"Processing match {idx+1}/{len(df)}")
+                    match_stats = self.scrape_report(row["match_report_link"])
+
+                    if match_stats:
+                        # Flatten the extra stats groups into individual columns
+                        flat_stats = self._flatten_stats(match_stats)
+                        results.append(flat_stats)
+                    else:
+                        results.append({})
+
+                    # Save progress periodically
+                    if (idx + 1) % batch_size == 0 or (idx + 1) == len(df):
+                        self._save_intermediate_results(df, results, output_file)
+                        logger.info(f"Saved progress after {idx+1} matches")
+
+                except Exception as e:
+                    logger.error(f"Error processing row {idx}: {str(e)}")
+                    results.append({})
+
+            # Merge results with original dataframe
+            final_df = self._merge_results(df, results)
+            final_df.to_csv(output_file, index=False)
+            logger.info(
+                f"Successfully processed {len(df)} matches. Saved to {output_file}"
+            )
+            return True
+
+        except Exception as e:
+            logger.error(f"Error processing CSV: {str(e)}")
+            return False
+
+    def _flatten_stats(self, stats: Dict) -> Dict:
+        """
+        Flatten the nested stats structure into individual columns.
+        """
+        flat_stats = {}
+        # Process main stats
+        for key, value in stats.items():
+            if not key.startswith("extra_stats_group"):
+                flat_stats[key] = value
+        # Process extra stats
+        for group_key, group_values in stats.items():
+            if group_key.startswith("extra_stats_group"):
+                # Process each triplet (home, stat_name, away)
+                for i in range(0, len(group_values), 3):
+                    if i + 2 < len(group_values):
+                        stat_name = group_values[i + 1].lower().replace(" ", "_")
+                        flat_stats[f"{stat_name}_home"] = group_values[i]
+                        flat_stats[f"{stat_name}_away"] = group_values[i + 2]
+        return flat_stats
+
+    def _save_intermediate_results(
+        self, df: pd.DataFrame, results: List[Dict], output_file: str
+    ):
+        """
+        Save intermediate results to avoid losing progress.
+        """
+        temp_df = df.iloc[: len(results)].copy()
+        for i, result in enumerate(results):
+            for key, value in result.items():
+                temp_df.at[i, key] = value
+        temp_df.to_csv(output_file, index=False)
+
+    def _merge_results(self, df: pd.DataFrame, results: List[Dict]) -> pd.DataFrame:
+        """
+        Merge original dataframe with scraped results.
+        """
+        result_df = pd.DataFrame(results)
+        return pd.concat([df, result_df], axis=1)
+
 
 if __name__ == "__main__":
-    import json
-
     # Configure logging
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     )
 
-    # Example usage
-    scraper = MatchReportScraper(headless=False)  # Visible for debugging
+    # Hardcoded file paths (change these as needed)
+    INPUT_CSV = (
+        "data/serie_a_2016_matches.csv"  # Input file with match_report_link column
+    )
+    OUTPUT_CSV = (
+        "data/serie_a_2016_matches_enhanced.csv"  # Output file for enhanced data
+    )
+
+    # Run the scraper
+    scraper = MatchReportScraper(headless=True)  # Set to False for debugging
     try:
-        test_url = "https://fbref.com/en/matches/42463e83/Flamengo-Sport-Recife-May-14-2016-Serie-A"
-        match_stats = scraper.scrape_report(test_url)
-
-        print("Complete Match Statistics:")
-        print(json.dumps(match_stats, indent=2))
-
-        # Expected output now includes both main and extra stats:
-        # {
-        #   "possession_home": "56%",
-        #   "possession_away": "44%",
-        #   "passing accuracy_home": "483 of 553 — 87%",
-        #   "passing accuracy_away": "83% — 362 of 437",
-        #   "shots on target_home": "5 of 11 — 45%",
-        #   "shots on target_away": "100% — 1 of 1",
-        #   "saves_home": "1 of 1 — 100%",
-        #   "saves_away": "80% — 4 of 5",
-        #   "fouls_home": "18",
-        #   "fouls_away": "17",
-        #   "corners_home": "4",
-        #   "corners_away": "4",
-        #   ... (all other extra stats)
-        # }
+        success = scraper.process_csv(
+            input_file=INPUT_CSV,
+            output_file=OUTPUT_CSV,
+            batch_size=5,  # Process 5 matches between saves
+        )
+        if not success:
+            logger.error("Failed to process CSV file")
+            exit(1)
     finally:
         scraper.close()
