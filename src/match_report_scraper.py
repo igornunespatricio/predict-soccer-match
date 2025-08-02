@@ -94,7 +94,8 @@ class MatchReportScraper:
 
     def _extract_main_stats(self, soup: BeautifulSoup) -> Dict:
         """
-        Extract statistics from the main team_stats div.
+        Extract and preprocess statistics from the main team_stats div.
+        Returns cleaned numeric values without percentages or additional text.
         """
         stats = {}
         stats_div = soup.find("div", id="team_stats")
@@ -125,15 +126,49 @@ class MatchReportScraper:
             if current_stat and len(row.find_all("td")) == 2:
                 home_td, away_td = row.find_all("td")
 
-                # Extract complete text content
-                home_value = home_td.get_text(strip=True)
-                away_value = away_td.get_text(strip=True)
+                # Extract and clean values
+                home_value = self._clean_stat_value(
+                    home_td.get_text(strip=True), current_stat
+                )
+                away_value = self._clean_stat_value(
+                    away_td.get_text(strip=True), current_stat
+                )
 
-                if home_value or away_value:
+                if home_value is not None:
                     stats[f"{current_stat}_home"] = home_value
+                if away_value is not None:
                     stats[f"{current_stat}_away"] = away_value
 
         return stats
+
+    def _clean_stat_value(self, raw_value: str, stat_name: str):
+        """
+        Clean and extract values from raw stat text.
+        - For passing accuracy, shots on target, and saves: extract the "X of Y" part
+        - For all other stats (including possession): keep as-is
+        """
+        if not raw_value:
+            return None
+
+        try:
+            # Only process these specific stats differently
+            if stat_name in ["passing accuracy", "shots on target", "saves"]:
+                # Handle both formats:
+                # Home: "265 of 361 — 73%"
+                # Away: "73% — 265 of 361"
+                parts = [p.strip() for p in raw_value.split("—")]
+
+                # Find the part that contains "of"
+                for part in parts:
+                    if "of" in part:
+                        return part.strip()
+
+            # Default case - return original value (including possession)
+            return raw_value.strip()
+
+        except Exception as e:
+            logger.warning(f"Error cleaning stat value '{raw_value}': {str(e)}")
+            return raw_value.strip()
 
     def _extract_extra_stats(self, soup: BeautifulSoup) -> Dict:
         """
@@ -177,19 +212,22 @@ class MatchReportScraper:
             logger.error(f"Error closing WebDriver: {str(e)}")
 
     def process_csv(
-        self, input_file: str, output_file: str, batch_size: int = 5
+        self,
+        input_file: str,
+        output_file: str,
+        batch_size: int = 5,
+        test_mode: bool = False,
+        test_rows: int = 3,
     ) -> bool:
         """
-        Process a CSV file containing match_report_link column.
-        Adds extracted stats as new columns and saves to output file.
+        Process matches from CSV file with optional test mode.
 
         Args:
-            input_file: Path to input CSV file
-            output_file: Path to save enhanced CSV file
-            batch_size: Number of matches to process between saves
-
-        Returns:
-            True if successful, False otherwise
+            input_file: Path to input CSV
+            output_file: Path to save enhanced CSV
+            batch_size: Number of matches between saves
+            test_mode: If True, only process test_rows number of matches
+            test_rows: Number of rows to process in test mode
         """
         try:
             # Read input CSV
@@ -199,12 +237,15 @@ class MatchReportScraper:
                 logger.error("Input CSV missing 'match_report_link' column")
                 return False
 
+            # Apply test mode limit if enabled
+            if test_mode:
+                df = df.head(test_rows)
+                logger.info(f"TEST MODE: Processing first {test_rows} rows only")
+
             # Prepare output directory
             output_path = Path(output_file)
             output_path.parent.mkdir(parents=True, exist_ok=True)
 
-            # Process matches in batches
-            processed_count = 0
             results = []
 
             for idx, row in df.iterrows():
@@ -218,16 +259,20 @@ class MatchReportScraper:
                     match_stats = self.scrape_report(row["match_report_link"])
 
                     if match_stats:
-                        # Flatten the extra stats groups into individual columns
                         flat_stats = self._flatten_stats(match_stats)
                         results.append(flat_stats)
                     else:
                         results.append({})
 
-                    # Save progress periodically
-                    if (idx + 1) % batch_size == 0 or (idx + 1) == len(df):
+                    # Save progress periodically (except in test mode)
+                    if not test_mode and (
+                        (idx + 1) % batch_size == 0 or (idx + 1) == len(df)
+                    ):
                         self._save_intermediate_results(df, results, output_file)
                         logger.info(f"Saved progress after {idx+1} matches")
+
+                    # Add delay between requests
+                    time.sleep(2)
 
                 except Exception as e:
                     logger.error(f"Error processing row {idx}: {str(e)}")
@@ -307,6 +352,8 @@ if __name__ == "__main__":
             input_file=INPUT_CSV,
             output_file=OUTPUT_CSV,
             batch_size=5,  # Process 5 matches between saves
+            test_mode=True,  # Set to True to run in test mode
+            test_rows=3,  # Number of rows to process in test mode
         )
         if not success:
             logger.error("Failed to process CSV file")
